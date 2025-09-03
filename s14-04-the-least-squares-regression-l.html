@@ -11,15 +11,15 @@
   <div id=navbar-top class="navbar">
     <div class="navbar-part left">
       
-        <a href="s14-03-modelling-linear-relationships.html"><img src="shared/images/batch-left.png"></a> <a href="s14-03-modelling-linear-relationships.html">Previous Section</a>
+        <a href="s14-03-modelling-linear-relationships.html"><img src="shared/images/batch-left.png"></a> <a href="s14-03-modelling-linear-relationships.html">Bagian Sebelumnya</a>
       
     </div>
     <div class="navbar-part middle">
-      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Daftar Isi</a>
     </div>
     <div class="navbar-part right">
       
-        <a href="s14-05-statistical-inferences-about-1.html">Next Section</a> <a href="s14-05-statistical-inferences-about-1.html"><img src="shared/images/batch-right.png"></a>
+        <a href="s14-05-statistical-inferences-about-1.html">Bagian Selanjutnya</a> <a href="s14-05-statistical-inferences-about-1.html"><img src="shared/images/batch-right.png"></a>
       
     </div>
   </div>
@@ -29,7 +29,7 @@
     <h2 class="title editable block">
 <span class="title-prefix">10.4</span> The Least Squares Regression Line</h2>
     <div class="learning_objectives editable block" id="fwk-shafer-ch10_s04_n01">
-        <h3 class="title">Learning Objectives</h3>
+        <h3 class="title">Tujuan Pembelajarans</h3>
         <ol class="orderedlist" id="fwk-shafer-ch10_s04_o01" numeration="arabic">
             <li>To learn how to measure how well a straight line fits a collection of data.</li>
             <li>To learn how to construct the least squares regression line, the straight line that best fits a collection of data.</li>
@@ -117,7 +117,7 @@
         </div>
         <p class="para editable block" id="fwk-shafer-ch10_s04_s01_p06">A first thought for a measure of the goodness of fit of the line to the data would be simply to add the errors at every point, but the example shows that this cannot work well in general. The line does not fit the data perfectly (no line can), yet because of cancellation of positive and negative errors the sum of the errors (the fourth column of numbers) is zero. Instead goodness of fit is measured by the sum of the squares of the errors. Squaring eliminates the minus signs, so no cancellation can occur. For the data and line in <a class="xref" href="#fwk-shafer-ch10_s04_s01_f01">Figure 10.6 "Plot of the Five-Point Data and the Line "</a> the sum of the squared errors (the last column of numbers) is 2. This number measures the goodness of fit of the line to the data.</p>
         <div class="callout block" id="fwk-shafer-ch10_s04_s01_n01">
-            <h3 class="title">Definition</h3>
+            <h3 class="title">Definisi</h3>
             <p class="para" id="fwk-shafer-ch10_s04_s01_p07"><em class="emphasis">The</em> <strong class="emphasis bold">goodness of fit</strong> <em class="emphasis">of a line</em> <span class="inlineequation" id="shafer-20121106-125753-152708"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch10-m0131" display="inline"><mrow><mover accent="true"><mi>y</mi><mo stretchy="true">^</mo></mover></mrow><mo class="MathClass-rel">=</mo><mi>m</mi><mi>x</mi><mo>+</mo><mi>b</mi></math></span> <em class="emphasis">to a set of</em> <em class="emphasis">n</em> <em class="emphasis">pairs</em> <span class="inlineequation" id="shafer-20121106-125753-152724"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch10-m0132" display="inline"><mrow><mo class="MathClass-open">(</mo><mrow><mi>x</mi><mo>,</mo><mi>y</mi></mrow><mo class="MathClass-close">)</mo></mrow></math></span> <em class="emphasis">of numbers in a sample is the sum of the squared errors</em></p>
             <span class="informalequation" id="shafer-20121106-125753-152741"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch10-m0133" display="block"><mrow><mi mathvariant="normal">Σ</mi><msup><mrow><mrow><mo class="MathClass-open">(</mo><mrow><mi>y</mi><mo>−</mo><mrow><mover accent="true"><mi>y</mi><mo stretchy="true">^</mo></mover></mrow></mrow><mo class="MathClass-close">)</mo></mrow></mrow><mrow><mn>2</mn></mrow></msup></mrow></math></span>
             <p class="para" id="fwk-shafer-ch10_s04_s01_p08"><em class="emphasis">(</em><em class="emphasis">n</em> <em class="emphasis">terms in the sum, one for each data pair).</em></p>
@@ -127,7 +127,7 @@
         <h2 class="title editable block">The Least Squares Regression Line</h2>
         <p class="para editable block" id="fwk-shafer-ch10_s04_s02_p01">Given any collection of pairs of numbers (except when all the <em class="emphasis">x</em>-values are the same) and the corresponding scatter diagram, there always exists exactly one straight line that fits the data better than any other, in the sense of minimizing the sum of the squared errors. It is called the <em class="emphasis">least squares regression line</em>. Moreover there are formulas for its slope and <em class="emphasis">y</em>-intercept.</p>
         <div class="callout block" id="fwk-shafer-ch10_s04_s02_n01">
-            <h3 class="title">Definition</h3>
+            <h3 class="title">Definisi</h3>
             <p class="para" id="fwk-shafer-ch10_s04_s02_p02"><em class="emphasis">Given a collection of pairs</em> <span class="inlineequation" id="shafer-20121106-125753-152756"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch10-m0134" display="inline"><mrow><mo class="MathClass-open">(</mo><mrow><mi>x</mi><mo>,</mo><mi>y</mi></mrow><mo class="MathClass-close">)</mo></mrow></math></span> <em class="emphasis">of numbers (in which not all the</em> <em class="emphasis">x</em><em class="emphasis">-values are the same), there is a line</em> <span class="inlineequation" id="shafer-20121106-125753-152773"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch10-m0135" display="inline"><mrow><mover accent="true"><mi>y</mi><mo stretchy="true">^</mo></mover></mrow><mo class="MathClass-rel">=</mo><msub><mrow><mrow><mover accent="true"><mi mathvariant="italic" fontsize="75%">β</mi><mo stretchy="true">^</mo></mover></mrow></mrow><mrow><mn>1</mn></mrow></msub><mi>x</mi><mo>+</mo><msub><mrow><mrow><mover accent="true"><mi mathvariant="italic" fontsize="75%">β</mi><mo stretchy="true">^</mo></mover></mrow></mrow><mrow><mn>0</mn></mrow></msub></math></span> <em class="emphasis">that best fits the data in the sense of minimizing the sum of the squared errors. It is called the</em> <span class="margin_term"><a class="glossterm">least squares regression line</a><span class="glossdef">The line that best fits a set of sample data in the sense of minimizing the sum of the squared errors.</span></span>. <em class="emphasis">Its slope</em> <span class="inlineequation" id="shafer-20121106-125753-152789"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch10-m0136" display="inline"><msub><mrow><mrow><mover accent="true"><mi mathvariant="italic" fontsize="75%">β</mi><mo stretchy="true">^</mo></mover></mrow></mrow><mrow><mn>1</mn></mrow></msub></math></span> <em class="emphasis">and</em> <em class="emphasis">y</em><em class="emphasis">-intercept</em> <span class="inlineequation" id="shafer-20121106-125753-152804"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch10-m0137" display="inline"><msub><mrow><mrow><mover accent="true"><mi mathvariant="italic" fontsize="75%">β</mi><mo stretchy="true">^</mo></mover></mrow></mrow><mrow><mn>0</mn></mrow></msub></math></span> <em class="emphasis">are computed using the formulas</em></p>
             <span class="informalequation" id="shafer-20121106-125753-152820"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch10-m0138" display="block"><mrow><msub><mrow><mover accent="true"><mi mathvariant="italic" fontsize="75%">β</mi><mo stretchy="true">^</mo></mover></mrow><mn>1</mn></msub><mo>=</mo><mfrac><mrow><mi>S</mi><msub><mi>S</mi><mrow><mi>x</mi><mi>y</mi></mrow></msub></mrow><mrow><mi>S</mi><msub><mi>S</mi><mrow><mi>x</mi><mi>x</mi></mrow></msub></mrow></mfrac><mtext> </mtext><mi>a</mi><mi>n</mi><mi>d</mi><mtext> </mtext><msub><mrow><mover accent="true"><mi mathvariant="italic" fontsize="75%">β</mi><mo stretchy="true">^</mo></mover></mrow><mn>0</mn></msub><mo>=</mo><mrow><mover accent="true"><mi>y</mi><mo stretchy="true">-</mo></mover></mrow><mo>−</mo><msub><mrow><mover accent="true"><mi mathvariant="italic" fontsize="75%">β</mi><mo stretchy="true">^</mo></mover></mrow><mn>1</mn></msub><mrow><mover accent="true"><mi>x</mi><mo stretchy="true">-</mo></mover></mrow></mrow></math></span>
             <p class="para" id="fwk-shafer-ch10_s04_s02_p03"><em class="emphasis">where</em></p>
@@ -138,11 +138,11 @@
         <p class="para block" id="fwk-shafer-ch10_s04_s02_p06">Remember from <a class="xref" href="https://saylordotorg.github.io/text_introductory-statistics/s14-03-modelling-linear-relationships.html">Section 10.3 "Modelling Linear Relationships with Randomness Present"</a> that the line with the equation <span class="inlineequation" id="shafer-20121106-125753-152922"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch10-m0144" display="inline"><mi>y</mi><mo class="MathClass-rel">=</mo><msub><mrow><mi mathvariant="italic">β</mi></mrow><mrow><mn>1</mn></mrow></msub><mi>x</mi><mo>+</mo><msub><mrow><mi mathvariant="italic">β</mi></mrow><mrow><mn>0</mn></mrow></msub></math></span> is called the population regression line. The numbers <span class="inlineequation" id="shafer-20121106-125753-152938"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch10-m0145" display="inline"><msub><mrow><mrow><mover accent="true"><mi mathvariant="italic" fontsize="75%">β</mi><mo stretchy="true">^</mo></mover></mrow></mrow><mrow><mn>1</mn></mrow></msub></math></span> and <span class="inlineequation" id="shafer-20121106-125753-152954"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch10-m0146" display="inline"><msub><mrow><mrow><mover accent="true"><mi mathvariant="italic" fontsize="75%">β</mi><mo stretchy="true">^</mo></mover></mrow></mrow><mrow><mn>0</mn></mrow></msub></math></span> are statistics that estimate the population parameters <span class="inlineequation" id="shafer-20121106-125753-152969"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch10-m0147" display="inline"><msub><mrow><mi mathvariant="italic">β</mi></mrow><mrow><mn>1</mn></mrow></msub></math></span> and <span class="inlineequation" id="shafer-20121106-125753-152991"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch10-m0148" display="inline"><msub><mrow><mi mathvariant="italic">β</mi></mrow><mrow><mn>0</mn></mrow></msub><mo>.</mo></math></span></p>
         <p class="para editable block" id="fwk-shafer-ch10_s04_s02_p07">We will compute the least squares regression line for the five-point data set, then for a more practical example that will be another running example for the introduction of new concepts in this and the next three sections.</p>
         <div class="exercises block" id="fwk-shafer-ch10_s04_s02_n02">
-            <h3 class="title">Example 2</h3>
+            <h3 class="title">Contoh 2</h3>
             <p class="para" id="fwk-shafer-ch10_s04_s02_p08">Find the least squares regression line for the five-point data set</p>
             <span class="informalequation" id="shafer-20121106-125753-153007"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch10-m0149" display="block"><mrow><mtable columnspacing="0.5em" columnlines="solid none none none none none" rowlines="solid"><mtr><mtd><mi>x</mi></mtd><mtd><mn>2</mn></mtd><mtd><mn>2</mn></mtd><mtd><mn>6</mn></mtd><mtd><mn>8</mn></mtd><mtd><mrow><mn>10</mn></mrow></mtd></mtr><mtr><mtd><mi>y</mi></mtd><mtd><mn>0</mn></mtd><mtd><mn>1</mn></mtd><mtd><mn>2</mn></mtd><mtd><mn>3</mn></mtd><mtd><mn>3</mn></mtd></mtr></mtable></mrow></math></span>
             <p class="para" id="fwk-shafer-ch10_s04_s02_p09">and verify that it fits the data better than the line <span class="inlineequation" id="shafer-20121106-125753-153024"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch10-m0150" display="inline"><mrow><mover accent="true"><mi>y</mi><mo stretchy="true">^</mo></mover></mrow><mo class="MathClass-rel">=</mo><mfrac><mrow><mn>1</mn></mrow><mrow><mn>2</mn></mrow></mfrac><mi>x</mi><mtext>−</mtext><mn>1</mn></math></span> considered in <a class="xref" href="#fwk-shafer-ch10_s04_s01">Section 10.4.1 "Goodness of Fit of a Straight Line to Data"</a>.</p>
-            <p class="simpara">Solution:</p>
+            <p class="simpara">Solusi:</p>
             <p class="para" id="fwk-shafer-ch10_s04_s02_p10">In actual practice computation of the regression line is done using a statistical computation package. In order to clarify the meaning of the formulas we display the computations in tabular form.</p>
             <div class="informaltable" id="fwk-shafer-ch10_s04_s02_tx01" frame="none">
                 <table cellpadding="0" cellspacing="0">
@@ -263,7 +263,7 @@
             </div>
         </div>
         <div class="exercises block" id="fwk-shafer-ch10_s04_s02_n03">
-            <h3 class="title">Example 3</h3>
+            <h3 class="title">Contoh 3</h3>
             <p class="para" id="fwk-shafer-ch10_s04_s02_p15"><a class="xref" href="#fwk-shafer-ch10_s04_s02_t03">Table 10.3 "Data on Age and Value of Used Automobiles of a Specific Make and Model"</a> shows the age in years and the retail value in thousands of dollars of a random sample of ten automobiles of the same make and model.</p>
             <ol class="orderedlist" id="fwk-shafer-ch10_s04_s02_o01" numeration="loweralpha">
                 <li>Construct the scatter diagram.</li>
@@ -307,7 +307,7 @@
                     </tbody>
                 </table>
             </div>
-            <p class="simpara">Solution:</p>
+            <p class="simpara">Solusi:</p>
             <ol class="orderedlist" id="fwk-shafer-ch10_s04_s02_o02" numeration="loweralpha">
                 <li>The scatter diagram is shown in <a class="xref" href="#fwk-shafer-ch10_s04_s02_f01">Figure 10.7 "Scatter Diagram for Age and Value of Used Automobiles"</a>.</li>
             </ol>
@@ -357,7 +357,7 @@
         </div>
         <p class="para editable block" id="fwk-shafer-ch10_s04_s02_p16">For emphasis we highlight the points raised by parts (f) and (g) of the example.</p>
         <div class="callout editable block" id="fwk-shafer-ch10_s04_s02_n04">
-            <h3 class="title">Definition</h3>
+            <h3 class="title">Definisi</h3>
             <p class="para" id="fwk-shafer-ch10_s04_s02_p17"><em class="emphasis">The process of using the least squares regression equation to estimate the value of</em> <em class="emphasis">y</em> <em class="emphasis">at a value of</em> <em class="emphasis">x</em> <em class="emphasis">that does not lie in the range of the</em> <em class="emphasis">x</em><em class="emphasis">-values in the data set that was used to form the regression line is called</em> <span class="margin_term"><a class="glossterm">extrapolation</a><span class="glossdef">The process of using the least squares regression equation to estimate the value of <em class="emphasis">y</em> at an <em class="emphasis">x</em> value not in the proper range.</span></span><em class="emphasis">. It is an invalid use of the regression equation that can lead to errors, hence should be avoided.</em></p>
         </div>
     </div>
@@ -370,7 +370,7 @@
             <span class="informalequation" id="shafer-20121106-125753-153668"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch10-m0188" display="block"><mrow><mi>S</mi><mi>S</mi><mi>E</mi><mo class="MathClass-rel">=</mo><mi>S</mi><msub><mrow><mi>S</mi></mrow><mrow><mi>y</mi><mi>y</mi></mrow></msub><mo>−</mo><msub><mrow><mrow><mover accent="true"><mi mathvariant="italic" fontsize="75%">β</mi><mo stretchy="true">^</mo></mover></mrow></mrow><mrow><mn>1</mn></mrow></msub><mi>S</mi><msub><mrow><mi>S</mi></mrow><mrow><mi>x</mi><mi>y</mi></mrow></msub></mrow></math></span>
         </div>
         <div class="exercises block" id="fwk-shafer-ch10_s04_s03_n02">
-            <h3 class="title">Example 4</h3>
+            <h3 class="title">Contoh 4</h3>
             <p class="para" id="fwk-shafer-ch10_s04_s03_p03">Find the sum of the squared errors <span class="inlineequation" id="shafer-20121106-125753-153685"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch10-m0189" display="inline"><mi>S</mi><mi>S</mi><mi>E</mi></math></span> for the least squares regression line for the five-point data set</p>
             <span class="informalequation" id="shafer-20121106-125753-153707"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch10-m0190" display="block"><mrow><mtable columnspacing="0.5em" columnlines="solid none none none none none" rowlines="solid"><mtr><mtd><mi>x</mi></mtd><mtd><mn>2</mn></mtd><mtd><mn>2</mn></mtd><mtd><mn>6</mn></mtd><mtd><mn>8</mn></mtd><mtd><mrow><mn>10</mn></mrow></mtd></mtr><mtr><mtd><mi>y</mi></mtd><mtd><mn>0</mn></mtd><mtd><mn>1</mn></mtd><mtd><mn>2</mn></mtd><mtd><mn>3</mn></mtd><mtd><mn>3</mn></mtd></mtr></mtable></mrow></math></span>
             <p class="para" id="fwk-shafer-ch10_s04_s03_p04">Do so in two ways: </p>
@@ -378,11 +378,11 @@
                     <li>using the formula <span class="inlineequation" id="shafer-20121106-125753-153740"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch10-m0192" display="inline"><mi>S</mi><mi>S</mi><mi>E</mi><mo class="MathClass-rel">=</mo><mi>S</mi><msub><mrow><mi>S</mi></mrow><mrow><mi>y</mi><mi>y</mi></mrow></msub><mo>−</mo><msub><mrow><mrow><mover accent="true"><mi mathvariant="italic" fontsize="75%">β</mi><mo stretchy="true">^</mo></mover></mrow></mrow><mrow><mn>1</mn></mrow></msub><mi>S</mi><msub><mrow><mi>S</mi></mrow><mrow><mi>x</mi><mi>y</mi></mrow></msub><mo>.</mo></math></span>
 </li>
 </ol>
-            <p class="simpara">Solution:</p>
+            <p class="simpara">Solusi:</p>
             <ol class="orderedlist" id="fwk-shafer-ch10_s04_s03_o02" numeration="loweralpha">
-                <li>The least squares regression line was computed in <a class="xref" href="https://saylordotorg.github.io/text_introductory-statistics/s14-04-the-least-squares-regression-l.html" xrefstyle="select: title">Note 10.18 "Example 2"</a> and is <span class="inlineequation" id="shafer-20121106-125753-153756"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch10-m0193" display="inline"><mrow><mover accent="true"><mi>y</mi><mo stretchy="true">^</mo></mover></mrow><mo class="MathClass-rel">=</mo><mn>0.34375</mn><mi>x</mi><mtext>−</mtext><mn>0.125</mn><mo>.</mo></math></span> <span class="inlineequation" id="shafer-20121106-125753-153773"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch10-m0194" display="inline"><mi>S</mi><mi>S</mi><mi>E</mi></math></span> was found at the end of that example using the definition <span class="inlineequation" id="shafer-20121106-125753-153789"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch10-m0195" display="inline"><mrow><mstyle displaystyle="true"><mi mathvariant="normal">Σ</mi><mrow><msup><mrow><mrow><mo>(</mo><mrow><mi>y</mi><mo>−</mo><mrow><mover accent="true"><mi>y</mi><mo stretchy="true">^</mo></mover></mrow></mrow><mo>)</mo></mrow></mrow><mn>2</mn></msup></mrow></mstyle></mrow><mo>.</mo></math></span> The computations were tabulated in <a class="xref" href="#fwk-shafer-ch10_s04_s02_t02">Table 10.2 "The Errors in Fitting Data with the Least Squares Regression Line"</a>. <span class="inlineequation" id="shafer-20121106-125753-153805"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch10-m0196" display="inline"><mi>S</mi><mi>S</mi><mi>E</mi></math></span> is the sum of the numbers in the last column, which is 0.75.</li>
+                <li>The least squares regression line was computed in <a class="xref" href="https://saylordotorg.github.io/text_introductory-statistics/s14-04-the-least-squares-regression-l.html" xrefstyle="select: title">Note 10.18 "Contoh 2"</a> and is <span class="inlineequation" id="shafer-20121106-125753-153756"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch10-m0193" display="inline"><mrow><mover accent="true"><mi>y</mi><mo stretchy="true">^</mo></mover></mrow><mo class="MathClass-rel">=</mo><mn>0.34375</mn><mi>x</mi><mtext>−</mtext><mn>0.125</mn><mo>.</mo></math></span> <span class="inlineequation" id="shafer-20121106-125753-153773"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch10-m0194" display="inline"><mi>S</mi><mi>S</mi><mi>E</mi></math></span> was found at the end of that example using the definition <span class="inlineequation" id="shafer-20121106-125753-153789"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch10-m0195" display="inline"><mrow><mstyle displaystyle="true"><mi mathvariant="normal">Σ</mi><mrow><msup><mrow><mrow><mo>(</mo><mrow><mi>y</mi><mo>−</mo><mrow><mover accent="true"><mi>y</mi><mo stretchy="true">^</mo></mover></mrow></mrow><mo>)</mo></mrow></mrow><mn>2</mn></msup></mrow></mstyle></mrow><mo>.</mo></math></span> The computations were tabulated in <a class="xref" href="#fwk-shafer-ch10_s04_s02_t02">Table 10.2 "The Errors in Fitting Data with the Least Squares Regression Line"</a>. <span class="inlineequation" id="shafer-20121106-125753-153805"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch10-m0196" display="inline"><mi>S</mi><mi>S</mi><mi>E</mi></math></span> is the sum of the numbers in the last column, which is 0.75.</li>
                 <li>
-                    <p class="para">The numbers <span class="inlineequation" id="shafer-20121106-125753-153821"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch10-m0197" display="inline"><mi>S</mi><msub><mrow><mi>S</mi></mrow><mrow><mi>x</mi><mi>y</mi></mrow></msub></math></span> and <span class="inlineequation" id="shafer-20121106-125753-153845"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch10-m0198" display="inline"><msub><mrow><mrow><mover accent="true"><mi mathvariant="italic" fontsize="75%">β</mi><mo stretchy="true">^</mo></mover></mrow></mrow><mrow><mn>1</mn></mrow></msub></math></span> were already computed in <a class="xref" href="https://saylordotorg.github.io/text_introductory-statistics/s14-04-the-least-squares-regression-l.html" xrefstyle="select: title">Note 10.18 "Example 2"</a> in the process of finding the least squares regression line. So was the number <span class="inlineequation" id="shafer-20121106-125753-153862"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch10-m0199" display="inline"><mrow><mstyle displaystyle="true"><mi mathvariant="normal">Σ</mi><mi>y</mi></mstyle><mo>=</mo><mn>9</mn></mrow><mo>.</mo></math></span> We must compute <span class="inlineequation" id="shafer-20121106-125753-153878"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch10-m0200" display="inline"><mi>S</mi><msub><mrow><mi>S</mi></mrow><mrow><mi>y</mi><mi>y</mi></mrow></msub><mo>.</mo></math></span> To do so it is necessary to first compute <span class="inlineequation" id="shafer-20121106-125753-153894"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch10-m0201" display="inline"><mrow><mstyle displaystyle="true"><mi mathvariant="normal">Σ</mi><mrow><msup><mi>y</mi><mn>2</mn></msup></mrow></mstyle><mo>=</mo><mn>0</mn><mo>+</mo><msup><mn>1</mn><mn>2</mn></msup><mo>+</mo><msup><mn>2</mn><mn>2</mn></msup><mo>+</mo><msup><mn>3</mn><mn>2</mn></msup><mo>+</mo><msup><mn>3</mn><mn>2</mn></msup><mo>=</mo><mn>23</mn></mrow><mo>.</mo></math></span> Then</p>
+                    <p class="para">The numbers <span class="inlineequation" id="shafer-20121106-125753-153821"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch10-m0197" display="inline"><mi>S</mi><msub><mrow><mi>S</mi></mrow><mrow><mi>x</mi><mi>y</mi></mrow></msub></math></span> and <span class="inlineequation" id="shafer-20121106-125753-153845"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch10-m0198" display="inline"><msub><mrow><mrow><mover accent="true"><mi mathvariant="italic" fontsize="75%">β</mi><mo stretchy="true">^</mo></mover></mrow></mrow><mrow><mn>1</mn></mrow></msub></math></span> were already computed in <a class="xref" href="https://saylordotorg.github.io/text_introductory-statistics/s14-04-the-least-squares-regression-l.html" xrefstyle="select: title">Note 10.18 "Contoh 2"</a> in the process of finding the least squares regression line. So was the number <span class="inlineequation" id="shafer-20121106-125753-153862"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch10-m0199" display="inline"><mrow><mstyle displaystyle="true"><mi mathvariant="normal">Σ</mi><mi>y</mi></mstyle><mo>=</mo><mn>9</mn></mrow><mo>.</mo></math></span> We must compute <span class="inlineequation" id="shafer-20121106-125753-153878"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch10-m0200" display="inline"><mi>S</mi><msub><mrow><mi>S</mi></mrow><mrow><mi>y</mi><mi>y</mi></mrow></msub><mo>.</mo></math></span> To do so it is necessary to first compute <span class="inlineequation" id="shafer-20121106-125753-153894"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch10-m0201" display="inline"><mrow><mstyle displaystyle="true"><mi mathvariant="normal">Σ</mi><mrow><msup><mi>y</mi><mn>2</mn></msup></mrow></mstyle><mo>=</mo><mn>0</mn><mo>+</mo><msup><mn>1</mn><mn>2</mn></msup><mo>+</mo><msup><mn>2</mn><mn>2</mn></msup><mo>+</mo><msup><mn>3</mn><mn>2</mn></msup><mo>+</mo><msup><mn>3</mn><mn>2</mn></msup><mo>=</mo><mn>23</mn></mrow><mo>.</mo></math></span> Then</p>
                     <span class="informalequation" id="shafer-20121106-125753-153910"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch10-m0202" display="block"><mrow><mi>S</mi><msub><mrow><mi>S</mi></mrow><mrow><mi>y</mi><mi>y</mi></mrow></msub><mo class="MathClass-rel">=</mo><mi mathvariant="normal">Σ</mi><msup><mrow><mi>y</mi></mrow><mrow><mn>2</mn></mrow></msup><mo>−</mo><mfrac><mrow><mn>1</mn></mrow><mrow><mi>n</mi></mrow></mfrac><msup><mrow><mrow><mo class="MathClass-open">(</mo><mrow><mi mathvariant="normal">Σ</mi><mi>y</mi></mrow><mo class="MathClass-close">)</mo></mrow></mrow><mrow><mn>2</mn></mrow></msup><mo class="MathClass-rel">=</mo><mn>23</mn><mo>−</mo><mfrac><mrow><mn>1</mn></mrow><mrow><mn>5</mn></mrow></mfrac><msup><mrow><mrow><mo class="MathClass-open">(</mo><mrow><mn>9</mn></mrow><mo class="MathClass-close">)</mo></mrow></mrow><mrow><mn>2</mn></mrow></msup><mo class="MathClass-rel">=</mo><mn>6.8</mn></mrow></math></span>
                     <p class="para">so that</p>
                     <span class="informalequation" id="shafer-20121106-125753-153926"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch10-m0203" display="block"><mrow><mi>S</mi><mi>S</mi><mi>E</mi><mo>=</mo><mi>S</mi><msub><mi>S</mi><mrow><mi>y</mi><mi>y</mi></mrow></msub><mo>−</mo><msub><mrow><mover accent="true"><mi mathvariant="italic" fontsize="75%">β</mi><mo stretchy="true">^</mo></mover></mrow><mn>1</mn></msub><mi>S</mi><msub><mi>S</mi><mrow><mi>x</mi><mi>y</mi></mrow></msub><mo>=</mo><mn>6.8</mn><mo>−</mo><mo stretchy="false">(</mo><mn>0.34375</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mn>17.6</mn><mo stretchy="false">)</mo><mo>=</mo><mn>0.75</mn></mrow></math></span>
@@ -390,10 +390,10 @@
             </ol>
         </div>
         <div class="exercises block" id="fwk-shafer-ch10_s04_s03_n03">
-            <h3 class="title">Example 5</h3>
-            <p class="para" id="fwk-shafer-ch10_s04_s03_p05">Find the sum of the squared errors <span class="inlineequation" id="shafer-20121106-125753-153942"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch10-m0204" display="inline"><mi>S</mi><mi>S</mi><mi>E</mi></math></span> for the least squares regression line for the data set, presented in <a class="xref" href="#fwk-shafer-ch10_s04_s02_t03">Table 10.3 "Data on Age and Value of Used Automobiles of a Specific Make and Model"</a>, on age and values of used vehicles in <a class="xref" href="https://saylordotorg.github.io/text_introductory-statistics/s14-04-the-least-squares-regression-l.html" xrefstyle="select: title">Note 10.19 "Example 3"</a>.</p>
-            <p class="simpara">Solution:</p>
-            <p class="para" id="fwk-shafer-ch10_s04_s03_p06">From <a class="xref" href="https://saylordotorg.github.io/text_introductory-statistics/s14-04-the-least-squares-regression-l.html" xrefstyle="select: title">Note 10.19 "Example 3"</a> we already know that</p>
+            <h3 class="title">Contoh 5</h3>
+            <p class="para" id="fwk-shafer-ch10_s04_s03_p05">Find the sum of the squared errors <span class="inlineequation" id="shafer-20121106-125753-153942"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch10-m0204" display="inline"><mi>S</mi><mi>S</mi><mi>E</mi></math></span> for the least squares regression line for the data set, presented in <a class="xref" href="#fwk-shafer-ch10_s04_s02_t03">Table 10.3 "Data on Age and Value of Used Automobiles of a Specific Make and Model"</a>, on age and values of used vehicles in <a class="xref" href="https://saylordotorg.github.io/text_introductory-statistics/s14-04-the-least-squares-regression-l.html" xrefstyle="select: title">Note 10.19 "Contoh 3"</a>.</p>
+            <p class="simpara">Solusi:</p>
+            <p class="para" id="fwk-shafer-ch10_s04_s03_p06">From <a class="xref" href="https://saylordotorg.github.io/text_introductory-statistics/s14-04-the-least-squares-regression-l.html" xrefstyle="select: title">Note 10.19 "Contoh 3"</a> we already know that</p>
             <span class="informalequation" id="shafer-20121106-125753-153959"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch10-m0205" display="block"><mrow><mi>S</mi><msub><mi>S</mi><mrow><mi>x</mi><mi>y</mi></mrow></msub><mo>=</mo><mtext>−</mtext><mn>28.7</mn><mo>,</mo><mtext> </mtext><msub><mrow><mover accent="true"><mi mathvariant="italic" fontsize="75%">β</mi><mo stretchy="true">^</mo></mover></mrow><mn>1</mn></msub><mo>=</mo><mtext>−</mtext><mn>2.05</mn><mo>,</mo><mtext> </mtext><mtext>and</mtext><mtext> </mtext><mstyle displaystyle="true"><mi mathvariant="normal">Σ</mi><mi>y</mi></mstyle><mo>=</mo><mn>246.3</mn></mrow></math></span>
             <p class="para" id="fwk-shafer-ch10_s04_s03_p07">To compute <span class="inlineequation" id="shafer-20121106-125753-153975"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch10-m0206" display="inline"><mi>S</mi><msub><mrow><mi>S</mi></mrow><mrow><mi>y</mi><mi>y</mi></mrow></msub></math></span> we first compute</p>
             <span class="informalequation" id="shafer-20121106-125753-153997"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch10-m0207" display="block"><mrow><mstyle displaystyle="true"><mi mathvariant="normal">Σ</mi><mrow><msup><mi>y</mi><mn>2</mn></msup></mrow></mstyle><mo>=</mo><msup><mrow><mn>28.7</mn></mrow><mn>2</mn></msup><mo>+</mo><msup><mrow><mn>24.8</mn></mrow><mn>2</mn></msup><mo>+</mo><msup><mrow><mn>26.0</mn></mrow><mn>2</mn></msup><mo>+</mo><msup><mrow><mn>30.5</mn></mrow><mn>2</mn></msup><mo>+</mo><msup><mrow><mn>23.8</mn></mrow><mn>2</mn></msup><mo>+</mo><msup><mrow><mn>24.6</mn></mrow><mn>2</mn></msup><mo>+</mo><msup><mrow><mn>23.8</mn></mrow><mn>2</mn></msup><mo>+</mo><msup><mrow><mn>20.4</mn></mrow><mn>2</mn></msup><mo>+</mo><msup><mrow><mn>21.6</mn></mrow><mn>2</mn></msup><mo>+</mo><msup><mrow><mn>22.1</mn></mrow><mn>2</mn></msup><mo>=</mo><mn>6154.15</mn></mrow></math></span>
@@ -403,7 +403,7 @@
             <span class="informalequation" id="shafer-20121106-125753-154029"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch10-m0209" display="block"><mrow><mi>S</mi><mi>S</mi><mi>E</mi><mo>=</mo><mi>S</mi><msub><mi>S</mi><mrow><mi>y</mi><mi>y</mi></mrow></msub><mo>−</mo><msub><mrow><mover accent="true"><mi mathvariant="italic" fontsize="75%">β</mi><mo stretchy="true">^</mo></mover></mrow><mn>1</mn></msub><mi>S</mi><msub><mi>S</mi><mrow><mi>x</mi><mi>y</mi></mrow></msub><mo>=</mo><mn>87.781</mn><mo>−</mo><mo stretchy="false">(</mo><mtext>−</mtext><mn>2.05</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mtext>−</mtext><mn>28.7</mn><mo stretchy="false">)</mo><mo>=</mo><mn>28.946</mn></mrow></math></span>
         </div>
         <div class="key_takeaways block" id="fwk-shafer-ch10_s04_s03_n04">
-            <h3 class="title">Key Takeaways</h3>
+            <h3 class="title">Poin Utamas</h3>
             <ul class="itemizedlist" id="fwk-shafer-ch10_s04_s03_l01" mark="bullet">
                 <li>How well a straight line fits a data set is measured by the sum of the squared errors.</li>
                 <li>The least squares regression line is the line that best fits the data. Its slope and <em class="emphasis">y</em>-intercept are computed from the data using formulas.</li>
@@ -412,33 +412,33 @@
             </ul>
         </div>
         <div class="qandaset block" id="fwk-shafer-ch10_s04_qs01" defaultlabel="number">
-            <h3 class="title">Exercises</h3>
+            <h3 class="title">Latihans</h3>
             <ol class="qandadiv" id="fwk-shafer-ch10_s04_qs01_qd01">
                 <h3 class="title">Basic</h3>
                 <p class="para" id="fwk-shafer-ch10_s04_qs01_p01">For the Basic and Application exercises in this section use the computations that were done for the exercises with the same number in <a class="xref" href="https://saylordotorg.github.io/text_introductory-statistics/s14-02-the-linear-correlation-coeffic.html">Section 10.2 "The Linear Correlation Coefficient"</a>.</p>
                 <li class="qandaentry" id="fwk-shafer-ch10_s04_qs01_qd01_qa01">
                     <div class="question">
-                        <p class="para" id="fwk-shafer-ch10_s04_qs01_p02">Compute the least squares regression line for the data in Exercise 1 of <a class="xref" href="https://saylordotorg.github.io/text_introductory-statistics/s14-02-the-linear-correlation-coeffic.html">Section 10.2 "The Linear Correlation Coefficient"</a>.</p>
+                        <p class="para" id="fwk-shafer-ch10_s04_qs01_p02">Compute the least squares regression line for the data in Latihan 1 of <a class="xref" href="https://saylordotorg.github.io/text_introductory-statistics/s14-02-the-linear-correlation-coeffic.html">Section 10.2 "The Linear Correlation Coefficient"</a>.</p>
                     </div>
                 </li>
                 <li class="qandaentry" id="fwk-shafer-ch10_s04_qs01_qd01_qa02">
                     <div class="question">
-                        <p class="para" id="fwk-shafer-ch10_s04_qs01_p04">Compute the least squares regression line for the data in Exercise 2 of <a class="xref" href="https://saylordotorg.github.io/text_introductory-statistics/s14-02-the-linear-correlation-coeffic.html">Section 10.2 "The Linear Correlation Coefficient"</a>.</p>
+                        <p class="para" id="fwk-shafer-ch10_s04_qs01_p04">Compute the least squares regression line for the data in Latihan 2 of <a class="xref" href="https://saylordotorg.github.io/text_introductory-statistics/s14-02-the-linear-correlation-coeffic.html">Section 10.2 "The Linear Correlation Coefficient"</a>.</p>
                     </div>
                 </li>
                 <li class="qandaentry" id="fwk-shafer-ch10_s04_qs01_qd01_qa03">
                     <div class="question">
-                        <p class="para" id="fwk-shafer-ch10_s04_qs01_p06">Compute the least squares regression line for the data in Exercise 3 of <a class="xref" href="https://saylordotorg.github.io/text_introductory-statistics/s14-02-the-linear-correlation-coeffic.html">Section 10.2 "The Linear Correlation Coefficient"</a>.</p>
+                        <p class="para" id="fwk-shafer-ch10_s04_qs01_p06">Compute the least squares regression line for the data in Latihan 3 of <a class="xref" href="https://saylordotorg.github.io/text_introductory-statistics/s14-02-the-linear-correlation-coeffic.html">Section 10.2 "The Linear Correlation Coefficient"</a>.</p>
                     </div>
                 </li>
                 <li class="qandaentry" id="fwk-shafer-ch10_s04_qs01_qd01_qa04">
                     <div class="question">
-                        <p class="para" id="fwk-shafer-ch10_s04_qs01_p08">Compute the least squares regression line for the data in Exercise 4 of <a class="xref" href="https://saylordotorg.github.io/text_introductory-statistics/s14-02-the-linear-correlation-coeffic.html">Section 10.2 "The Linear Correlation Coefficient"</a>.</p>
+                        <p class="para" id="fwk-shafer-ch10_s04_qs01_p08">Compute the least squares regression line for the data in Latihan 4 of <a class="xref" href="https://saylordotorg.github.io/text_introductory-statistics/s14-02-the-linear-correlation-coeffic.html">Section 10.2 "The Linear Correlation Coefficient"</a>.</p>
                     </div>
                 </li>
                 <li class="qandaentry" id="fwk-shafer-ch10_s04_qs01_qd01_qa05">
                     <div class="question">
-                        <p class="para" id="fwk-shafer-ch10_s04_qs01_p10">For the data in Exercise 5 of <a class="xref" href="https://saylordotorg.github.io/text_introductory-statistics/s14-02-the-linear-correlation-coeffic.html">Section 10.2 "The Linear Correlation Coefficient"</a></p>
+                        <p class="para" id="fwk-shafer-ch10_s04_qs01_p10">For the data in Latihan 5 of <a class="xref" href="https://saylordotorg.github.io/text_introductory-statistics/s14-02-the-linear-correlation-coeffic.html">Section 10.2 "The Linear Correlation Coefficient"</a></p>
                         <ol class="orderedlist" id="fwk-shafer-ch10_s04_qs01_o01" numeration="loweralpha">
                             <li>Compute the least squares regression line.</li>
                             <li>Compute the sum of the squared errors <span class="inlineequation" id="shafer-20121106-125753-154150"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch10-m0216" display="inline"><mi>S</mi><mi>S</mi><mi>E</mi></math></span> using the definition <span class="inlineequation" id="shafer-20121106-125753-154167"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch10-m0217" display="inline"><mrow><mstyle displaystyle="true"><mi mathvariant="normal">Σ</mi><mrow><msup><mrow><mo stretchy="false">(</mo><mi>y</mi><mo>−</mo><mrow><mover accent="true"><mi>y</mi><mo stretchy="true">^</mo></mover></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></mstyle></mrow><mo>.</mo></math></span>
@@ -450,7 +450,7 @@
                 </li>
                 <li class="qandaentry" id="fwk-shafer-ch10_s04_qs01_qd01_qa06">
                     <div class="question">
-                        <p class="para" id="fwk-shafer-ch10_s04_qs01_p12">For the data in Exercise 6 of <a class="xref" href="https://saylordotorg.github.io/text_introductory-statistics/s14-02-the-linear-correlation-coeffic.html">Section 10.2 "The Linear Correlation Coefficient"</a></p>
+                        <p class="para" id="fwk-shafer-ch10_s04_qs01_p12">For the data in Latihan 6 of <a class="xref" href="https://saylordotorg.github.io/text_introductory-statistics/s14-02-the-linear-correlation-coeffic.html">Section 10.2 "The Linear Correlation Coefficient"</a></p>
                         <ol class="orderedlist" id="fwk-shafer-ch10_s04_qs01_o02" numeration="loweralpha">
                             <li>Compute the least squares regression line.</li>
                             <li>Compute the sum of the squared errors <span class="inlineequation" id="shafer-20121106-125753-154250"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch10-m0222" display="inline"><mi>S</mi><mi>S</mi><mi>E</mi></math></span> using the definition <span class="inlineequation" id="shafer-20121106-125753-154273"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch10-m0223" display="inline"><mrow><mstyle displaystyle="true"><mi mathvariant="normal">Σ</mi><mrow><msup><mrow><mo stretchy="false">(</mo><mi>y</mi><mo>−</mo><mrow><mover accent="true"><mi>y</mi><mo stretchy="true">^</mo></mover></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></mstyle></mrow><mo>.</mo></math></span>
@@ -462,17 +462,17 @@
                 </li>
                 <li class="qandaentry" id="fwk-shafer-ch10_s04_qs01_qd01_qa07">
                     <div class="question">
-                        <p class="para" id="fwk-shafer-ch10_s04_qs01_p14">Compute the least squares regression line for the data in Exercise 7 of <a class="xref" href="https://saylordotorg.github.io/text_introductory-statistics/s14-02-the-linear-correlation-coeffic.html">Section 10.2 "The Linear Correlation Coefficient"</a>.</p>
+                        <p class="para" id="fwk-shafer-ch10_s04_qs01_p14">Compute the least squares regression line for the data in Latihan 7 of <a class="xref" href="https://saylordotorg.github.io/text_introductory-statistics/s14-02-the-linear-correlation-coeffic.html">Section 10.2 "The Linear Correlation Coefficient"</a>.</p>
                     </div>
                 </li>
                 <li class="qandaentry" id="fwk-shafer-ch10_s04_qs01_qd01_qa08">
                     <div class="question">
-                        <p class="para" id="fwk-shafer-ch10_s04_qs01_p16">Compute the least squares regression line for the data in Exercise 8 of <a class="xref" href="https://saylordotorg.github.io/text_introductory-statistics/s14-02-the-linear-correlation-coeffic.html">Section 10.2 "The Linear Correlation Coefficient"</a>.</p>
+                        <p class="para" id="fwk-shafer-ch10_s04_qs01_p16">Compute the least squares regression line for the data in Latihan 8 of <a class="xref" href="https://saylordotorg.github.io/text_introductory-statistics/s14-02-the-linear-correlation-coeffic.html">Section 10.2 "The Linear Correlation Coefficient"</a>.</p>
                     </div>
                 </li>
                 <li class="qandaentry" id="fwk-shafer-ch10_s04_qs01_qd01_qa09">
                     <div class="question">
-                        <p class="para" id="fwk-shafer-ch10_s04_qs01_p18">For the data in Exercise 9 of <a class="xref" href="https://saylordotorg.github.io/text_introductory-statistics/s14-02-the-linear-correlation-coeffic.html">Section 10.2 "The Linear Correlation Coefficient"</a></p>
+                        <p class="para" id="fwk-shafer-ch10_s04_qs01_p18">For the data in Latihan 9 of <a class="xref" href="https://saylordotorg.github.io/text_introductory-statistics/s14-02-the-linear-correlation-coeffic.html">Section 10.2 "The Linear Correlation Coefficient"</a></p>
                         <ol class="orderedlist" id="fwk-shafer-ch10_s04_qs01_o03" numeration="loweralpha">
                             <li>Compute the least squares regression line.</li>
                             <li>Can you compute the sum of the squared errors <span class="inlineequation" id="shafer-20121106-125753-154387"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch10-m0230" display="inline"><mi>S</mi><mi>S</mi><mi>E</mi></math></span> using the definition <span class="inlineequation" id="shafer-20121106-125753-154409"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch10-m0231" display="inline"><mrow><mstyle displaystyle="true"><mi mathvariant="normal">Σ</mi><mrow><msup><mrow><mo stretchy="false">(</mo><mi>y</mi><mo>−</mo><mrow><mover accent="true"><mi>y</mi><mo stretchy="true">^</mo></mover></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></mstyle></mrow></math></span>? Explain.</li>
@@ -483,7 +483,7 @@
                 </li>
                 <li class="qandaentry" id="fwk-shafer-ch10_s04_qs01_qd01_qa10">
                     <div class="question">
-                        <p class="para" id="fwk-shafer-ch10_s04_qs01_p20">For the data in Exercise 10 of <a class="xref" href="https://saylordotorg.github.io/text_introductory-statistics/s14-02-the-linear-correlation-coeffic.html">Section 10.2 "The Linear Correlation Coefficient"</a></p>
+                        <p class="para" id="fwk-shafer-ch10_s04_qs01_p20">For the data in Latihan 10 of <a class="xref" href="https://saylordotorg.github.io/text_introductory-statistics/s14-02-the-linear-correlation-coeffic.html">Section 10.2 "The Linear Correlation Coefficient"</a></p>
                         <ol class="orderedlist" id="fwk-shafer-ch10_s04_qs01_o04" numeration="loweralpha">
                             <li>Compute the least squares regression line.</li>
                             <li>Can you compute the sum of the squared errors <span class="inlineequation" id="shafer-20121106-125753-154490"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch10-m0236" display="inline"><mi>S</mi><mi>S</mi><mi>E</mi></math></span> using the definition <span class="inlineequation" id="shafer-20121106-125753-154506"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch10-m0237" display="inline"><mrow><mstyle displaystyle="true"><mi mathvariant="normal">Σ</mi><mrow><msup><mrow><mo stretchy="false">(</mo><mi>y</mi><mo>−</mo><mrow><mover accent="true"><mi>y</mi><mo stretchy="true">^</mo></mover></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></mstyle></mrow></math></span>? Explain.</li>
@@ -497,7 +497,7 @@
                 <h3 class="title">Applications</h3>
                 <li class="qandaentry" id="fwk-shafer-ch10_s04_qs01_qd02_qa11">
                     <div class="question">
-                        <p class="para" id="fwk-shafer-ch10_s04_qs01_p22">For the data in Exercise 11 of <a class="xref" href="https://saylordotorg.github.io/text_introductory-statistics/s14-02-the-linear-correlation-coeffic.html">Section 10.2 "The Linear Correlation Coefficient"</a></p>
+                        <p class="para" id="fwk-shafer-ch10_s04_qs01_p22">For the data in Latihan 11 of <a class="xref" href="https://saylordotorg.github.io/text_introductory-statistics/s14-02-the-linear-correlation-coeffic.html">Section 10.2 "The Linear Correlation Coefficient"</a></p>
                         <ol class="orderedlist" id="fwk-shafer-ch10_s04_qs01_o05" numeration="loweralpha">
                             <li>Compute the least squares regression line.</li>
                             <li>On average, how many new words does a child from 13 to 18 months old learn each month? Explain.</li>
@@ -507,7 +507,7 @@
                 </li>
                 <li class="qandaentry" id="fwk-shafer-ch10_s04_qs01_qd02_qa12">
                     <div class="question">
-                        <p class="para" id="fwk-shafer-ch10_s04_qs01_p23">For the data in Exercise 12 of <a class="xref" href="https://saylordotorg.github.io/text_introductory-statistics/s14-02-the-linear-correlation-coeffic.html">Section 10.2 "The Linear Correlation Coefficient"</a></p>
+                        <p class="para" id="fwk-shafer-ch10_s04_qs01_p23">For the data in Latihan 12 of <a class="xref" href="https://saylordotorg.github.io/text_introductory-statistics/s14-02-the-linear-correlation-coeffic.html">Section 10.2 "The Linear Correlation Coefficient"</a></p>
                         <ol class="orderedlist" id="fwk-shafer-ch10_s04_qs01_o07" numeration="loweralpha">
                             <li>Compute the least squares regression line.</li>
                             <li>On average, how many additional feet are added to the braking distance for each additional 100 pounds of weight? Explain.</li>
@@ -517,7 +517,7 @@
                 </li>
                 <li class="qandaentry" id="fwk-shafer-ch10_s04_qs01_qd02_qa13">
                     <div class="question">
-                        <p class="para" id="fwk-shafer-ch10_s04_qs01_p24">For the data in Exercise 13 of <a class="xref" href="https://saylordotorg.github.io/text_introductory-statistics/s14-02-the-linear-correlation-coeffic.html">Section 10.2 "The Linear Correlation Coefficient"</a></p>
+                        <p class="para" id="fwk-shafer-ch10_s04_qs01_p24">For the data in Latihan 13 of <a class="xref" href="https://saylordotorg.github.io/text_introductory-statistics/s14-02-the-linear-correlation-coeffic.html">Section 10.2 "The Linear Correlation Coefficient"</a></p>
                         <ol class="orderedlist" id="fwk-shafer-ch10_s04_qs01_o09" numeration="loweralpha">
                             <li>Compute the least squares regression line.</li>
                             <li>Estimate the average resting heart rate of all 40-year-old men.</li>
@@ -527,7 +527,7 @@
                 </li>
                 <li class="qandaentry" id="fwk-shafer-ch10_s04_qs01_qd02_qa14">
                     <div class="question">
-                        <p class="para" id="fwk-shafer-ch10_s04_qs01_p25">For the data in Exercise 14 of <a class="xref" href="https://saylordotorg.github.io/text_introductory-statistics/s14-02-the-linear-correlation-coeffic.html">Section 10.2 "The Linear Correlation Coefficient"</a></p>
+                        <p class="para" id="fwk-shafer-ch10_s04_qs01_p25">For the data in Latihan 14 of <a class="xref" href="https://saylordotorg.github.io/text_introductory-statistics/s14-02-the-linear-correlation-coeffic.html">Section 10.2 "The Linear Correlation Coefficient"</a></p>
                         <ol class="orderedlist" id="fwk-shafer-ch10_s04_qs01_o11" numeration="loweralpha">
                             <li>Compute the least squares regression line.</li>
                             <li>Estimate the average wave height when the wind is blowing at 10 miles per hour.</li>
@@ -537,7 +537,7 @@
                 </li>
                 <li class="qandaentry" id="fwk-shafer-ch10_s04_qs01_qd02_qa15">
                     <div class="question">
-                        <p class="para" id="fwk-shafer-ch10_s04_qs01_p26">For the data in Exercise 15 of <a class="xref" href="https://saylordotorg.github.io/text_introductory-statistics/s14-02-the-linear-correlation-coeffic.html">Section 10.2 "The Linear Correlation Coefficient"</a></p>
+                        <p class="para" id="fwk-shafer-ch10_s04_qs01_p26">For the data in Latihan 15 of <a class="xref" href="https://saylordotorg.github.io/text_introductory-statistics/s14-02-the-linear-correlation-coeffic.html">Section 10.2 "The Linear Correlation Coefficient"</a></p>
                         <ol class="orderedlist" id="fwk-shafer-ch10_s04_qs01_o13" numeration="loweralpha">
                             <li>Compute the least squares regression line.</li>
                             <li>On average, for each additional thousand dollars spent on advertising, how does revenue change? Explain.</li>
@@ -547,7 +547,7 @@
                 </li>
                 <li class="qandaentry" id="fwk-shafer-ch10_s04_qs01_qd02_qa16">
                     <div class="question">
-                        <p class="para" id="fwk-shafer-ch10_s04_qs01_p27">For the data in Exercise 16 of <a class="xref" href="https://saylordotorg.github.io/text_introductory-statistics/s14-02-the-linear-correlation-coeffic.html">Section 10.2 "The Linear Correlation Coefficient"</a></p>
+                        <p class="para" id="fwk-shafer-ch10_s04_qs01_p27">For the data in Latihan 16 of <a class="xref" href="https://saylordotorg.github.io/text_introductory-statistics/s14-02-the-linear-correlation-coeffic.html">Section 10.2 "The Linear Correlation Coefficient"</a></p>
                         <ol class="orderedlist" id="fwk-shafer-ch10_s04_qs01_o15" numeration="loweralpha">
                             <li>Compute the least squares regression line.</li>
                             <li>On average, for each additional inch of height of two-year-old girl, what is the change in the adult height? Explain.</li>
@@ -557,7 +557,7 @@
                 </li>
                 <li class="qandaentry" id="fwk-shafer-ch10_s04_qs01_qd02_qa17">
                     <div class="question">
-                        <p class="para" id="fwk-shafer-ch10_s04_qs01_p28">For the data in Exercise 17 of <a class="xref" href="https://saylordotorg.github.io/text_introductory-statistics/s14-02-the-linear-correlation-coeffic.html">Section 10.2 "The Linear Correlation Coefficient"</a></p>
+                        <p class="para" id="fwk-shafer-ch10_s04_qs01_p28">For the data in Latihan 17 of <a class="xref" href="https://saylordotorg.github.io/text_introductory-statistics/s14-02-the-linear-correlation-coeffic.html">Section 10.2 "The Linear Correlation Coefficient"</a></p>
                         <ol class="orderedlist" id="fwk-shafer-ch10_s04_qs01_o17" numeration="loweralpha">
                             <li>Compute the least squares regression line.</li>
                             <li>Compute <span class="inlineequation" id="shafer-20121106-125753-154700"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch10-m0248" display="inline"><mi>S</mi><mi>S</mi><mi>E</mi></math></span> using the formula <span class="inlineequation" id="shafer-20121106-125753-154716"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch10-m0249" display="inline"><mi>S</mi><mi>S</mi><mi>E</mi><mo class="MathClass-rel">=</mo><mi>S</mi><msub><mrow><mi>S</mi></mrow><mrow><mi>y</mi><mi>y</mi></mrow></msub><mo>−</mo><msub><mrow><mrow><mover accent="true"><mi mathvariant="italic" fontsize="75%">β</mi><mo stretchy="true">^</mo></mover></mrow></mrow><mrow><mn>1</mn></mrow></msub><mi>S</mi><msub><mrow><mi>S</mi></mrow><mrow><mi>x</mi><mi>y</mi></mrow></msub><mo>.</mo></math></span>
@@ -568,7 +568,7 @@
                 </li>
                 <li class="qandaentry" id="fwk-shafer-ch10_s04_qs01_qd02_qa18">
                     <div class="question">
-                        <p class="para" id="fwk-shafer-ch10_s04_qs01_p29">For the data in Exercise 18 of <a class="xref" href="https://saylordotorg.github.io/text_introductory-statistics/s14-02-the-linear-correlation-coeffic.html">Section 10.2 "The Linear Correlation Coefficient"</a></p>
+                        <p class="para" id="fwk-shafer-ch10_s04_qs01_p29">For the data in Latihan 18 of <a class="xref" href="https://saylordotorg.github.io/text_introductory-statistics/s14-02-the-linear-correlation-coeffic.html">Section 10.2 "The Linear Correlation Coefficient"</a></p>
                         <ol class="orderedlist" id="fwk-shafer-ch10_s04_qs01_o19" numeration="loweralpha">
                             <li>Compute the least squares regression line.</li>
                             <li>Compute <span class="inlineequation" id="shafer-20121106-125753-154748"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch10-m0251" display="inline"><mi>S</mi><mi>S</mi><mi>E</mi></math></span> using the formula <span class="inlineequation" id="shafer-20121106-125753-154764"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch10-m0252" display="inline"><mi>S</mi><mi>S</mi><mi>E</mi><mo class="MathClass-rel">=</mo><mi>S</mi><msub><mrow><mi>S</mi></mrow><mrow><mi>y</mi><mi>y</mi></mrow></msub><mo>−</mo><msub><mrow><mrow><mover accent="true"><mi mathvariant="italic" fontsize="75%">β</mi><mo stretchy="true">^</mo></mover></mrow></mrow><mrow><mn>1</mn></mrow></msub><mi>S</mi><msub><mrow><mi>S</mi></mrow><mrow><mi>x</mi><mi>y</mi></mrow></msub><mo>.</mo></math></span>
@@ -579,7 +579,7 @@
                 </li>
                 <li class="qandaentry" id="fwk-shafer-ch10_s04_qs01_qd02_qa19">
                     <div class="question">
-                        <p class="para" id="fwk-shafer-ch10_s04_qs01_p30">For the data in Exercise 19 of <a class="xref" href="https://saylordotorg.github.io/text_introductory-statistics/s14-02-the-linear-correlation-coeffic.html">Section 10.2 "The Linear Correlation Coefficient"</a></p>
+                        <p class="para" id="fwk-shafer-ch10_s04_qs01_p30">For the data in Latihan 19 of <a class="xref" href="https://saylordotorg.github.io/text_introductory-statistics/s14-02-the-linear-correlation-coeffic.html">Section 10.2 "The Linear Correlation Coefficient"</a></p>
                         <ol class="orderedlist" id="fwk-shafer-ch10_s04_qs01_o21" numeration="loweralpha">
                             <li>Compute the least squares regression line.</li>
                             <li>Interpret the value of the slope of the least squares regression line in the context of the problem.</li>
@@ -589,7 +589,7 @@
                 </li>
                 <li class="qandaentry" id="fwk-shafer-ch10_s04_qs01_qd02_qa20">
                     <div class="question">
-                        <p class="para" id="fwk-shafer-ch10_s04_qs01_p31">For the data in Exercise 20 of <a class="xref" href="https://saylordotorg.github.io/text_introductory-statistics/s14-02-the-linear-correlation-coeffic.html">Section 10.2 "The Linear Correlation Coefficient"</a></p>
+                        <p class="para" id="fwk-shafer-ch10_s04_qs01_p31">For the data in Latihan 20 of <a class="xref" href="https://saylordotorg.github.io/text_introductory-statistics/s14-02-the-linear-correlation-coeffic.html">Section 10.2 "The Linear Correlation Coefficient"</a></p>
                         <ol class="orderedlist" id="fwk-shafer-ch10_s04_qs01_o23" numeration="loweralpha">
                             <li>Compute the least squares regression line.</li>
                             <li>Interpret the value of the slope of the least squares regression line in the context of the problem.</li>
@@ -599,7 +599,7 @@
                 </li>
                 <li class="qandaentry" id="fwk-shafer-ch10_s04_qs01_qd02_qa21">
                     <div class="question">
-                        <p class="para" id="fwk-shafer-ch10_s04_qs01_p32">For the data in Exercise 21 of <a class="xref" href="https://saylordotorg.github.io/text_introductory-statistics/s14-02-the-linear-correlation-coeffic.html">Section 10.2 "The Linear Correlation Coefficient"</a></p>
+                        <p class="para" id="fwk-shafer-ch10_s04_qs01_p32">For the data in Latihan 21 of <a class="xref" href="https://saylordotorg.github.io/text_introductory-statistics/s14-02-the-linear-correlation-coeffic.html">Section 10.2 "The Linear Correlation Coefficient"</a></p>
                         <ol class="orderedlist" id="fwk-shafer-ch10_s04_qs01_o25" numeration="loweralpha">
                             <li>Compute the least squares regression line.</li>
                             <li>The 28-day strength of concrete used on a certain job must be at least 3,200 psi. If the 3-day strength is 1,300 psi, would we anticipate that the concrete will be sufficiently strong on the 28th day? Explain fully.</li>
@@ -608,7 +608,7 @@
                 </li>
                 <li class="qandaentry" id="fwk-shafer-ch10_s04_qs01_qd02_qa22">
                     <div class="question">
-                        <p class="para" id="fwk-shafer-ch10_s04_qs01_p33">For the data in Exercise 22 of <a class="xref" href="https://saylordotorg.github.io/text_introductory-statistics/s14-02-the-linear-correlation-coeffic.html">Section 10.2 "The Linear Correlation Coefficient"</a></p>
+                        <p class="para" id="fwk-shafer-ch10_s04_qs01_p33">For the data in Latihan 22 of <a class="xref" href="https://saylordotorg.github.io/text_introductory-statistics/s14-02-the-linear-correlation-coeffic.html">Section 10.2 "The Linear Correlation Coefficient"</a></p>
                         <ol class="orderedlist" id="fwk-shafer-ch10_s04_qs01_o27" numeration="loweralpha">
                             <li>Compute the least squares regression line.</li>
                             <li>If the power facility is called upon to provide more than 95 million watt-hours tomorrow then energy will have to be purchased from elsewhere at a premium. The forecast is for an average temperature of 42 degrees. Should the company plan on purchasing power at a premium?</li>
@@ -617,7 +617,7 @@
                 </li>
             </ol>
             <ol class="qandadiv" id="fwk-shafer-ch10_s04_qs01_qd03" start="23">
-                <h3 class="title">Additional Exercises</h3>
+                <h3 class="title">Additional Latihans</h3>
                 <li class="qandaentry" id="fwk-shafer-ch10_s04_qs01_qd03_qa23">
                     <div class="question">
                         <p class="para" id="fwk-shafer-ch10_s04_qs01_p34">Verify that no matter what the data are, the least squares regression line always passes through the point with coordinates <span class="inlineequation" id="shafer-20121106-125753-154869"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch10-m0258" display="inline"><mrow><mo class="MathClass-open">(</mo><mrow><mrow><mover accent="true"><mi>x</mi><mo stretchy="true">-</mo></mover></mrow><mo>,</mo><mrow><mover accent="true"><mi>y</mi><mo stretchy="true">-</mo></mover></mrow></mrow><mo class="MathClass-close">)</mo></mrow><mo>.</mo></math></span> Hint: Find the predicted value of <em class="emphasis">y</em> when <span class="inlineequation" id="shafer-20121106-125753-154885"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch10-m0259" display="inline"><mi>x</mi><mo class="MathClass-rel">=</mo><mrow><mover accent="true"><mi>x</mi><mo stretchy="true">-</mo></mover></mrow><mo>.</mo></math></span></p>
@@ -625,7 +625,7 @@
                 </li>
                 <li class="qandaentry" id="fwk-shafer-ch10_s04_qs01_qd03_qa24">
                     <div class="question">
-                        <p class="para" id="fwk-shafer-ch10_s04_qs01_p35">In Exercise 1 you computed the least squares regression line for the data in Exercise 1 of <a class="xref" href="https://saylordotorg.github.io/text_introductory-statistics/s14-02-the-linear-correlation-coeffic.html">Section 10.2 "The Linear Correlation Coefficient"</a>.</p>
+                        <p class="para" id="fwk-shafer-ch10_s04_qs01_p35">In Latihan 1 you computed the least squares regression line for the data in Latihan 1 of <a class="xref" href="https://saylordotorg.github.io/text_introductory-statistics/s14-02-the-linear-correlation-coeffic.html">Section 10.2 "The Linear Correlation Coefficient"</a>.</p>
                         <ol class="orderedlist" id="fwk-shafer-ch10_s04_qs01_o29" numeration="loweralpha">
                             <li>
                                 <p class="para">Reverse the roles of <em class="emphasis">x</em> and <em class="emphasis">y</em> and compute the least squares regression line for the new data set</p>
@@ -638,7 +638,7 @@
                 </li>
             </ol>
             <ol class="qandadiv" id="fwk-shafer-ch10_s04_qs01_qd04" start="25">
-                <h3 class="title">Large Data Set Exercises</h3>
+                <h3 class="title">Large Data Set Latihans</h3>
                 <li class="qandaentry" id="fwk-shafer-ch10_s04_qs01_qd04_qa25">
                     <div class="question">
                         <p class="para" id="fwk-shafer-ch10_s04_qs01_p36">Large Data Set 1 lists the SAT scores and GPAs of 1,000 students.</p>
@@ -856,15 +856,15 @@
   <div id=navbar-bottom class="navbar">
     <div class="navbar-part left">
       
-        <a href="s14-03-modelling-linear-relationships.html"><img src="shared/images/batch-left.png"></a> <a href="s14-03-modelling-linear-relationships.html">Previous Section</a>
+        <a href="s14-03-modelling-linear-relationships.html"><img src="shared/images/batch-left.png"></a> <a href="s14-03-modelling-linear-relationships.html">Bagian Sebelumnya</a>
       
     </div>
     <div class="navbar-part middle">
-      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Daftar Isi</a>
     </div>
     <div class="navbar-part right">
       
-        <a href="s14-05-statistical-inferences-about-1.html">Next Section</a> <a href="s14-05-statistical-inferences-about-1.html"><img src="shared/images/batch-right.png"></a>
+        <a href="s14-05-statistical-inferences-about-1.html">Bagian Selanjutnya</a> <a href="s14-05-statistical-inferences-about-1.html"><img src="shared/images/batch-right.png"></a>
       
     </div>
   </div>

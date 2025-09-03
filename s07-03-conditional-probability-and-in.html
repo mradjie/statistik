@@ -11,15 +11,15 @@
   <div id=navbar-top class="navbar">
     <div class="navbar-part left">
       
-        <a href="s07-02-complements-intersections-and-.html"><img src="shared/images/batch-left.png"></a> <a href="s07-02-complements-intersections-and-.html">Previous Section</a>
+        <a href="s07-02-complements-intersections-and-.html"><img src="shared/images/batch-left.png"></a> <a href="s07-02-complements-intersections-and-.html">Bagian Sebelumnya</a>
       
     </div>
     <div class="navbar-part middle">
-      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Daftar Isi</a>
     </div>
     <div class="navbar-part right">
       
-        <a href="s08-01-random-variables.html">Next Section</a> <a href="s08-01-random-variables.html"><img src="shared/images/batch-right.png"></a>
+        <a href="s08-01-random-variables.html">Bagian Selanjutnya</a> <a href="s08-01-random-variables.html"><img src="shared/images/batch-right.png"></a>
       
     </div>
   </div>
@@ -29,7 +29,7 @@
     <h2 class="title editable block">
 <span class="title-prefix">3.3</span> Conditional Probability and Independent Events</h2>
     <div class="learning_objectives editable block" id="fwk-shafer-ch03_s03_n01">
-        <h3 class="title">Learning Objectives</h3>
+        <h3 class="title">Tujuan Pembelajarans</h3>
         <ol class="orderedlist" id="fwk-shafer-ch03_s03_o01" numeration="arabic">
             <li>To learn the concept of a conditional probability and how to compute it.</li>
             <li>To learn the concept of independence of events, and how to apply it.</li>
@@ -39,19 +39,19 @@
         <h2 class="title editable block">Conditional Probability</h2>
         <p class="para block" id="fwk-shafer-ch03_s03_s01_p01">Suppose a fair die has been rolled and you are asked to give the probability that it was a five. There are six equally likely outcomes, so your answer is 1/6. But suppose that before you give your answer you are given the extra information that the number rolled was odd. Since there are only three odd numbers that are possible, one of which is five, you would certainly revise your estimate of the likelihood that a five was rolled from 1/6 to 1/3. In general, the <em class="emphasis">revised</em> probability that an event <em class="emphasis">A</em> has occurred, taking into account the additional information that another event <em class="emphasis">B</em> has definitely occurred on this trial of the experiment, is called the <em class="emphasis">conditional probability of</em> <em class="emphasis">A</em> <em class="emphasis">given</em> <em class="emphasis">B</em> and is denoted by <span class="inlineequation" id="shafer-20121106-125753-097539"><math xml:id="fwk-shafer-ch03-m0319" display="inline"><mi>P</mi><mrow><mo>(</mo><mrow><mi>A</mi><mo>|</mo><mi>B</mi></mrow><mo>)</mo></mrow><mo>.</mo></math></span> The reasoning employed in this example can be generalized to yield the computational formula in the following definition.</p>
         <div class="callout block" id="fwk-shafer-ch03_s03_s01_n01">
-            <h3 class="title">Definition</h3>
+            <h3 class="title">Definisi</h3>
             <p class="para" id="fwk-shafer-ch03_s03_s01_p02"><em class="emphasis">The</em> <span class="margin_term"><a class="glossterm">conditional probability</a><span class="glossdef">The probability of the event <em class="emphasis">A</em> taking into account the fact that event <em class="emphasis">B</em> is known to have occurred.</span></span> <strong class="emphasis bold">of</strong> <em class="emphasis">A</em> <strong class="emphasis bold">given</strong> <em class="emphasis">B</em>, <em class="emphasis">denoted</em> <span class="inlineequation" id="shafer-20121106-125753-097555"><math xml:id="fwk-shafer-ch03-m0320" display="inline"><mi>P</mi><mrow><mo>(</mo><mrow><mi>A</mi><mo>|</mo><mi>B</mi></mrow><mo>)</mo></mrow></math></span>, <em class="emphasis">is the probability that event</em> <em class="emphasis">A</em> <em class="emphasis">has occurred in a trial of a random experiment for which it is known that event</em> <em class="emphasis">B</em> <em class="emphasis">has definitely occurred. It may be computed by means of the following formula:</em></p>
             <p class="simpara">Rule for Conditional Probability</p>
             <span class="informalequation" id="shafer-20121106-125753-097572"><math xml:id="fwk-shafer-ch03-m0321" display="block"><mrow><mi>P</mi><mrow><mo>(</mo><mrow><mi>A</mi><mo>|</mo><mi>B</mi></mrow><mo>)</mo></mrow><mo>=</mo><mfrac><mrow><mi>P</mi><mrow><mo>(</mo><mrow><mi>A</mi><mo>∩</mo><mi>B</mi></mrow><mo>)</mo></mrow></mrow><mrow><mi>P</mi><mrow><mo>(</mo><mrow><mi>B</mi></mrow><mo>)</mo></mrow></mrow></mfrac></mrow></math></span>
         </div>
         <div class="exercises block" id="fwk-shafer-ch03_s03_s01_n03">
-            <h3 class="title">Example 20</h3>
+            <h3 class="title">Contoh 20</h3>
             <p class="para" id="fwk-shafer-ch03_s03_s01_p03">A fair die is rolled.</p>
             <ol class="orderedlist" id="fwk-shafer-ch03_s03_s01_o01" numeration="loweralpha">
                 <li>Find the probability that the number rolled is a five, given that it is odd.</li>
                 <li>Find the probability that the number rolled is odd, given that it is a five.</li>
             </ol>
-            <p class="simpara">Solution:</p>
+            <p class="simpara">Solusi:</p>
             <p class="para" id="fwk-shafer-ch03_s03_s01_p04">The sample space for this experiment is the set <span class="inlineequation" id="shafer-20121106-125753-097588"><math xml:id="fwk-shafer-ch03-m0322" display="inline"><mi>S</mi><mo>=</mo><mrow><mo>{</mo><mrow><mn>1,2,3,4,5,6</mn></mrow><mo>}</mo></mrow></math></span> consisting of six equally likely outcomes. Let <em class="emphasis">F</em> denote the event “a five is rolled” and let <em class="emphasis">O</em> denote the event “an odd number is rolled,” so that</p>
             <span class="informalequation" id="shafer-20121106-125753-097604"><math xml:id="fwk-shafer-ch03-m0323" display="block"><mrow><mi>F</mi><mo>=</mo><mrow><mo>{</mo><mrow><mn>5</mn></mrow><mo>}</mo></mrow><mtext> </mtext><mtext>and</mtext><mtext> </mtext><mi>O</mi><mo>=</mo><mrow><mo>{</mo><mrow><mn>1,3,5</mn></mrow><mo>}</mo></mrow></mrow></math></span>
             <ol class="orderedlist" id="fwk-shafer-ch03_s03_s01_o02" numeration="loweralpha">
@@ -73,7 +73,7 @@
         </div>
         <p class="para editable block" id="fwk-shafer-ch03_s03_s01_p05">Just as we did not need the computational formula in this example, we do not need it when the information is presented in a two-way classification table, as in the next example.</p>
         <div class="exercises block" id="fwk-shafer-ch03_s03_s01_n04">
-            <h3 class="title">Example 21</h3>
+            <h3 class="title">Contoh 21</h3>
             <p class="para" id="fwk-shafer-ch03_s03_s01_p06">In a sample of 902 individuals under 40 who were or had previously been married, each person was classified according to gender and age at first marriage. The results are summarized in the following two-way classification table, where the meaning of the labels is:</p>
             <ul class="itemizedlist" id="fwk-shafer-ch03_s03_s01_l01" mark="none">
                 <li>
@@ -128,7 +128,7 @@
                 <li>Find the probability that the individual selected was a teenager at first marriage.</li>
                 <li>Find the probability that the individual selected was a teenager at first marriage, given that the person is male.</li>
             </ol>
-            <p class="simpara">Solution:</p>
+            <p class="simpara">Solusi:</p>
             <p class="para" id="fwk-shafer-ch03_s03_s01_p08">It is natural to let <em class="emphasis">E</em> also denote the event that the person selected was a teenager at first marriage and to let <em class="emphasis">M</em> denote the event that the person selected is male.</p>
             <ol class="orderedlist" id="fwk-shafer-ch03_s03_s01_o04" numeration="loweralpha">
                 <li>According to the table the proportion of individuals in the sample who were in their teens at their first marriage is 125/902. This is the relative frequency of such people in the population, hence <span class="inlineequation" id="shafer-20121106-125753-097794"><math xml:id="fwk-shafer-ch03-m0334" display="inline"><mi>P</mi><mrow><mo>(</mo><mrow><mi>E</mi></mrow><mo>)</mo></mrow><mo>=</mo><mn>125</mn><mo>∕</mo><mn>902</mn><mo>≈</mo><mn>0.139</mn></math></span> or about 14%.</li>
@@ -162,14 +162,14 @@
         </div>
         <p class="para editable block" id="fwk-shafer-ch03_s03_s01_p10">In the next example, the computational formula in the definition must be used.</p>
         <div class="exercises block" id="fwk-shafer-ch03_s03_s01_n05">
-            <h3 class="title">Example 22</h3>
+            <h3 class="title">Contoh 22</h3>
             <p class="para" id="fwk-shafer-ch03_s03_s01_p11">Suppose that in an adult population the proportion of people who are both overweight and suffer hypertension is 0.09; the proportion of people who are not overweight but suffer hypertension is 0.11; the proportion of people who are overweight but do not suffer hypertension is 0.02; and the proportion of people who are neither overweight nor suffer hypertension is 0.78. An adult is randomly selected from this population.</p>
             <ol class="orderedlist" id="fwk-shafer-ch03_s03_s01_o05" numeration="loweralpha">
                 <li>Find the probability that the person selected suffers hypertension given that he is overweight.</li>
                 <li>Find the probability that the selected person suffers hypertension given that he is not overweight.</li>
                 <li>Compare the two probabilities just found to give an answer to the question as to whether overweight people tend to suffer from hypertension.</li>
             </ol>
-            <p class="simpara">Solution:</p>
+            <p class="simpara">Solusi:</p>
             <p class="para" id="fwk-shafer-ch03_s03_s01_p12">Let <em class="emphasis">H</em> denote the event “the person selected suffers hypertension.” Let <em class="emphasis">O</em> denote the event “the person selected is overweight.” The probability information given in the problem may be organized into the following contingency table:</p>
             <div class="informaltable">
                 <table cellpadding="0" cellspacing="0">
@@ -213,7 +213,7 @@
         <p class="para block" id="fwk-shafer-ch03_s03_s02_p01">Although typically we expect the conditional probability <span class="inlineequation" id="shafer-20121106-125753-097924"><math xml:id="fwk-shafer-ch03-m0342" display="inline"><mi>P</mi><mrow><mo>(</mo><mrow><mi>A</mi><mo>|</mo><mi>B</mi></mrow><mo>)</mo></mrow></math></span> to be different from the probability <span class="inlineequation" id="shafer-20121106-125753-097946"><math xml:id="fwk-shafer-ch03-m0343" display="inline"><mi>P</mi><mrow><mo>(</mo><mrow><mi>A</mi></mrow><mo>)</mo></mrow></math></span> of <em class="emphasis">A</em>, it does not have to be different from <span class="inlineequation" id="shafer-20121106-125753-097962"><math xml:id="fwk-shafer-ch03-m0344" display="inline"><mi>P</mi><mrow><mo>(</mo><mrow><mi>A</mi></mrow><mo>)</mo></mrow><mo>.</mo></math></span> When <span class="inlineequation" id="shafer-20121106-125753-097979"><math xml:id="fwk-shafer-ch03-m0345" display="inline"><mi>P</mi><mrow><mo>(</mo><mrow><mi>A</mi><mo>|</mo><mi>B</mi></mrow><mo>)</mo></mrow><mo>=</mo><mi>P</mi><mrow><mo>(</mo><mrow><mi>A</mi></mrow><mo>)</mo></mrow></math></span>, the occurrence of <em class="emphasis">B</em> has no effect on the likelihood of <em class="emphasis">A</em>. Whether or not the event <em class="emphasis">A</em> has occurred is <em class="emphasis">independent</em> of the event <em class="emphasis">B</em>.</p>
         <p class="para block" id="fwk-shafer-ch03_s03_s02_p02">Using algebra it can be shown that the equality <span class="inlineequation" id="shafer-20121106-125753-097995"><math xml:id="fwk-shafer-ch03-m0346" display="inline"><mi>P</mi><mrow><mo>(</mo><mrow><mi>A</mi><mo>|</mo><mi>B</mi></mrow><mo>)</mo></mrow><mo>=</mo><mi>P</mi><mrow><mo>(</mo><mrow><mi>A</mi></mrow><mo>)</mo></mrow></math></span> holds if and only if the equality <span class="inlineequation" id="shafer-20121106-125753-098011"><math xml:id="fwk-shafer-ch03-m0347" display="inline"><mi>P</mi><mrow><mo>(</mo><mrow><mi>A</mi><mo>∩</mo><mi>B</mi></mrow><mo>)</mo></mrow><mo>=</mo><mi>P</mi><mrow><mo>(</mo><mrow><mi>A</mi></mrow><mo>)</mo></mrow><mo>·</mo><mi>P</mi><mrow><mo>(</mo><mrow><mi>B</mi></mrow><mo>)</mo></mrow></math></span> holds, which in turn is true if and only if <span class="inlineequation" id="shafer-20121106-125753-098027"><math xml:id="fwk-shafer-ch03-m0348" display="inline"><mi>P</mi><mrow><mo>(</mo><mrow><mi>B</mi><mo>|</mo><mi>A</mi></mrow><mo>)</mo></mrow><mo>=</mo><mi>P</mi><mrow><mo>(</mo><mrow><mi>B</mi></mrow><mo>)</mo></mrow><mo>.</mo></math></span> This is the basis for the following definition.</p>
         <div class="callout block" id="fwk-shafer-ch03_s03_s02_n01">
-            <h3 class="title">Definition</h3>
+            <h3 class="title">Definisi</h3>
             <p class="para" id="fwk-shafer-ch03_s03_s02_p03"><em class="emphasis">Events</em> <em class="emphasis">A</em> <em class="emphasis">and</em> <em class="emphasis">B</em> <em class="emphasis">are</em> <span class="margin_term"><a class="glossterm">independent</a><span class="glossdef">Events whose probability of occurring together is the product of their individual probabilities.</span></span> <em class="emphasis">if</em></p>
             <span class="informalequation" id="shafer-20121106-125753-098043"><math xml:id="fwk-shafer-ch03-m0349" display="block"><mrow><mi>P</mi><mrow><mo>(</mo><mrow><mi>A</mi><mo>∩</mo><mi>B</mi></mrow><mo>)</mo></mrow><mo>=</mo><mi>P</mi><mrow><mo>(</mo><mrow><mi>A</mi></mrow><mo>)</mo></mrow><mo>·</mo><mi>P</mi><mrow><mo>(</mo><mrow><mi>B</mi></mrow><mo>)</mo></mrow></mrow></math></span>
             <p class="para" id="fwk-shafer-ch03_s03_s02_p04"><em class="emphasis">If</em> <em class="emphasis">A</em> <em class="emphasis">and</em> <em class="emphasis">B</em> <em class="emphasis">are not independent then they are</em> <strong class="emphasis bold">dependent</strong>.</p>
@@ -231,14 +231,14 @@
 </li>
         </ol>
         <div class="exercises block" id="fwk-shafer-ch03_s03_s02_n02">
-            <h3 class="title">Example 23</h3>
+            <h3 class="title">Contoh 23</h3>
             <p class="para" id="fwk-shafer-ch03_s03_s02_p06">A single fair die is rolled. Let <span class="inlineequation" id="shafer-20121106-125753-098264"><math xml:id="fwk-shafer-ch03-m0361" display="inline"><mi>A</mi><mo>=</mo><mrow><mo>{</mo><mrow><mn>3</mn></mrow><mo>}</mo></mrow></math></span> and <span class="inlineequation" id="shafer-20121106-125753-098280"><math xml:id="fwk-shafer-ch03-m0362" display="inline"><mi>B</mi><mo>=</mo><mrow><mo>{</mo><mrow><mn>1,3,5</mn></mrow><mo>}</mo></mrow><mo>.</mo></math></span> Are <em class="emphasis">A</em> and <em class="emphasis">B</em> independent?</p>
-            <p class="simpara">Solution:</p>
+            <p class="simpara">Solusi:</p>
             <p class="para" id="fwk-shafer-ch03_s03_s02_p07">In this example we can compute all three probabilities <span class="inlineequation" id="shafer-20121106-125753-098296"><math xml:id="fwk-shafer-ch03-m0363" display="inline"><mi>P</mi><mrow><mo>(</mo><mrow><mi>A</mi></mrow><mo>)</mo></mrow><mo>=</mo><mn>1</mn><mo>∕</mo><mn>6</mn></math></span>, <span class="inlineequation" id="shafer-20121106-125753-098313"><math xml:id="fwk-shafer-ch03-m0364" display="inline"><mi>P</mi><mrow><mo>(</mo><mrow><mi>B</mi></mrow><mo>)</mo></mrow><mo>=</mo><mn>1</mn><mo>∕</mo><mn>2</mn></math></span>, and <span class="inlineequation" id="shafer-20121106-125753-098328"><math xml:id="fwk-shafer-ch03-m0365" display="inline"><mi>P</mi><mrow><mo>(</mo><mrow><mi>A</mi><mo>∩</mo><mi>B</mi></mrow><mo>)</mo></mrow><mo>=</mo><mi>P</mi><mrow><mo>(</mo><mrow><mrow><mo>{</mo><mrow><mn>3</mn></mrow><mo>}</mo></mrow></mrow><mo>)</mo></mrow><mo>=</mo><mn>1</mn><mo>∕</mo><mn>6</mn><mo>.</mo></math></span> Since the product <span class="inlineequation" id="shafer-20121106-125753-098344"><math xml:id="fwk-shafer-ch03-m0366" display="inline"><mi>P</mi><mrow><mo>(</mo><mrow><mi>A</mi></mrow><mo>)</mo></mrow><mo>·</mo><mi>P</mi><mrow><mo>(</mo><mrow><mi>B</mi></mrow><mo>)</mo></mrow><mo>=</mo><mrow><mo>(</mo><mrow><mn>1</mn><mo>∕</mo><mn>6</mn></mrow><mo>)</mo></mrow><mrow><mo>(</mo><mrow><mn>1</mn><mo>∕</mo><mn>2</mn></mrow><mo>)</mo></mrow><mo>=</mo><mn>1</mn><mo>∕</mo><mn>12</mn></math></span> is not the same number as <span class="inlineequation" id="shafer-20121106-125753-098366"><math xml:id="fwk-shafer-ch03-m0367" display="inline"><mi>P</mi><mrow><mo>(</mo><mrow><mi>A</mi><mo>∩</mo><mi>B</mi></mrow><mo>)</mo></mrow><mo>=</mo><mn>1</mn><mo>∕</mo><mn>6</mn></math></span>, the events <em class="emphasis">A</em> and <em class="emphasis">B</em> are not independent.</p>
         </div>
         <div class="exercises block" id="fwk-shafer-ch03_s03_s02_n03">
-            <h3 class="title">Example 24</h3>
-            <p class="para" id="fwk-shafer-ch03_s03_s02_p08">The two-way classification of married or previously married adults under 40 according to gender and age at first marriage in <a class="xref" href="#fwk-shafer-ch03_s03_s01_n04" xrefstyle="select: title">Note 3.48 "Example 21"</a> produced the table</p>
+            <h3 class="title">Contoh 24</h3>
+            <p class="para" id="fwk-shafer-ch03_s03_s02_p08">The two-way classification of married or previously married adults under 40 according to gender and age at first marriage in <a class="xref" href="#fwk-shafer-ch03_s03_s01_n04" xrefstyle="select: title">Note 3.48 "Contoh 21"</a> produced the table</p>
             <div class="informaltable">
                 <table cellpadding="0" cellspacing="0">
                     <thead>
@@ -276,7 +276,7 @@
                 </table>
             </div>
             <p class="para" id="fwk-shafer-ch03_s03_s02_p09">Determine whether or not the events <em class="emphasis">F</em>: “female” and <em class="emphasis">E</em>: “was a teenager at first marriage” are independent.</p>
-            <p class="simpara">Solution:</p>
+            <p class="simpara">Solusi:</p>
             <p class="para" id="fwk-shafer-ch03_s03_s02_p10">The table shows that in the sample of 902 such adults, 452 were female, 125 were teenagers at their first marriage, and 82 were females who were teenagers at their first marriage, so that</p>
             <span class="informalequation" id="shafer-20121106-125753-098382"><math xml:id="fwk-shafer-ch03-m0368" display="block"><mrow><mi>P</mi><mrow><mo>(</mo><mrow><mi>F</mi></mrow><mo>)</mo></mrow><mo>=</mo><mfrac><mrow><mn>452</mn></mrow><mrow><mn>902</mn></mrow></mfrac><mtext> </mtext><mi>P</mi><mrow><mo>(</mo><mrow><mi>E</mi></mrow><mo>)</mo></mrow><mo>=</mo><mfrac><mrow><mn>125</mn></mrow><mrow><mn>902</mn></mrow></mfrac><mtext> </mtext><mi>P</mi><mrow><mo>(</mo><mrow><mi>F</mi><mo>∩</mo><mi>E</mi></mrow><mo>)</mo></mrow><mo>=</mo><mfrac><mrow><mn>82</mn></mrow><mrow><mn>902</mn></mrow></mfrac></mrow></math></span>
             <p class="para" id="fwk-shafer-ch03_s03_s02_p11">Since</p>
@@ -286,14 +286,14 @@
             <p class="para" id="fwk-shafer-ch03_s03_s02_p13">we conclude that the two events are not independent.</p>
         </div>
         <div class="exercises block" id="fwk-shafer-ch03_s03_s02_n04">
-            <h3 class="title">Example 25</h3>
+            <h3 class="title">Contoh 25</h3>
             <p class="para" id="fwk-shafer-ch03_s03_s02_p14">Many diagnostic tests for detecting diseases do not test for the disease directly but for a chemical or biological product of the disease, hence are not perfectly reliable. The <em class="emphasis">sensitivity</em> of a test is the probability that the test will be positive when administered to a person who has the disease. The higher the sensitivity, the greater the detection rate and the lower the false negative rate.</p>
             <p class="para" id="fwk-shafer-ch03_s03_s02_p15">Suppose the sensitivity of a diagnostic procedure to test whether a person has a particular disease is 92%. A person who actually has the disease is tested for it using this procedure by two independent laboratories.</p>
             <ol class="orderedlist" id="fwk-shafer-ch03_s03_s02_o02" numeration="loweralpha">
                 <li>What is the probability that both test results will be positive?</li>
                 <li>What is the probability that at least one of the two test results will be positive?</li>
             </ol>
-            <p class="simpara">Solution:</p>
+            <p class="simpara">Solusi:</p>
             <ol class="orderedlist" id="fwk-shafer-ch03_s03_s02_o03" numeration="loweralpha">
                 <li>
                     <p class="para">Let <em class="emphasis">A</em><sub class="subscript">1</sub> denote the event “the test by the first laboratory is positive” and let <em class="emphasis">A</em><sub class="subscript">2</sub> denote the event “the test by the second laboratory is positive.” Since <em class="emphasis">A</em><sub class="subscript">1</sub> and <em class="emphasis">A</em><sub class="subscript">2</sub> are independent,</p>
@@ -306,14 +306,14 @@
             </ol>
         </div>
         <div class="exercises block" id="fwk-shafer-ch03_s03_s02_n05">
-            <h3 class="title">Example 26</h3>
+            <h3 class="title">Contoh 26</h3>
             <p class="para" id="fwk-shafer-ch03_s03_s02_p16">The <em class="emphasis">specificity</em> of a diagnostic test for a disease is the probability that the test will be negative when administered to a person who does not have the disease. The higher the specificity, the lower the false positive rate.</p>
             <p class="para" id="fwk-shafer-ch03_s03_s02_p17">Suppose the specificity of a diagnostic procedure to test whether a person has a particular disease is 89%.</p>
             <ol class="orderedlist" id="fwk-shafer-ch03_s03_s02_o04" numeration="loweralpha">
                 <li>A person who does not have the disease is tested for it using this procedure. What is the probability that the test result will be positive?</li>
                 <li>A person who does not have the disease is tested for it by two independent laboratories using this procedure. What is the probability that both test results will be positive?</li>
             </ol>
-            <p class="simpara">Solution:</p>
+            <p class="simpara">Solusi:</p>
             <ol class="orderedlist" id="fwk-shafer-ch03_s03_s02_o05" numeration="loweralpha">
                 <li>
                     <p class="para">Let <em class="emphasis">B</em> denote the event “the test result is positive.” The complement of <em class="emphasis">B</em> is that the test result is negative, and has probability the specificity of the test, 0.89. Thus</p>
@@ -327,10 +327,10 @@
         </div>
         <p class="para block" id="fwk-shafer-ch03_s03_s02_p18">The concept of independence applies to any number of events. For example, three events <em class="emphasis">A</em>, <em class="emphasis">B</em>, and <em class="emphasis">C</em> are independent if <span class="inlineequation" id="shafer-20121106-125753-098504"><math xml:id="fwk-shafer-ch03-m0375" display="inline"><mi>P</mi><mrow><mo>(</mo><mrow><mi>A</mi><mo>∩</mo><mi>B</mi><mo>∩</mo><mi>C</mi></mrow><mo>)</mo></mrow><mo>=</mo><mi>P</mi><mrow><mo>(</mo><mrow><mi>A</mi></mrow><mo>)</mo></mrow><mo>·</mo><mi>P</mi><mrow><mo>(</mo><mrow><mi>B</mi></mrow><mo>)</mo></mrow><mo>·</mo><mi>P</mi><mrow><mo>(</mo><mrow><mi>C</mi></mrow><mo>)</mo></mrow><mo>.</mo></math></span> Note carefully that, as is the case with just two events, this is not a formula that is always valid, but holds precisely when the events in question are independent.</p>
         <div class="exercises block" id="fwk-shafer-ch03_s03_s02_n06">
-            <h3 class="title">Example 27</h3>
+            <h3 class="title">Contoh 27</h3>
             <p class="para" id="fwk-shafer-ch03_s03_s02_p19">The reliability of a system can be enhanced by redundancy, which means building two or more independent devices to do the same job, such as two independent braking systems in an automobile.</p>
             <p class="para" id="fwk-shafer-ch03_s03_s02_p20">Suppose a particular species of trained dogs has a 90% chance of detecting contraband in airline luggage. If the luggage is checked three times by three different dogs independently of one another, what is the probability that contraband will be detected?</p>
-            <p class="simpara">Solution:</p>
+            <p class="simpara">Solusi:</p>
             <p class="para" id="fwk-shafer-ch03_s03_s02_p21">Let <em class="emphasis">D</em><sub class="subscript">1</sub> denote the event that the contraband is detected by the first dog, <em class="emphasis">D</em><sub class="subscript">2</sub> the event that it is detected by the second dog, and <em class="emphasis">D</em><sub class="subscript">3</sub> the event that it is detected by the third. Since each dog has a 90% of detecting the contraband, by the Probability Rule for Complements it has a 10% chance of failing. In symbols, <span class="inlineequation" id="shafer-20121106-125753-098521"><math xml:id="fwk-shafer-ch03-m0376" display="inline"><mi>P</mi><mrow><mo>(</mo><mrow><msubsup><mrow><mi>D</mi></mrow><mrow><mn>1</mn></mrow><mrow><mi>c</mi></mrow></msubsup></mrow><mo>)</mo></mrow><mo>=</mo><mn>0.10</mn><mo>,</mo></math></span> <span class="inlineequation" id="shafer-20121106-125753-098537"><math xml:id="fwk-shafer-ch03-m0377" display="inline"><mi>P</mi><mrow><mo>(</mo><mrow><msubsup><mrow><mi>D</mi></mrow><mrow><mn>2</mn></mrow><mrow><mi>c</mi></mrow></msubsup></mrow><mo>)</mo></mrow><mo>=</mo><mn>0.10</mn></math></span>, and <span class="inlineequation" id="shafer-20121106-125753-098553"><math xml:id="fwk-shafer-ch03-m0378" display="inline"><mi>P</mi><mrow><mo>(</mo><mrow><msubsup><mrow><mi>D</mi></mrow><mrow><mn>3</mn></mrow><mrow><mi>c</mi></mrow></msubsup></mrow><mo>)</mo></mrow><mo>=</mo><mn>0.10</mn><mo>.</mo></math></span></p>
             <p class="para" id="fwk-shafer-ch03_s03_s02_p22">Let <em class="emphasis">D</em> denote the event that the contraband is detected. We seek <span class="inlineequation" id="shafer-20121106-125753-098568"><math xml:id="fwk-shafer-ch03-m0379" display="inline"><mi>P</mi><mrow><mo>(</mo><mrow><mi>D</mi></mrow><mo>)</mo></mrow><mo>.</mo></math></span> It is easier to find <span class="inlineequation" id="shafer-20121106-125753-098584"><math xml:id="fwk-shafer-ch03-m0380" display="inline"><mi>P</mi><mrow><mo>(</mo><mrow><msup><mrow><mi>D</mi></mrow><mrow><mi>c</mi></mrow></msup></mrow><mo>)</mo></mrow></math></span>, because although there are several ways for the contraband to be detected, there is only one way for it to go undetected: all three dogs must fail. Thus <span class="inlineequation" id="shafer-20121106-125753-098600"><math xml:id="fwk-shafer-ch03-m0381" display="inline"><msup><mrow><mi>D</mi></mrow><mrow><mi>c</mi></mrow></msup><mo>=</mo><msubsup><mrow><mi>D</mi></mrow><mrow><mn>1</mn></mrow><mrow><mi>c</mi></mrow></msubsup><mo>∩</mo><msubsup><mrow><mi>D</mi></mrow><mrow><mn>2</mn></mrow><mrow><mi>c</mi></mrow></msubsup><mo>∩</mo><msubsup><mrow><mi>D</mi></mrow><mrow><mn>3</mn></mrow><mrow><mi>c</mi></mrow></msubsup></math></span>, and</p>
             <span class="informalequation" id="shafer-20121106-125753-098615"><math xml:id="fwk-shafer-ch03-m0382" display="block"><mrow><mi>P</mi><mrow><mo>(</mo><mrow><mi>D</mi></mrow><mo>)</mo></mrow><mo>=</mo><mn>1</mn><mo>−</mo><mi>P</mi><mrow><mo>(</mo><mrow><msup><mrow><mi>D</mi></mrow><mrow><mi>c</mi></mrow></msup></mrow><mo>)</mo></mrow><mo>=</mo><mn>1</mn><mo>−</mo><mi>P</mi><mrow><mo>(</mo><mrow><msubsup><mrow><mi>D</mi></mrow><mrow><mn>1</mn></mrow><mrow><mi>c</mi></mrow></msubsup><mo>∩</mo><msubsup><mrow><mi>D</mi></mrow><mrow><mn>2</mn></mrow><mrow><mi>c</mi></mrow></msubsup><mo>∩</mo><msubsup><mrow><mi>D</mi></mrow><mrow><mn>3</mn></mrow><mrow><mi>c</mi></mrow></msubsup></mrow><mo>)</mo></mrow></mrow></math></span>
@@ -345,14 +345,14 @@
         <h2 class="title editable block">Probabilities on Tree Diagrams</h2>
         <p class="para editable block" id="fwk-shafer-ch03_s03_s03_p01">Some probability problems are made much simpler when approached using a tree diagram. The next example illustrates how to place probabilities on a tree diagram and use it to solve a problem.</p>
         <div class="exercises block" id="fwk-shafer-ch03_s03_s03_n01">
-            <h3 class="title">Example 28</h3>
+            <h3 class="title">Contoh 28</h3>
             <p class="para" id="fwk-shafer-ch03_s03_s03_p02">A jar contains 10 marbles, 7 black and 3 white. Two marbles are drawn without replacement, which means that the first one is not put back before the second one is drawn.</p>
             <ol class="orderedlist" id="fwk-shafer-ch03_s03_s03_o01" numeration="loweralpha">
                 <li>What is the probability that both marbles are black?</li>
                 <li>What is the probability that exactly one marble is black?</li>
                 <li>What is the probability that at least one marble is black?</li>
             </ol>
-            <p class="simpara">Solution:</p>
+            <p class="simpara">Solusi:</p>
             <p class="para" id="fwk-shafer-ch03_s03_s03_p03">A tree diagram for the situation of drawing one marble after the other without replacement is shown in <a class="xref" href="#fwk-shafer-ch03_s03_s03_f01">Figure 3.6 "Tree Diagram for Drawing Two Marbles"</a>. The circle and rectangle will be explained later, and should be ignored for now.</p>
             <div class="figure large small-height" id="fwk-shafer-ch03_s03_s03_f01">
                 <p class="title"><span class="title-prefix">Figure 3.6</span> Tree Diagram for Drawing Two Marbles</p>
@@ -380,7 +380,7 @@
             </ol>
         </div>
         <div class="key_takeaways block" id="fwk-shafer-ch03_s03_s03_n03">
-            <h3 class="title">Key Takeaways</h3>
+            <h3 class="title">Poin Utamas</h3>
             <ul class="itemizedlist" id="fwk-shafer-ch03_s03_s03_l01" mark="bullet">
                 <li>A conditional probability is the probability that an event has occurred, taking into account additional information about the result of the experiment.</li>
                 <li>A conditional probability can always be computed using the formula in the definition. Sometimes it can be computed by discarding part of the sample space.</li>
@@ -388,7 +388,7 @@
             </ul>
         </div>
         <div class="qandaset block" id="fwk-shafer-ch03_s03_qs01" defaultlabel="number">
-            <h3 class="title">Exercises</h3>
+            <h3 class="title">Latihans</h3>
             <ol class="qandadiv" id="fwk-shafer-ch03_s03_qs01_qd01">
                 <h3 class="title">Basic</h3>
                 <li class="qandaentry" id="fwk-shafer-ch03_s03_qs01_qd01_qa01">
@@ -875,7 +875,7 @@
                 </li>
             </ol>
             <ol class="qandadiv" id="fwk-shafer-ch03_s03_qs01_qd03" start="27">
-                <h3 class="title">Additional Exercises</h3>
+                <h3 class="title">Additional Latihans</h3>
                 <li class="qandaentry" id="fwk-shafer-ch03_s03_qs01_qd03_qa27">
                     <div class="question">
                         <p class="para" id="fwk-shafer-ch03_s03_qs01_p35">Events <em class="emphasis">A</em> and <em class="emphasis">B</em> are mutually exclusive. Find <span class="inlineequation" id="shafer-20121106-125753-099997"><math xml:id="fwk-shafer-ch03-m0463" display="inline"><mi>P</mi><mrow><mo>(</mo><mrow><mi>A</mi><mo>|</mo><mi>B</mi></mrow><mo>)</mo></mrow><mo>.</mo></math></span></p>
@@ -1163,15 +1163,15 @@
   <div id=navbar-bottom class="navbar">
     <div class="navbar-part left">
       
-        <a href="s07-02-complements-intersections-and-.html"><img src="shared/images/batch-left.png"></a> <a href="s07-02-complements-intersections-and-.html">Previous Section</a>
+        <a href="s07-02-complements-intersections-and-.html"><img src="shared/images/batch-left.png"></a> <a href="s07-02-complements-intersections-and-.html">Bagian Sebelumnya</a>
       
     </div>
     <div class="navbar-part middle">
-      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Daftar Isi</a>
     </div>
     <div class="navbar-part right">
       
-        <a href="s08-01-random-variables.html">Next Section</a> <a href="s08-01-random-variables.html"><img src="shared/images/batch-right.png"></a>
+        <a href="s08-01-random-variables.html">Bagian Selanjutnya</a> <a href="s08-01-random-variables.html"><img src="shared/images/batch-right.png"></a>
       
     </div>
   </div>

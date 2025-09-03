@@ -11,15 +11,15 @@
   <div id=navbar-top class="navbar">
     <div class="navbar-part left">
       
-        <a href="s06-03-measures-of-variability.html"><img src="shared/images/batch-left.png"></a> <a href="s06-03-measures-of-variability.html">Previous Section</a>
+        <a href="s06-03-measures-of-variability.html"><img src="shared/images/batch-left.png"></a> <a href="s06-03-measures-of-variability.html">Bagian Sebelumnya</a>
       
     </div>
     <div class="navbar-part middle">
-      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Daftar Isi</a>
     </div>
     <div class="navbar-part right">
       
-        <a href="s06-05-the-empirical-rule-and-chebysh.html">Next Section</a> <a href="s06-05-the-empirical-rule-and-chebysh.html"><img src="shared/images/batch-right.png"></a>
+        <a href="s06-05-the-empirical-rule-and-chebysh.html">Bagian Selanjutnya</a> <a href="s06-05-the-empirical-rule-and-chebysh.html"><img src="shared/images/batch-right.png"></a>
       
     </div>
   </div>
@@ -29,7 +29,7 @@
     <h2 class="title editable block">
 <span class="title-prefix">2.4</span> Relative Position of Data</h2>
     <div class="learning_objectives editable block" id="fwk-shafer-ch02_s04_n01">
-        <h3 class="title">Learning Objectives</h3>
+        <h3 class="title">Tujuan Pembelajarans</h3>
         <ol class="orderedlist" id="fwk-shafer-ch02_s04_o01" numeration="arabic">
             <li>To learn the concept of the relative position of an element of a data set.</li>
             <li>To learn the meaning of each of two measures, the percentile rank and the <em class="emphasis">z</em>-score, of the relative position of a measurement and how to compute each one.</li>
@@ -42,13 +42,13 @@
         <h2 class="title editable block">Percentiles and Quartiles</h2>
         <p class="para editable block" id="fwk-shafer-ch02_s04_s01_p01">Anyone who has taken a national standardized test is familiar with the idea of being given both a score on the exam and a “percentile ranking” of that score. You may be told that your score was 625 and that it is the 85th percentile. The first number tells how you actually did on the exam; the second says that 85% of the scores on the exam were less than or equal to your score, 625.</p>
         <div class="callout editable block" id="fwk-shafer-ch02_s04_s01_n01">
-            <h3 class="title">Definition</h3>
+            <h3 class="title">Definisi</h3>
             <p class="para" id="fwk-shafer-ch02_s04_s01_p02"><em class="emphasis">Given an observed value</em> <em class="emphasis">x</em> <em class="emphasis">in a data set</em>, <em class="emphasis">x</em> <em class="emphasis">is the</em> <span class="margin_term"><a class="glossterm"><em class="emphasis">P</em>th percentile</a><span class="glossdef">The measurement <em class="emphasis">x</em>, if it exists, such that <em class="emphasis">P</em> percent of the data are less than or equal to <em class="emphasis">x</em>.</span></span> <em class="emphasis">of the data if the percentage of the data that are less than or equal to</em> <em class="emphasis">x</em> <em class="emphasis">is</em> <em class="emphasis">P</em><em class="emphasis">. The number</em> <em class="emphasis">P</em> <em class="emphasis">is the</em> <span class="margin_term"><a class="glossterm">percentile rank</a><span class="glossdef">Of a measurement <em class="emphasis">x</em>, the percentage of the data that are less than or equal to <em class="emphasis">x</em>.</span></span> <em class="emphasis">of</em> <em class="emphasis">x</em>.</p>
         </div>
         <div class="exercises block" id="fwk-shafer-ch02_s04_s01_n02">
-            <h3 class="title">Example 13</h3>
-            <p class="para" id="fwk-shafer-ch02_s04_s01_p03">What percentile is the value 1.39 in the data set of ten GPAs considered in <a class="xref" href="https://saylordotorg.github.io/text_introductory-statistics/s06-02-measures-of-central-location.html" xrefstyle="select: title">Note 2.12 "Example 3"</a> in <a class="xref" href="https://saylordotorg.github.io/text_introductory-statistics/s06-02-measures-of-central-location.html">Section 2.2 "Measures of Central Location"</a>? What percentile is the value 3.33?</p>
-            <p class="simpara">Solution:</p>
+            <h3 class="title">Contoh 13</h3>
+            <p class="para" id="fwk-shafer-ch02_s04_s01_p03">What percentile is the value 1.39 in the data set of ten GPAs considered in <a class="xref" href="https://saylordotorg.github.io/text_introductory-statistics/s06-02-measures-of-central-location.html" xrefstyle="select: title">Note 2.12 "Contoh 3"</a> in <a class="xref" href="https://saylordotorg.github.io/text_introductory-statistics/s06-02-measures-of-central-location.html">Section 2.2 "Measures of Central Location"</a>? What percentile is the value 3.33?</p>
+            <p class="simpara">Solusi:</p>
             <p class="para" id="fwk-shafer-ch02_s04_s01_p04">The data written in increasing order are</p>
             <span class="informalequation" id="shafer-20121106-125753-088047"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch02-m0241" display="block"><mrow><mtable columnspacing="0.5em"><mtr><mtd><mn>1.39</mn></mtd><mtd><mn>1.76</mn></mtd><mtd><mn>1.90</mn></mtd><mtd><mn>2.12</mn></mtd><mtd><mn>2.53</mn></mtd><mtd><mn>2.71</mn></mtd><mtd><mn>3.00</mn></mtd><mtd><mn>3.33</mn></mtd><mtd><mn>3.71</mn></mtd><mtd><mn>4.00</mn></mtd></mtr></mtable></mrow></math></span>
             <p class="para" id="fwk-shafer-ch02_s04_s01_p05">The only data value that is less than or equal to 1.39 is 1.39 itself. Since 1 is 1∕10 = .10 or 10% of 10, the value 1.39 is the 10th percentile. Eight data values are less than or equal to 3.33. Since 8 is 8∕10 = .80 or 80% of 10, the value 3.33 is the 80th percentile.</p>
@@ -59,7 +59,7 @@
             <img src="section_06/bd498ec19e330a43ba648c1e7df70db9.jpg">
         </div>
         <div class="callout block" id="fwk-shafer-ch02_s04_s01_n03">
-            <h3 class="title">Definition</h3>
+            <h3 class="title">Definisi</h3>
             <p class="para" id="fwk-shafer-ch02_s04_s01_p07"><em class="emphasis">For any data set:</em>
 </p>
 <ol class="orderedlist" id="fwk-shafer-ch02_s04_s01_o01" numeration="arabic">                    <li>
@@ -83,9 +83,9 @@
 </ol>
         </div>
         <div class="exercises block" id="fwk-shafer-ch02_s04_s01_n04">
-            <h3 class="title">Example 14</h3>
-            <p class="para" id="fwk-shafer-ch02_s04_s01_p08">Find the quartiles of the data set of GPAs of <a class="xref" href="https://saylordotorg.github.io/text_introductory-statistics/s06-02-measures-of-central-location.html" xrefstyle="select: title">Note 2.12 "Example 3"</a> in <a class="xref" href="https://saylordotorg.github.io/text_introductory-statistics/s06-02-measures-of-central-location.html">Section 2.2 "Measures of Central Location"</a>.</p>
-            <p class="simpara">Solution:</p>
+            <h3 class="title">Contoh 14</h3>
+            <p class="para" id="fwk-shafer-ch02_s04_s01_p08">Find the quartiles of the data set of GPAs of <a class="xref" href="https://saylordotorg.github.io/text_introductory-statistics/s06-02-measures-of-central-location.html" xrefstyle="select: title">Note 2.12 "Contoh 3"</a> in <a class="xref" href="https://saylordotorg.github.io/text_introductory-statistics/s06-02-measures-of-central-location.html">Section 2.2 "Measures of Central Location"</a>.</p>
+            <p class="simpara">Solusi:</p>
             <p class="para" id="fwk-shafer-ch02_s04_s01_p09">As in the previous example we first list the data in numerical order:</p>
             <span class="informalequation" id="shafer-20121106-125753-088325"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch02-m0251" display="block"><mrow><mtable columnspacing="0.5em"><mtr><mtd><mn>1.39</mn></mtd><mtd><mn>1.76</mn></mtd><mtd><mn>1.90</mn></mtd><mtd><mn>2.12</mn></mtd><mtd><mn>2.53</mn></mtd><mtd><mn>2.71</mn></mtd><mtd><mn>3.00</mn></mtd><mtd><mn>3.33</mn></mtd><mtd><mn>3.71</mn></mtd><mtd><mn>4.00</mn></mtd></mtr></mtable></mrow></math></span>
             <p class="para" id="fwk-shafer-ch02_s04_s01_p10">This data set has <em class="emphasis">n</em> = 10 observations. Since 10 is an even number, the median is the mean of the two middle observations: <span class="inlineequation" id="shafer-20121106-125753-088341"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch02-m0252" display="inline"><mrow><mover accent="true"><mi fontsize="125%">x</mi><mo stretchy="true">~</mo></mover></mrow><mo>=</mo><mrow><mo stretchy="false">(</mo><mrow><mn>2.53</mn><mo>+</mo><mn>2.71</mn></mrow><mo stretchy="false">)</mo></mrow><mo>∕</mo><mn>2</mn><mo>=</mo><mn>2.62</mn><mo>.</mo></math></span> Thus the second quartile is <span class="inlineequation" id="shafer-20121106-125753-088358"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch02-m0253" display="inline"><msub><mi>Q</mi><mn>2</mn></msub><mo>=</mo><mn>2.62</mn><mo>.</mo></math></span> The lower and upper subsets are</p>
@@ -93,9 +93,9 @@
             <p class="para" id="fwk-shafer-ch02_s04_s01_p11">Each has an odd number of elements, so the median of each is its middle observation. Thus the first quartile is <span class="inlineequation" id="shafer-20121106-125753-088390"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch02-m0255" display="inline"><msub><mi>Q</mi><mn>1</mn></msub><mo>=</mo><mn>1.90</mn></math></span>, the median of <em class="emphasis">L</em>, and the third quartile is <span class="inlineequation" id="shafer-20121106-125753-088406"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch02-m0256" display="inline"><msub><mi>Q</mi><mn>3</mn></msub><mo>=</mo><mn>3.33</mn></math></span>, the median of <em class="emphasis">U</em>.</p>
         </div>
         <div class="exercises block" id="fwk-shafer-ch02_s04_s01_n05">
-            <h3 class="title">Example 15</h3>
+            <h3 class="title">Contoh 15</h3>
             <p class="para" id="fwk-shafer-ch02_s04_s01_p12">Adjoin the observation 3.88 to the data set of the previous example and find the quartiles of the new set of data.</p>
-            <p class="simpara">Solution:</p>
+            <p class="simpara">Solusi:</p>
             <p class="para" id="fwk-shafer-ch02_s04_s01_p13">As in the previous example we first list the data in numerical order:</p>
             <span class="informalequation" id="shafer-20121106-125753-088422"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch02-m0257" display="block"><mrow><mtable columnspacing="0.5em"><mtr><mtd><mn>1.39</mn></mtd><mtd><mn>1.76</mn></mtd><mtd><mn>1.90</mn></mtd><mtd><mn>2.12</mn></mtd><mtd><mn>2.53</mn></mtd><mtd><mn>2.71</mn></mtd><mtd><mn>3.00</mn></mtd><mtd><mn>3.33</mn></mtd><mtd><mn>3.71</mn></mtd><mtd><mn>3.88</mn></mtd><mtd><mn>4.00</mn></mtd></mtr></mtable></mrow></math></span>
             <p class="para" id="fwk-shafer-ch02_s04_s01_p14">This data set has 11 observations. The second quartile is its median, the middle value 2.71. Thus <span class="inlineequation" id="shafer-20121106-125753-088437"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch02-m0258" display="inline"><msub><mi>Q</mi><mn>2</mn></msub><mo>=</mo><mn>2.71</mn><mo>.</mo></math></span> The lower and upper subsets are now</p>
@@ -111,15 +111,15 @@
         </div>
         <p class="para block" id="fwk-shafer-ch02_s04_s01_p18">Note that the distance from <span class="inlineequation" id="shafer-20121106-125753-088628"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch02-m0270" display="inline"><msub><mi>Q</mi><mn>1</mn></msub></math></span> to <span class="inlineequation" id="shafer-20121106-125753-088644"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch02-m0271" display="inline"><msub><mi>Q</mi><mn>3</mn></msub></math></span> is the length of the interval over which the middle half of the data range. Thus it has the following special name.</p>
         <div class="callout block" id="fwk-shafer-ch02_s04_s01_n06">
-            <h3 class="title">Definition</h3>
+            <h3 class="title">Definisi</h3>
             <p class="para" id="fwk-shafer-ch02_s04_s01_p19"><em class="emphasis">The</em> <span class="margin_term"><a class="glossterm">interquartile range (IQR)</a><span class="glossdef">Of a data set, the difference between the first and third quartiles.</span></span> <em class="emphasis">is the quantity</em></p>
             <span class="informalequation" id="shafer-20121106-125753-088661"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch02-m0272" display="block"><mrow><mi>I</mi><mi>Q</mi><mi>R</mi><mo>=</mo><msub><mrow><mi>Q</mi></mrow><mrow><mn>3</mn></mrow></msub><mo>−</mo><msub><mrow><mi>Q</mi></mrow><mrow><mn>1</mn></mrow></msub></mrow></math></span>
         </div>
         <div class="exercises block" id="fwk-shafer-ch02_s04_s01_n07">
-            <h3 class="title">Example 16</h3>
-            <p class="para" id="fwk-shafer-ch02_s04_s01_p20">Construct a box plot and find the IQR for the data in <a class="xref" href="#fwk-shafer-ch02_s04_s01_n04" xrefstyle="select: title">Note 2.44 "Example 14"</a>.</p>
-            <p class="simpara">Solution:</p>
-            <p class="para" id="fwk-shafer-ch02_s04_s01_p21">From our work in <a class="xref" href="#fwk-shafer-ch02_s04_s01_n04" xrefstyle="select: title">Note 2.44 "Example 14"</a> we know that the five-number summary is</p>
+            <h3 class="title">Contoh 16</h3>
+            <p class="para" id="fwk-shafer-ch02_s04_s01_p20">Construct a box plot and find the IQR for the data in <a class="xref" href="#fwk-shafer-ch02_s04_s01_n04" xrefstyle="select: title">Note 2.44 "Contoh 14"</a>.</p>
+            <p class="simpara">Solusi:</p>
+            <p class="para" id="fwk-shafer-ch02_s04_s01_p21">From our work in <a class="xref" href="#fwk-shafer-ch02_s04_s01_n04" xrefstyle="select: title">Note 2.44 "Contoh 14"</a> we know that the five-number summary is</p>
             <span class="informalequation" id="shafer-20121106-125753-088676"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch02-m0273" display="block"><mrow><msub><mrow><mi>x</mi></mrow><mrow><mtext>min</mtext></mrow></msub><mo>=</mo><mn>1.39</mn><mtext> </mtext><msub><mrow><mi>Q</mi></mrow><mrow><mn>1</mn></mrow></msub><mo>=</mo><mn>1.90</mn><mtext> </mtext><msub><mrow><mi>Q</mi></mrow><mrow><mn>2</mn></mrow></msub><mo>=</mo><mn>2.62</mn><mtext> </mtext><msub><mrow><mi>Q</mi></mrow><mrow><mn>3</mn></mrow></msub><mo>=</mo><mn>3.33</mn><mtext> </mtext><msub><mrow><mi>x</mi></mrow><mrow><mtext>max</mtext></mrow></msub><mo>=</mo><mn>4.00</mn></mrow></math></span>
             <p class="para" id="fwk-shafer-ch02_s04_s01_p22">The box plot is</p>
             <div class="informalfigure large">
@@ -133,7 +133,7 @@
 <em class="emphasis">z</em>-scores</h2>
         <p class="para editable block" id="fwk-shafer-ch02_s04_s02_p01">Another way to locate a particular observation <em class="emphasis">x</em> in a data set is to compute its distance from the mean in units of standard deviation.</p>
         <div class="callout block" id="fwk-shafer-ch02_s04_s02_n01">
-            <h3 class="title">Definition</h3>
+            <h3 class="title">Definisi</h3>
             <p class="para" id="fwk-shafer-ch02_s04_s02_p02"><em class="emphasis">The</em> <span class="margin_term"><a class="glossterm"><em class="emphasis">z</em>-score</a><span class="glossdef">Of a measurement <em class="emphasis">x</em>, the distance of <em class="emphasis">x</em> from the mean in units of standard deviation.</span></span> <em class="emphasis">of an observation</em> <em class="emphasis">x</em> <em class="emphasis">is the number</em> <em class="emphasis">z</em> <em class="emphasis">given by the computational formula</em></p>
             <span class="informalequation" id="shafer-20121106-125753-088708"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch02-m0275" display="block"><mrow><mi>z</mi><mo>=</mo><mfrac><mrow><mi>x</mi><mo>−</mo><mrow><mover accent="true"><mi>x</mi><mo stretchy="true">-</mo></mover></mrow></mrow><mrow><mi>s</mi></mrow></mfrac><mtext> </mtext><mi>o</mi><mi>r</mi><mtext> </mtext><mi>z</mi><mo>=</mo><mfrac><mrow><mi>x</mi><mo>−</mo><mi mathvariant="italic">μ</mi></mrow><mrow><mi mathvariant="italic">σ</mi></mrow></mfrac></mrow></math></span>
             <p class="para" id="fwk-shafer-ch02_s04_s02_p03"><em class="emphasis">according to whether the data set is a sample or is the entire population.</em></p>
@@ -146,10 +146,10 @@
             <img src="section_06/26fd571691fc0707b45b01d2c189d453.jpg">
         </div>
         <div class="exercises block" id="fwk-shafer-ch02_s04_s02_n02">
-            <h3 class="title">Example 17</h3>
-            <p class="para" id="fwk-shafer-ch02_s04_s02_p06">Find the <em class="emphasis">z</em>-scores for all ten observations in the GPA sample data in <a class="xref" href="https://saylordotorg.github.io/text_introductory-statistics/s06-02-measures-of-central-location.html" xrefstyle="select: title">Note 2.12 "Example 3"</a> in <a class="xref" href="https://saylordotorg.github.io/text_introductory-statistics/s06-02-measures-of-central-location.html">Section 2.2 "Measures of Central Location"</a>.</p>
+            <h3 class="title">Contoh 17</h3>
+            <p class="para" id="fwk-shafer-ch02_s04_s02_p06">Find the <em class="emphasis">z</em>-scores for all ten observations in the GPA sample data in <a class="xref" href="https://saylordotorg.github.io/text_introductory-statistics/s06-02-measures-of-central-location.html" xrefstyle="select: title">Note 2.12 "Contoh 3"</a> in <a class="xref" href="https://saylordotorg.github.io/text_introductory-statistics/s06-02-measures-of-central-location.html">Section 2.2 "Measures of Central Location"</a>.</p>
             <span class="informalequation" id="shafer-20121106-125753-088740"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch02-m0277" display="block"><mrow><mtable columnspacing="0.5em" columnlines="none none none none none none none none none"><mtr><mtd columnalign="center"><mn>1.90</mn></mtd><mtd columnalign="center"><mn>3.00</mn></mtd><mtd columnalign="center"><mn>2.53</mn></mtd><mtd columnalign="center"><mn>3.71</mn></mtd><mtd columnalign="center"><mn>2.12</mn></mtd><mtd columnalign="center"><mn>1.76</mn></mtd><mtd columnalign="center"><mn>2.71</mn></mtd><mtd columnalign="center"><mn>1.39</mn></mtd><mtd columnalign="center"><mn>4.00</mn></mtd><mtd columnalign="center"><mn>3.33</mn></mtd></mtr></mtable></mrow></math></span>
-            <p class="simpara">Solution:</p>
+            <p class="simpara">Solusi:</p>
             <p class="para" id="fwk-shafer-ch02_s04_s02_p07">For these data <span class="inlineequation" id="shafer-20121106-125753-088756"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch02-m0278" display="inline"><mrow><mover accent="true"><mi>x</mi><mo stretchy="true">-</mo></mover></mrow><mo>=</mo><mn>2.645</mn></math></span> and <em class="emphasis">s</em> = 0.8674. The first observation <em class="emphasis">x</em> = 1.9 in the data set has <em class="emphasis">z</em>-score</p>
             <span class="informalequation" id="shafer-20121106-125753-088772"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch02-m0279" display="block"><mrow><mi>z</mi><mo>=</mo><mfrac><mrow><mi>x</mi><mo>−</mo><mrow><mover accent="true"><mi>x</mi><mo stretchy="true">-</mo></mover></mrow></mrow><mrow><mi>s</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>1.9</mn><mo>−</mo><mn>2.645</mn></mrow><mrow><mn>0.8674</mn></mrow></mfrac><mo>=</mo><mtext>−</mtext><mn>0.8589</mn></mrow></math></span>
             <p class="para" id="fwk-shafer-ch02_s04_s02_p08">which means that <em class="emphasis">x</em> = 1.90 is 0.8589 standard deviations <em class="emphasis">below</em> the sample mean. The second observation <em class="emphasis">x</em> = 3.00 has <em class="emphasis">z</em>-score</p>
@@ -158,14 +158,14 @@
             <span class="informalequation" id="shafer-20121106-125753-088804"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch02-m0281" display="block"><mrow><mtext>−</mtext><mn>0.86</mn><mtext> </mtext><mn>0.41</mn><mtext> </mtext><mtext>−</mtext><mn>0.13</mn><mtext> </mtext><mn>1.23</mn><mtext> </mtext><mtext>−</mtext><mn>0.61</mn><mtext> </mtext><mtext>−</mtext><mn>1.02</mn><mtext> </mtext><mn>0.07</mn><mtext> </mtext><mtext>−</mtext><mn>1.45</mn><mtext> </mtext><mn>1.56</mn><mtext> </mtext><mn>0.79</mn></mrow></math></span>
         </div>
         <div class="exercises block" id="fwk-shafer-ch02_s04_s02_n03">
-            <h3 class="title">Example 18</h3>
+            <h3 class="title">Contoh 18</h3>
             <p class="para" id="fwk-shafer-ch02_s04_s02_p10">Suppose the mean and standard deviation of the GPAs of all currently registered students at a college are <em class="emphasis">μ</em> = 2.70 and <em class="emphasis">σ</em> = 0.50. The <em class="emphasis">z</em>-scores of the GPAs of two students, Antonio and Beatrice, are <span class="inlineequation" id="shafer-20121106-125753-088819"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch02-m0282" display="inline"><mi>z</mi><mo>=</mo><mtext>−</mtext><mn>0.62</mn></math></span> and <em class="emphasis">z</em> = 1.28, respectively. What are their GPAs?</p>
-            <p class="simpara">Solution:</p>
+            <p class="simpara">Solusi:</p>
             <p class="para" id="fwk-shafer-ch02_s04_s02_p11">Using the second formula right after the definition of <em class="emphasis">z</em>-scores we compute the GPAs as</p>
             <span class="informalequation" id="shafer-20121106-125753-088836"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch02-m0283" display="block"><mtable columnspacing="0.5em"><mtr><mtd columnalign="right"><mtext>Antonio: </mtext><mi>x</mi><mo>=</mo><mi mathvariant="italic">μ</mi><mo>+</mo><mi>z</mi><mtext> </mtext><mi mathvariant="italic">σ</mi><mo>=</mo><mn>2.70</mn><mo>+</mo><mrow><mo>(</mo><mrow><mtext>−</mtext><mn>0.62</mn></mrow><mo>)</mo></mrow><mrow><mo>(</mo><mrow><mn>0.50</mn></mrow><mo>)</mo></mrow><mo>=</mo><mn>2.39</mn></mtd><mtd columnalign="right"></mtd><mtd></mtd></mtr><mtr><mtd columnalign="right"><mtext>Beatrice: </mtext><mi>x</mi><mo>=</mo><mi mathvariant="italic">μ</mi><mo>+</mo><mi>z</mi><mtext> </mtext><mi mathvariant="italic">σ</mi><mo>=</mo><mn>2.70</mn><mo>+</mo><mrow><mo>(</mo><mrow><mn>1.28</mn></mrow><mo>)</mo></mrow><mrow><mo>(</mo><mrow><mn>0.50</mn></mrow><mo>)</mo></mrow><mo>=</mo><mn>3.34</mn></mtd><mtd columnalign="right"></mtd><mtd></mtd></mtr></mtable></math></span>
         </div>
         <div class="key_takeaways editable block" id="fwk-shafer-ch02_s04_s02_n04">
-            <h3 class="title">Key Takeaways</h3>
+            <h3 class="title">Poin Utamas</h3>
             <ul class="itemizedlist" id="fwk-shafer-ch02_s04_s02_l01" mark="bullet">
                 <li>The percentile rank and <em class="emphasis">z</em>-score of a measurement indicate its relative position with regard to the other measurements in a data set.</li>
                 <li>The three quartiles divide a data set into fourths.</li>
@@ -173,7 +173,7 @@
             </ul>
         </div>
         <div class="qandaset block" id="fwk-shafer-ch02_s04_qs01" condition="1col" defaultlabel="number">
-            <h3 class="title">Exercises</h3>
+            <h3 class="title">Latihans</h3>
             <ol class="qandadiv" id="fwk-shafer-ch02_s04_qs01_qd01">
                 <h3 class="title">Basic</h3>
                 <li class="qandaentry" id="fwk-shafer-ch02_s04_qs01_qd01_qa01">
@@ -246,7 +246,7 @@
                 </li>
                 <li class="qandaentry" id="fwk-shafer-ch02_s04_qs01_qd01_qa10">
                     <div class="question">
-                        <p class="para" id="fwk-shafer-ch02_s04_qs01_p14">Find the five-number summary and the IQR and sketch the box plot for the sample explicitly displayed in <a class="xref" href="https://saylordotorg.github.io/text_introductory-statistics/s06-02-measures-of-central-location.html" xrefstyle="select: title">Note 2.20 "Example 7"</a> in <a class="xref" href="https://saylordotorg.github.io/text_introductory-statistics/s06-02-measures-of-central-location.html">Section 2.2 "Measures of Central Location"</a>.</p>
+                        <p class="para" id="fwk-shafer-ch02_s04_qs01_p14">Find the five-number summary and the IQR and sketch the box plot for the sample explicitly displayed in <a class="xref" href="https://saylordotorg.github.io/text_introductory-statistics/s06-02-measures-of-central-location.html" xrefstyle="select: title">Note 2.20 "Contoh 7"</a> in <a class="xref" href="https://saylordotorg.github.io/text_introductory-statistics/s06-02-measures-of-central-location.html">Section 2.2 "Measures of Central Location"</a>.</p>
                     </div>
                 </li>
                 <li class="qandaentry" id="fwk-shafer-ch02_s04_qs01_qd01_qa11">
@@ -400,7 +400,7 @@
                 </li>
             </ol>
             <ol class="qandadiv" id="fwk-shafer-ch02_s04_qs01_qd03" start="29">
-                <h3 class="title">Additional Exercises</h3>
+                <h3 class="title">Additional Latihans</h3>
                 <li class="qandaentry" id="fwk-shafer-ch02_s04_qs01_qd03_qa29">
                     <div class="question">
                         <p class="para" id="fwk-shafer-ch02_s04_qs01_p50">Consider the data set represented by the ordered stem and leaf diagram</p>
@@ -467,7 +467,7 @@
                 </li>
             </ol>
             <ol class="qandadiv" id="fwk-shafer-ch02_s04_qs01_qd04" start="38">
-                <h3 class="title">Large Data Set Exercises</h3>
+                <h3 class="title">Large Data Set Latihans</h3>
                 <li class="qandaentry" id="fwk-shafer-ch02_s04_qs01_qd04_qa38">
                     <div class="question">
                         <p class="para" id="fwk-shafer-ch02_s04_qs01_p65">Large Data Set 1 lists the SAT scores and GPAs of 1,000 students.</p>
@@ -776,15 +776,15 @@
   <div id=navbar-bottom class="navbar">
     <div class="navbar-part left">
       
-        <a href="s06-03-measures-of-variability.html"><img src="shared/images/batch-left.png"></a> <a href="s06-03-measures-of-variability.html">Previous Section</a>
+        <a href="s06-03-measures-of-variability.html"><img src="shared/images/batch-left.png"></a> <a href="s06-03-measures-of-variability.html">Bagian Sebelumnya</a>
       
     </div>
     <div class="navbar-part middle">
-      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Daftar Isi</a>
     </div>
     <div class="navbar-part right">
       
-        <a href="s06-05-the-empirical-rule-and-chebysh.html">Next Section</a> <a href="s06-05-the-empirical-rule-and-chebysh.html"><img src="shared/images/batch-right.png"></a>
+        <a href="s06-05-the-empirical-rule-and-chebysh.html">Bagian Selanjutnya</a> <a href="s06-05-the-empirical-rule-and-chebysh.html"><img src="shared/images/batch-right.png"></a>
       
     </div>
   </div>

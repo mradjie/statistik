@@ -11,15 +11,15 @@
   <div id=navbar-top class="navbar">
     <div class="navbar-part left">
       
-        <a href="s15-02-chi-square-one-sample-goodness.html"><img src="shared/images/batch-left.png"></a> <a href="s15-02-chi-square-one-sample-goodness.html">Previous Section</a>
+        <a href="s15-02-chi-square-one-sample-goodness.html"><img src="shared/images/batch-left.png"></a> <a href="s15-02-chi-square-one-sample-goodness.html">Bagian Sebelumnya</a>
       
     </div>
     <div class="navbar-part middle">
-      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Daftar Isi</a>
     </div>
     <div class="navbar-part right">
       
-        <a href="s15-04-f-tests-in-one-way-anova.html">Next Section</a> <a href="s15-04-f-tests-in-one-way-anova.html"><img src="shared/images/batch-right.png"></a>
+        <a href="s15-04-f-tests-in-one-way-anova.html">Bagian Selanjutnya</a> <a href="s15-04-f-tests-in-one-way-anova.html"><img src="shared/images/batch-right.png"></a>
       
     </div>
   </div>
@@ -29,7 +29,7 @@
     <h2 class="title editable block">
 <span class="title-prefix">11.3</span> <em class="emphasis">F</em>-tests for Equality of Two Variances</h2>
     <div class="learning_objectives editable block" id="fwk-shafer-ch11_s03_n01">
-        <h3 class="title">Learning Objectives</h3>
+        <h3 class="title">Tujuan Pembelajarans</h3>
         <ol class="orderedlist" id="fwk-shafer-ch11_s03_o01" numeration="arabic">
             <li>To understand what <em class="emphasis">F</em>-distributions are.</li>
             <li>To understand how to use an <em class="emphasis">F</em>-test to judge whether two population variances are equal.</li>
@@ -45,7 +45,7 @@
         </div>
         <p class="para block" id="fwk-shafer-ch11_s03_s01_p02">The parameter <span class="inlineequation" id="shafer-20121106-125753-166453"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch11-m0244" display="inline"><mi>d</mi><msub><mrow><mi>f</mi></mrow><mrow><mn>1</mn></mrow></msub></math></span> is often referred to as the <em class="emphasis">numerator</em> degrees of freedom and the parameter <span class="inlineequation" id="shafer-20121106-125753-166471"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch11-m0245" display="inline"><mi>d</mi><msub><mrow><mi>f</mi></mrow><mrow><mn>2</mn></mrow></msub></math></span> as the <em class="emphasis">denominator</em> degrees of freedom. It is important to keep in mind that they are not interchangeable. For example, the <em class="emphasis">F</em>-distribution with degrees of freedom <span class="inlineequation" id="shafer-20121106-125753-166486"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch11-m0246" display="inline"><mi>d</mi><msub><mrow><mi>f</mi></mrow><mrow><mn>1</mn></mrow></msub><mo>=</mo><mn>3</mn></math></span> and <span class="inlineequation" id="shafer-20121106-125753-166502"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch11-m0247" display="inline"><mi>d</mi><msub><mrow><mi>f</mi></mrow><mrow><mn>2</mn></mrow></msub><mo>=</mo><mn>8</mn></math></span> is a different distribution from the <em class="emphasis">F</em>-distribution with degrees of freedom <span class="inlineequation" id="shafer-20121106-125753-166518"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch11-m0248" display="inline"><mi>d</mi><msub><mrow><mi>f</mi></mrow><mrow><mn>1</mn></mrow></msub><mo>=</mo><mn>8</mn></math></span> and <span class="inlineequation" id="shafer-20121106-125753-166536"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch11-m0249" display="inline"><mi>d</mi><msub><mrow><mi>f</mi></mrow><mrow><mn>2</mn></mrow></msub><mo>=</mo><mn>3</mn><mo>.</mo></math></span></p>
         <div class="callout block" id="fwk-shafer-ch11_s03_s01_n01">
-            <h3 class="title">Definition</h3>
+            <h3 class="title">Definisi</h3>
             <p class="para" id="fwk-shafer-ch11_s03_s01_p03"><em class="emphasis">The value of the</em> <em class="emphasis">F</em><em class="emphasis"> random variable</em> <em class="emphasis">F</em> <em class="emphasis">with degrees of freedom</em> <span class="inlineequation" id="shafer-20121106-125753-166552"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch11-m0250" display="inline"><mi>d</mi><msub><mrow><mi>f</mi></mrow><mrow><mn>1</mn></mrow></msub></math></span> <em class="emphasis">and</em> <span class="inlineequation" id="shafer-20121106-125753-166568"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch11-m0251" display="inline"><mi>d</mi><msub><mrow><mi>f</mi></mrow><mrow><mn>2</mn></mrow></msub></math></span> <em class="emphasis">that cuts off a right tail of area</em> <em class="emphasis">c</em> <em class="emphasis">is denoted</em> <em class="emphasis">F<sub class="subscript">c</sub></em> <em class="emphasis">and is called a</em> <strong class="emphasis bold">critical value</strong>. <em class="emphasis">See <a class="xref" href="#fwk-shafer-ch11_s03_s01_f02">Figure 11.8</a>.</em></p>
             <div class="figure medium" id="fwk-shafer-ch11_s03_s01_f02">
                 <p class="title"><span class="title-prefix">Figure 11.8</span> <em class="emphasis">F<sub class="subscript">c</sub></em> Illustrated</p>
@@ -54,7 +54,7 @@
         </div>
         <p class="para block" id="fwk-shafer-ch11_s03_s01_p04">Tables containing the values of <em class="emphasis">F<sub class="subscript">c</sub></em> are given in <a class="xref" href="https://saylordotorg.github.io/text_introductory-statistics/s15-chi-square-tests-and-f-tests.html">Chapter 11 "Chi-Square Tests and "</a>. Each of the tables is for a fixed collection of values of <em class="emphasis">c</em>, either 0.900, 0.950, 0.975, 0.990, and 0.995 (yielding what are called “lower” critical values), or 0.005, 0.010, 0.025, 0.050, and 0.100 (yielding what are called “upper” critical values). In each table critical values are given for various pairs <span class="inlineequation" id="shafer-20121106-125753-166584"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch11-m0252" display="inline"><mrow><mo>(</mo><mrow><mi>d</mi><msub><mrow><mi>f</mi></mrow><mrow><mn>1</mn></mrow></msub><mo>,</mo><mi>d</mi><msub><mrow><mi>f</mi></mrow><mrow><mn>2</mn></mrow></msub></mrow><mo>)</mo></mrow><mo>.</mo></math></span> We illustrate the use of the tables with several examples.</p>
         <div class="exercises block" id="fwk-shafer-ch11_s03_s01_n02">
-            <h3 class="title">Example 3</h3>
+            <h3 class="title">Contoh 3</h3>
             <p class="para" id="fwk-shafer-ch11_s03_s01_p05">Suppose <em class="emphasis">F</em> is an <em class="emphasis">F</em> random variable with degrees of freedom <span class="inlineequation" id="shafer-20121106-125753-166607"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch11-m0253" display="inline"><mi>d</mi><msub><mrow><mi>f</mi></mrow><mrow><mn>1</mn></mrow></msub><mo>=</mo><mn>5</mn></math></span> and <span class="inlineequation" id="shafer-20121106-125753-166624"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch11-m0254" display="inline"><mi>d</mi><msub><mrow><mi>f</mi></mrow><mrow><mn>2</mn></mrow></msub><mo>=</mo><mn>4</mn><mo>.</mo></math></span> Use the tables to find</p>
             <ol class="orderedlist" id="fwk-shafer-ch11_s03_s01_o01" numeration="loweralpha">
                 <li>
@@ -64,7 +64,7 @@
 <em class="emphasis">F</em><sub class="subscript">0.95</sub>
 </li>
             </ol>
-            <p class="simpara">Solution:</p>
+            <p class="simpara">Solusi:</p>
             <ol class="orderedlist" id="fwk-shafer-ch11_s03_s01_o02" numeration="loweralpha">
                 <li>
                     <p class="para">The column headings of all the tables contain <span class="inlineequation" id="shafer-20121106-125753-166640"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch11-m0255" display="inline"><mi>d</mi><msub><mrow><mi>f</mi></mrow><mrow><mn>1</mn></mrow></msub><mo>=</mo><mn>5</mn><mo>.</mo></math></span> Look for the table for which 0.10 is one of the entries on the extreme left (a table of upper critical values) and that has a row heading <span class="inlineequation" id="shafer-20121106-125753-166657"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch11-m0256" display="inline"><mi>d</mi><msub><mrow><mi>f</mi></mrow><mrow><mn>2</mn></mrow></msub><mo>=</mo><mn>4</mn></math></span> in the left margin of the table. A portion of the relevant table is provided. The entry in the intersection of the column with heading <span class="inlineequation" id="shafer-20121106-125753-166674"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch11-m0257" display="inline"><mi>d</mi><msub><mrow><mi>f</mi></mrow><mrow><mn>1</mn></mrow></msub><mo>=</mo><mn>5</mn></math></span> and the row with the headings 0.10 and <span class="inlineequation" id="shafer-20121106-125753-166690"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch11-m0258" display="inline"><mi>d</mi><msub><mrow><mi>f</mi></mrow><mrow><mn>2</mn></mrow></msub><mo>=</mo><mn>4</mn></math></span>, which is shaded in the table provided, is the answer, <span class="inlineequation" id="shafer-20121106-125753-166706"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch11-m0259" display="inline"><msub><mrow><mi>F</mi></mrow><mrow><mn>0.10</mn></mrow></msub><mo>=</mo><mn>4.05</mn><mo>.</mo></math></span></p>
@@ -243,7 +243,7 @@
             </ol>
         </div>
         <div class="exercises block" id="fwk-shafer-ch11_s03_s01_n03">
-            <h3 class="title">Example 4</h3>
+            <h3 class="title">Contoh 4</h3>
             <p class="para" id="fwk-shafer-ch11_s03_s01_p06">Suppose <span class="inlineequation" id="shafer-20121106-125753-167657"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch11-m0314" display="inline"><mstyle mathvariant="bold"><mi>F</mi></mstyle></math></span> is an <em class="emphasis">F</em> random variable with degrees of freedom <span class="inlineequation" id="shafer-20121106-125753-167673"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch11-m0315" display="inline"><mi>d</mi><msub><mrow><mi>f</mi></mrow><mrow><mn>1</mn></mrow></msub><mo>=</mo><mn>2</mn></math></span> and <span class="inlineequation" id="shafer-20121106-125753-167690"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch11-m0316" display="inline"><mi>d</mi><msub><mrow><mi>f</mi></mrow><mrow><mn>2</mn></mrow></msub><mo>=</mo><mn>20</mn><mo>.</mo></math></span> Let <span class="inlineequation" id="shafer-20121106-125753-167705"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch11-m0317" display="inline"><mi>α</mi><mo>=</mo><mn>0.05</mn><mo>.</mo></math></span> Use the tables to find</p>
             <ol class="orderedlist" id="fwk-shafer-ch11_s03_s01_o03" numeration="loweralpha">
                 <li><span class="inlineequation" id="shafer-20121106-125753-167721"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch11-m0318" display="inline"><msub><mrow><mi>F</mi></mrow><mrow><mi>α</mi></mrow></msub></math></span></li>
@@ -251,7 +251,7 @@
                 <li><span class="inlineequation" id="shafer-20121106-125753-167761"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch11-m0320" display="inline"><msub><mrow><mi>F</mi></mrow><mrow><mn>1</mn><mo>−</mo><mi>α</mi></mrow></msub></math></span></li>
                 <li><span class="inlineequation" id="shafer-20121106-125753-167777"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch11-m0321" display="inline"><msub><mrow><mi>F</mi></mrow><mrow><mn>1</mn><mo>−</mo><mi>α</mi><mo>∕</mo><mn>2</mn></mrow></msub></math></span></li>
             </ol>
-            <p class="simpara">Solution:</p>
+            <p class="simpara">Solusi:</p>
             <ol class="orderedlist" id="fwk-shafer-ch11_s03_s01_o04" numeration="loweralpha">
                 <li>
                     <p class="para">The column headings of all the tables contain <span class="inlineequation" id="shafer-20121106-125753-167793"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch11-m0322" display="inline"><mi>d</mi><msub><mrow><mi>f</mi></mrow><mrow><mn>1</mn></mrow></msub><mo>=</mo><mn>2</mn><mo>.</mo></math></span> Look for the table for which <span class="inlineequation" id="shafer-20121106-125753-167809"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch11-m0323" display="inline"><mi>α</mi><mo>=</mo><mn>0.05</mn></math></span> is one of the entries on the extreme left (a table of upper critical values) and that has a row heading <span class="inlineequation" id="shafer-20121106-125753-167825"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch11-m0324" display="inline"><mi>d</mi><msub><mrow><mi>f</mi></mrow><mrow><mn>2</mn></mrow></msub><mo>=</mo><mn>20</mn></math></span> in the left margin of the table. A portion of the relevant table is provided. The shaded entry, in the intersection of the column with heading <span class="inlineequation" id="shafer-20121106-125753-167841"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch11-m0325" display="inline"><mi>d</mi><msub><mrow><mi>f</mi></mrow><mrow><mn>1</mn></mrow></msub><mo>=</mo><mn>2</mn></math></span> and the row with the headings 0.05 and <span class="inlineequation" id="shafer-20121106-125753-167857"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch11-m0326" display="inline"><mi>d</mi><msub><mrow><mi>f</mi></mrow><mrow><mn>2</mn></mrow></msub><mo>=</mo><mn>20</mn></math></span> is the answer, <span class="inlineequation" id="shafer-20121106-125753-167873"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch11-m0327" display="inline"><msub><mrow><mi>F</mi></mrow><mrow><mn>0.05</mn></mrow></msub><mo>=</mo><mn>3.49</mn><mo>.</mo></math></span></p>
@@ -545,7 +545,7 @@
             <span class="informalequation" id="shafer-20121106-125753-169168"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch11-m0402" display="block"><mrow><msub><mrow><mi>F</mi></mrow><mrow><mi>c</mi></mrow></msub><mrow><mo>(</mo><mrow><mi>k</mi><mo>,</mo><mi>ℓ</mi></mrow><mo>)</mo></mrow><mo>=</mo><mfrac><mrow><mn>1</mn></mrow><mrow><msub><mrow><mi>F</mi></mrow><mrow><mn>1</mn><mo>−</mo><mi>c</mi></mrow></msub><mrow><mo>(</mo><mrow><mi>ℓ</mi><mo>,</mo><mi>k</mi></mrow><mo>)</mo></mrow></mrow></mfrac></mrow></math></span>
         </div>
         <div class="exercises block" id="fwk-shafer-ch11_s03_s01_n05">
-            <h3 class="title">Example 5</h3>
+            <h3 class="title">Contoh 5</h3>
             <p class="para" id="fwk-shafer-ch11_s03_s01_p09">Use the tables to find</p>
             <ol class="orderedlist" id="fwk-shafer-ch11_s03_s01_o05" numeration="loweralpha">
                 <li>
@@ -555,7 +555,7 @@
 <em class="emphasis">F</em><sub class="subscript">0.975</sub> for an <em class="emphasis">F</em> random variable with <span class="inlineequation" id="shafer-20121106-125753-169223"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch11-m0405" display="inline"><mi>d</mi><msub><mrow><mi>f</mi></mrow><mrow><mn>1</mn></mrow></msub><mo>=</mo><mn>40</mn></math></span> and <span class="inlineequation" id="shafer-20121106-125753-169239"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch11-m0406" display="inline"><mi>d</mi><msub><mrow><mi>f</mi></mrow><mrow><mn>2</mn></mrow></msub><mo>=</mo><mn>10</mn></math></span>
 </li>
             </ol>
-            <p class="simpara">Solution:</p>
+            <p class="simpara">Solusi:</p>
             <ol class="orderedlist" id="fwk-shafer-ch11_s03_s01_o06" numeration="loweralpha">
                 <li>
                     <p class="para">There is no table with <span class="inlineequation" id="shafer-20121106-125753-169255"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch11-m0407" display="inline"><mi>d</mi><msub><mrow><mi>f</mi></mrow><mrow><mn>1</mn></mrow></msub><mo>=</mo><mn>13</mn></math></span>, but there is one with <span class="inlineequation" id="shafer-20121106-125753-169271"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch11-m0408" display="inline"><mi>d</mi><msub><mrow><mi>f</mi></mrow><mrow><mn>1</mn></mrow></msub><mo>=</mo><mn>8</mn><mo>.</mo></math></span> Thus we use the fact that</p>
@@ -646,7 +646,7 @@
         </div>
         <p class="para editable block" id="fwk-shafer-ch11_s03_s02_p09">The test is performed using the usual five-step procedure described at the end of <a class="xref" href="fwk-shafer-ch08_s01#fwk-shafer-ch08_s01">Section 8.1 "The Elements of Hypothesis Testing"</a> in <a class="xref" href="https://saylordotorg.github.io/text_introductory-statistics/s12-testing-hypotheses.html">Chapter 8 "Testing Hypotheses"</a>.</p>
         <div class="exercises block" id="fwk-shafer-ch11_s03_s02_n02">
-            <h3 class="title">Example 6</h3>
+            <h3 class="title">Contoh 6</h3>
             <p class="para" id="fwk-shafer-ch11_s03_s02_p10">One of the quality measures of blood glucose meter strips is the consistency of the test results on the same sample of blood. The consistency is measured by the variance of the readings in repeated testing. Suppose two types of strips, <em class="emphasis">A</em> and <em class="emphasis">B</em>, are compared for their respective consistencies. We arbitrarily label the population of Type <em class="emphasis">A</em> strips Population 1 and the population of Type <em class="emphasis">B</em> strips Population 2. Suppose 15 Type <em class="emphasis">A</em> strips were tested with blood drops from a well-shaken vial and 20 Type <em class="emphasis">B</em> strips were tested with the blood from the same vial. The results are summarized in <a class="xref" href="#fwk-shafer-ch11_s03_s02_t01">Table 11.16 "Two Types of Test Strips"</a>. Assume the glucose readings using Type <em class="emphasis">A</em> strips follow a normal distribution with variance <span class="inlineequation" id="shafer-20121106-125753-169919"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch11-m0445" display="inline"><msubsup><mrow><mi mathvariant="italic">σ</mi></mrow><mrow><mn>1</mn></mrow><mrow><mn>2</mn></mrow></msubsup></math></span> and those using Type <em class="emphasis">B</em> strips follow a normal distribution with variance with <span class="inlineequation" id="shafer-20121106-125753-169936"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch11-m0446" display="inline"><msubsup><mrow><mi mathvariant="italic">σ</mi></mrow><mrow><mn>2</mn></mrow><mrow><mn>2</mn></mrow></msubsup><mo>.</mo></math></span> Test, at the 10% level of significance, whether the data provide sufficient evidence to conclude that the consistencies of the two types of strips are different.</p>
             <div class="table" id="fwk-shafer-ch11_s03_s02_t01">
                 <p class="title"><span class="title-prefix">Table 11.16</span> Two Types of Test Strips</p>
@@ -672,7 +672,7 @@
                     </tbody>
                 </table>
             </div>
-            <p class="simpara">Solution:</p>
+            <p class="simpara">Solusi:</p>
             <ul class="itemizedlist" id="fwk-shafer-ch11_s03_s02_l01" mark="none">
                 <li>
                     <p class="para">Step 1. The test of hypotheses is</p>
@@ -683,7 +683,7 @@
                 <li>Step 3. The test is two-tailed. The left or lower critical value is <span class="inlineequation" id="shafer-20121106-125753-170072"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch11-m0454" display="inline"><msub><mrow><mi>F</mi></mrow><mrow><mn>1</mn><mo>−</mo><mi>α</mi><mo>∕</mo><mn>2</mn></mrow></msub><mo>=</mo><msub><mrow><mi>F</mi></mrow><mrow><mn>0.95</mn></mrow></msub><mo>=</mo><mn>0.43</mn><mo>.</mo></math></span> The right or upper critical value is <span class="inlineequation" id="shafer-20121106-125753-170094"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch11-m0455" display="inline"><msub><mrow><mi>F</mi></mrow><mrow><mi>α</mi><mo>∕</mo><mn>2</mn></mrow></msub><mo>=</mo><msub><mrow><mi>F</mi></mrow><mrow><mn>0.05</mn></mrow></msub><mo>=</mo><mn>2.20</mn><mo>.</mo></math></span> Thus the rejection region is <span class="inlineequation" id="shafer-20121106-125753-170110"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch11-m0456" display="inline"><mrow><mo>[</mo><mrow><mn>0</mn><mo>,</mo><mtext>−</mtext><mn>0.43</mn></mrow><mo>]</mo></mrow><mo>∪</mo><mrow><mo>[</mo><mrow><mn>2.20</mn><mo>,</mo><mi>∞</mi></mrow><mo>)</mo></mrow></math></span>, as illustrated in <a class="xref" href="#fwk-shafer-ch11_s03_s02_f02">Figure 11.10 "Rejection Region and Test Statistic for "</a>.</li>
             </ul>
             <div class="figure medium" id="fwk-shafer-ch11_s03_s02_f02">
-                <p class="title"><span class="title-prefix">Figure 11.10</span> Rejection Region and Test Statistic for <a class="xref" href="#fwk-shafer-ch11_s03_s02_n02" xrefstyle="select: title">Note 11.27 "Example 6"</a></p>
+                <p class="title"><span class="title-prefix">Figure 11.10</span> Rejection Region and Test Statistic for <a class="xref" href="#fwk-shafer-ch11_s03_s02_n02" xrefstyle="select: title">Note 11.27 "Contoh 6"</a></p>
                 <img src="section_15/5529f95c575a61746d7c6db537493c0f.jpg">
             </div>
             <ul class="itemizedlist" id="fwk-shafer-ch11_s03_s02_l02" mark="none">
@@ -695,9 +695,9 @@
             </ul>
         </div>
         <div class="exercises block" id="fwk-shafer-ch11_s03_s02_n03">
-            <h3 class="title">Example 7</h3>
-            <p class="para" id="fwk-shafer-ch11_s03_s02_p11">In the context of <a class="xref" href="#fwk-shafer-ch11_s03_s02_n02" xrefstyle="select: title">Note 11.27 "Example 6"</a>, suppose Type <em class="emphasis">A</em> test strips are the current market leader and Type <em class="emphasis">B</em> test strips are a newly improved version of Type <em class="emphasis">A</em>. Test, at the 10% level of significance, whether the data given in <a class="xref" href="#fwk-shafer-ch11_s03_s02_t01">Table 11.16 "Two Types of Test Strips"</a> provide sufficient evidence to conclude that Type <em class="emphasis">B</em> test strips have better consistency (lower variance) than Type <em class="emphasis">A</em> test strips.</p>
-            <p class="simpara">Solution:</p>
+            <h3 class="title">Contoh 7</h3>
+            <p class="para" id="fwk-shafer-ch11_s03_s02_p11">In the context of <a class="xref" href="#fwk-shafer-ch11_s03_s02_n02" xrefstyle="select: title">Note 11.27 "Contoh 6"</a>, suppose Type <em class="emphasis">A</em> test strips are the current market leader and Type <em class="emphasis">B</em> test strips are a newly improved version of Type <em class="emphasis">A</em>. Test, at the 10% level of significance, whether the data given in <a class="xref" href="#fwk-shafer-ch11_s03_s02_t01">Table 11.16 "Two Types of Test Strips"</a> provide sufficient evidence to conclude that Type <em class="emphasis">B</em> test strips have better consistency (lower variance) than Type <em class="emphasis">A</em> test strips.</p>
+            <p class="simpara">Solusi:</p>
             <ul class="itemizedlist" id="fwk-shafer-ch11_s03_s02_l03" mark="none">
                 <li>
                     <p class="para">Step 1. The test of hypotheses is now</p>
@@ -712,7 +712,7 @@
                 <li>Step 4. The test is right-tailed. The single critical value is <span class="inlineequation" id="shafer-20121106-125753-170213"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch11-m0462" display="inline"><msub><mrow><mi>F</mi></mrow><mrow><mi>α</mi></mrow></msub><mo>=</mo><msub><mrow><mi>F</mi></mrow><mrow><mn>0.10</mn></mrow></msub><mo>=</mo><mn>1.84</mn><mo>.</mo></math></span> Thus the rejection region is <span class="inlineequation" id="shafer-20121106-125753-170229"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch11-m0463" display="inline"><mrow><mo>[</mo><mrow><mn>1.84</mn><mo>,</mo><mi>∞</mi></mrow><mo>)</mo></mrow></math></span>, as illustrated in <a class="xref" href="#fwk-shafer-ch11_s03_s02_f03">Figure 11.11 "Rejection Region and Test Statistic for "</a>.</li>
             </ul>
             <div class="figure medium" id="fwk-shafer-ch11_s03_s02_f03">
-                <p class="title"><span class="title-prefix">Figure 11.11</span> Rejection Region and Test Statistic for <a class="xref" href="#fwk-shafer-ch11_s03_s02_n03" xrefstyle="select: title">Note 11.28 "Example 7"</a></p>
+                <p class="title"><span class="title-prefix">Figure 11.11</span> Rejection Region and Test Statistic for <a class="xref" href="#fwk-shafer-ch11_s03_s02_n03" xrefstyle="select: title">Note 11.28 "Contoh 7"</a></p>
                 <img src="section_15/0dee7b0964c04670ae90832291b81e85.jpg">
             </div>
             <ul class="itemizedlist" id="fwk-shafer-ch11_s03_s02_l04" mark="none">
@@ -720,14 +720,14 @@
             </ul>
         </div>
         <div class="key_takeaways block" id="fwk-shafer-ch11_s03_s02_n04">
-            <h3 class="title">Key Takeaways</h3>
+            <h3 class="title">Poin Utamas</h3>
             <ul class="itemizedlist" id="fwk-shafer-ch11_s03_s02_l05" mark="bullet">
                 <li>Critical values of an <em class="emphasis">F</em>-distribution with degrees of freedom <span class="inlineequation" id="shafer-20121106-125753-170245"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch11-m0464" display="inline"><mi>d</mi><msub><mrow><mi>f</mi></mrow><mrow><mn>1</mn></mrow></msub></math></span> and <span class="inlineequation" id="shafer-20121106-125753-170262"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch11-m0465" display="inline"><mi>d</mi><msub><mrow><mi>f</mi></mrow><mrow><mn>2</mn></mrow></msub></math></span> are found in tables in <a class="xref" href="https://saylordotorg.github.io/text_introductory-statistics/s16-appendix.html">Chapter 12 "Appendix"</a>.</li>
                 <li>An <em class="emphasis">F</em>-test can be used to evaluate the hypothesis of two identical normal population variances.</li>
             </ul>
         </div>
         <div class="qandaset block" id="fwk-shafer-ch11_s03_qs01" defaultlabel="number">
-            <h3 class="title">Exercises</h3>
+            <h3 class="title">Latihans</h3>
             <ol class="qandadiv" id="fwk-shafer-ch11_s03_qs01_qd01">
                 <h3 class="title">Basic</h3>
                 <li class="qandaentry" id="fwk-shafer-ch11_s03_qs01_qd01_qa01">
@@ -1106,7 +1106,7 @@
                 </li>
             </ol>
             <ol class="qandadiv" id="fwk-shafer-ch11_s03_qs01_qd03" start="21">
-                <h3 class="title">Large Data Set Exercises</h3>
+                <h3 class="title">Large Data Set Latihans</h3>
                 <li class="qandaentry" id="fwk-shafer-ch11_s03_qs01_qd03_qa21">
                     <div class="question">
                         <p class="para" id="fwk-shafer-ch11_s03_qs01_p37">Large Data Sets 1A and 1B record SAT scores for 419 male and 581 female students. Test, at the 1% level of significance, whether the data provide sufficient evidence to conclude that the variances of scores of male and female students differ.</p>
@@ -1292,15 +1292,15 @@
   <div id=navbar-bottom class="navbar">
     <div class="navbar-part left">
       
-        <a href="s15-02-chi-square-one-sample-goodness.html"><img src="shared/images/batch-left.png"></a> <a href="s15-02-chi-square-one-sample-goodness.html">Previous Section</a>
+        <a href="s15-02-chi-square-one-sample-goodness.html"><img src="shared/images/batch-left.png"></a> <a href="s15-02-chi-square-one-sample-goodness.html">Bagian Sebelumnya</a>
       
     </div>
     <div class="navbar-part middle">
-      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Daftar Isi</a>
     </div>
     <div class="navbar-part right">
       
-        <a href="s15-04-f-tests-in-one-way-anova.html">Next Section</a> <a href="s15-04-f-tests-in-one-way-anova.html"><img src="shared/images/batch-right.png"></a>
+        <a href="s15-04-f-tests-in-one-way-anova.html">Bagian Selanjutnya</a> <a href="s15-04-f-tests-in-one-way-anova.html"><img src="shared/images/batch-right.png"></a>
       
     </div>
   </div>
