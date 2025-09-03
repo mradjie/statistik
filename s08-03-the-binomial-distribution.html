@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <link href="shared/bookhub.css" rel="stylesheet" type="text/css">
-  <title>The Binomial Distribution</title>
+  <title>Distribusi Binomial</title>
 </head>
 <body>
 
@@ -11,15 +11,15 @@
   <div id=navbar-top class="navbar">
     <div class="navbar-part left">
       
-        <a href="s08-02-probability-distributions-for-.html"><img src="shared/images/batch-left.png"></a> <a href="s08-02-probability-distributions-for-.html">Previous Section</a>
+        <a href="s08-02-probability-distributions-for-.html"><img src="shared/images/batch-left.png"></a> <a href="s08-02-probability-distributions-for-.html">Bagian Sebelumnya</a>
       
     </div>
     <div class="navbar-part middle">
-      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Daftar Isi</a>
     </div>
     <div class="navbar-part right">
       
-        <a href="s09-01-continuous-random-variables.html">Next Section</a> <a href="s09-01-continuous-random-variables.html"><img src="shared/images/batch-right.png"></a>
+        <a href="s09-01-continuous-random-variables.html">Bagian Selanjutnya</a> <a href="s09-01-continuous-random-variables.html"><img src="shared/images/batch-right.png"></a>
       
     </div>
   </div>
@@ -29,7 +29,7 @@
     <h2 class="title editable block">
 <span class="title-prefix">4.3</span> The Binomial Distribution</h2>
     <div class="learning_objectives editable block" id="fwk-shafer-ch04_s03_n01">
-        <h3 class="title">Learning Objectives</h3>
+        <h3 class="title">Tujuan Pembelajarans</h3>
         <ol class="orderedlist" id="fwk-shafer-ch04_s03_o01" numeration="arabic">
             <li>To learn the concept of a binomial random variable.</li>
             <li>To learn how to recognize a random variable as being a binomial random variable.</li>
@@ -43,7 +43,7 @@
         <img src="section_08/38928bb96eec1a3decfd6ac8e189a437.jpg">
     </div>
     <div class="callout editable block" id="fwk-shafer-ch04_s03_n02">
-        <h3 class="title">Definition</h3>
+        <h3 class="title">Definisi</h3>
         <p class="para" id="fwk-shafer-ch04_s03_p03"><em class="emphasis">Suppose a random experiment has the following characteristics.</em></p>
         <ol class="orderedlist" id="fwk-shafer-ch04_s03_o02" numeration="arabic">
             <li>
@@ -75,14 +75,14 @@
             <span class="informalequation" id="shafer-20121106-125753-102171"><math xml:id="fwk-shafer-ch04-m0114" display="block"><mrow><mi>m</mi><mo>!</mo><mo>=</mo><mn>1</mn><mo>·</mo><mn>2</mn><mtext> · · · </mtext><mrow><mo>(</mo><mrow><mi>m</mi><mtext>−</mtext><mn>1</mn></mrow><mo>)</mo></mrow><mo>·</mo><mi>m</mi></mrow></math></span>
         </div>
         <div class="exercises block" id="fwk-shafer-ch04_s03_s01_n02">
-            <h3 class="title">Example 7</h3>
+            <h3 class="title">Contoh 7</h3>
             <p class="para" id="fwk-shafer-ch04_s03_s01_p05">Seventeen percent of victims of financial fraud know the perpetrator of the fraud personally.</p>
             <ol class="orderedlist" id="fwk-shafer-ch04_s03_s01_o01" numeration="loweralpha">
                 <li>Use the formula to construct the probability distribution for the number <em class="emphasis">X</em> of people in a random sample of five victims of financial fraud who knew the perpetrator personally.</li>
                 <li>A investigator examines five cases of financial fraud every day. Find the most frequent number of cases each day in which the victim knew the perpetrator.</li>
                 <li>A investigator examines five cases of financial fraud every day. Find the average number of cases per day in which the victim knew the perpetrator.</li>
             </ol>
-            <p class="simpara">Solution:</p>
+            <p class="simpara">Solusi:</p>
             <ol class="orderedlist" id="fwk-shafer-ch04_s03_s01_o02" numeration="loweralpha">
                 <li>
                     <p class="para">The random variable <em class="emphasis">X</em> is binomial with parameters <em class="emphasis">n</em> = 5 and <em class="emphasis">p</em> = 0.17; <span class="inlineequation" id="shafer-20121106-125753-102187"><math xml:id="fwk-shafer-ch04-m0115" display="inline"><mi>q</mi><mo>=</mo><mn>1</mn><mo>−</mo><mi>p</mi><mo>=</mo><mn>0.83</mn><mo>.</mo></math></span> The possible values of <em class="emphasis">X</em> are 0, 1, 2, 3, 4, and 5.</p>
@@ -96,7 +96,7 @@
                 </li>
             </ol>
             <div class="figure large medium-height" id="fwk-shafer-ch04_s03_s01_f01">
-                <p class="title"><span class="title-prefix">Figure 4.5</span> Probability Distribution of the Binomial Random Variable in <a class="xref" href="#fwk-shafer-ch04_s03_s01_n02" xrefstyle="select: title">Note 4.29 "Example 7"</a></p>
+                <p class="title"><span class="title-prefix">Figure 4.5</span> Probability Distribution of the Binomial Random Variable in <a class="xref" href="#fwk-shafer-ch04_s03_s01_n02" xrefstyle="select: title">Note 4.29 "Contoh 7"</a></p>
                 <img src="section_08/2fcd12630df97eb0e8aebc3dfb3e7887.jpg">
             </div>
             <ol class="orderedlist" id="fwk-shafer-ch04_s03_s01_o03" continuation="continues" numeration="loweralpha">
@@ -110,16 +110,16 @@
     </div>
     <div class="section" id="fwk-shafer-ch04_s03_s02" version="5.0" lang="en">
         <h2 class="title editable block">Special Formulas for the Mean and Standard Deviation of a Binomial Random Variable</h2>
-        <p class="para editable block" id="fwk-shafer-ch04_s03_s02_p01">Since a binomial random variable is a discrete random variable, the formulas for its mean, variance, and standard deviation given in the previous section apply to it, as we just saw in <a class="xref" href="#fwk-shafer-ch04_s03_s01_n02" xrefstyle="select: title">Note 4.29 "Example 7"</a> in the case of the mean. However, for the binomial random variable there are much simpler formulas.</p>
+        <p class="para editable block" id="fwk-shafer-ch04_s03_s02_p01">Since a binomial random variable is a discrete random variable, the formulas for its mean, variance, and standard deviation given in the previous section apply to it, as we just saw in <a class="xref" href="#fwk-shafer-ch04_s03_s01_n02" xrefstyle="select: title">Note 4.29 "Contoh 7"</a> in the case of the mean. However, for the binomial random variable there are much simpler formulas.</p>
         <div class="callout block" id="fwk-shafer-ch04_s03_s02_n01">
             <p class="para" id="fwk-shafer-ch04_s03_s02_p02">If <em class="emphasis">X</em> is a binomial random variable with parameters <em class="emphasis">n</em> and <em class="emphasis">p</em>, then</p>
             <span class="informalequation" id="shafer-20121106-125753-102282"><math xml:id="fwk-shafer-ch04-m0121" display="block"><mrow><mi mathvariant="italic">μ</mi><mo>=</mo><mi>n</mi><mi>p</mi><mtext> </mtext><msup><mrow><mi mathvariant="italic">σ</mi></mrow><mrow><mn>2</mn></mrow></msup><mo>=</mo><mi>n</mi><mi>p</mi><mi>q</mi><mtext> </mtext><mi mathvariant="italic">σ</mi><mo>=</mo><msqrt><mrow><mi>n</mi><mi>p</mi><mi>q</mi></mrow></msqrt></mrow></math></span>
             <p class="para" id="fwk-shafer-ch04_s03_s02_p03">where <span class="inlineequation" id="shafer-20121106-125753-102298"><math xml:id="fwk-shafer-ch04-m0122" display="inline"><mi>q</mi><mo>=</mo><mn>1</mn><mo>−</mo><mi>p</mi></math></span></p>
         </div>
         <div class="exercises block" id="fwk-shafer-ch04_s03_s02_n02">
-            <h3 class="title">Example 8</h3>
-            <p class="para" id="fwk-shafer-ch04_s03_s02_p04">Find the mean and standard deviation of the random variable <em class="emphasis">X</em> of <a class="xref" href="#fwk-shafer-ch04_s03_s01_n02" xrefstyle="select: title">Note 4.29 "Example 7"</a>.</p>
-            <p class="simpara">Solution:</p>
+            <h3 class="title">Contoh 8</h3>
+            <p class="para" id="fwk-shafer-ch04_s03_s02_p04">Find the mean and standard deviation of the random variable <em class="emphasis">X</em> of <a class="xref" href="#fwk-shafer-ch04_s03_s01_n02" xrefstyle="select: title">Note 4.29 "Contoh 7"</a>.</p>
+            <p class="simpara">Solusi:</p>
             <p class="para" id="fwk-shafer-ch04_s03_s02_p05">The random variable <em class="emphasis">X</em> is binomial with parameters <em class="emphasis">n</em> = 5 and <em class="emphasis">p</em> = 0.17, and <span class="inlineequation" id="shafer-20121106-125753-102320"><math xml:id="fwk-shafer-ch04-m0123" display="inline"><mi>q</mi><mo>=</mo><mn>1</mn><mo>−</mo><mi>p</mi><mo>=</mo><mn>0.83</mn><mo>.</mo></math></span> Thus its mean and standard deviation are</p>
             <span class="informalequation" id="shafer-20121106-125753-102336"><math xml:id="fwk-shafer-ch04-m0124" display="block"><mrow><mi mathvariant="italic">μ</mi><mo>=</mo><mi>n</mi><mi>p</mi><mo>=</mo><mn>5</mn><mo>·</mo><mn>0.17</mn><mo>=</mo><mn>0.85</mn><mtext> </mtext><mstyle><mtext mathvariant="normal"> (exactly)</mtext></mstyle></mrow></math></span>
             <p class="para" id="fwk-shafer-ch04_s03_s02_p06">and</p>
@@ -140,13 +140,13 @@
             <span class="informalequation" id="shafer-20121106-125753-102503"><math xml:id="fwk-shafer-ch04-m0134" display="block"><mrow><mi>P</mi><mrow><mo>(</mo><mrow><mi>X</mi><mo>≥</mo><mi>x</mi></mrow><mo>)</mo></mrow><mo>=</mo><mn>1</mn><mo>−</mo><mi>P</mi><mrow><mo>(</mo><mrow><mi>X</mi><mo>≤</mo><mi>x</mi><mtext>−</mtext><mn>1</mn></mrow><mo>)</mo></mrow><mtext> </mtext><mstyle><mtext mathvariant="normal"> and</mtext></mstyle><mtext> </mtext><mi>P</mi><mrow><mo>(</mo><mrow><mi>x</mi></mrow><mo>)</mo></mrow><mo>=</mo><mi>P</mi><mrow><mo>(</mo><mrow><mi>X</mi><mo>≤</mo><mi>x</mi></mrow><mo>)</mo></mrow><mo>−</mo><mi>P</mi><mrow><mo>(</mo><mrow><mi>X</mi><mo>≤</mo><mi>x</mi><mtext>−</mtext><mn>1</mn></mrow><mo>)</mo></mrow></mrow></math></span>
         </div>
         <div class="exercises block" id="fwk-shafer-ch04_s03_s03_n02">
-            <h3 class="title">Example 9</h3>
+            <h3 class="title">Contoh 9</h3>
             <p class="para" id="fwk-shafer-ch04_s03_s03_p04">A student takes a ten-question true/false exam.</p>
             <ol class="orderedlist" id="fwk-shafer-ch04_s03_s03_o01" numeration="loweralpha">
                 <li>Find the probability that the student gets exactly six of the questions right simply by guessing the answer on every question.</li>
                 <li>Find the probability that the student will obtain a passing grade of 60% or greater simply by guessing.</li>
             </ol>
-            <p class="simpara">Solution:</p>
+            <p class="simpara">Solusi:</p>
             <p class="para" id="fwk-shafer-ch04_s03_s03_p05">Let <em class="emphasis">X</em> denote the number of questions that the student guesses correctly. Then <em class="emphasis">X</em> is a binomial random variable with parameters <em class="emphasis">n</em> = 10 and <em class="emphasis">p</em> = 0.50.</p>
             <ol class="orderedlist" id="fwk-shafer-ch04_s03_s03_o02" numeration="loweralpha">
                 <li>
@@ -165,13 +165,13 @@
             </ol>
         </div>
         <div class="exercises block" id="fwk-shafer-ch04_s03_s03_n03">
-            <h3 class="title">Example 10</h3>
+            <h3 class="title">Contoh 10</h3>
             <p class="para" id="fwk-shafer-ch04_s03_s03_p09">An appliance repairman services five washing machines on site each day. One-third of the service calls require installation of a particular part.</p>
             <ol class="orderedlist" id="fwk-shafer-ch04_s03_s03_o03" numeration="loweralpha">
                 <li>The repairman has only one such part on his truck today. Find the probability that the one part will be enough today, that is, that at most one washing machine he services will require installation of this particular part.</li>
                 <li>Find the minimum number of such parts he should take with him each day in order that the probability that he have enough for the day's service calls is at least 95%.</li>
             </ol>
-            <p class="simpara">Solution:</p>
+            <p class="simpara">Solusi:</p>
             <p class="para" id="fwk-shafer-ch04_s03_s03_p10">Let <em class="emphasis">X</em> denote the number of service calls today on which the part is required. Then <em class="emphasis">X</em> is a binomial random variable with parameters <em class="emphasis">n</em> = 5 and <span class="inlineequation" id="shafer-20121106-125753-102637"><math xml:id="fwk-shafer-ch04-m0142" display="inline"><mi>p</mi><mo>=</mo><mn>1</mn><mo>∕</mo><mn>3</mn><mo>=</mo><mn>0</mn><mo>.</mo><mrow><mover accent="true"><mn>3</mn><mo stretchy="true">-</mo></mover></mrow><mo>.</mo></math></span></p>
             <ol class="orderedlist" id="fwk-shafer-ch04_s03_s03_o04" numeration="loweralpha">
                 <li>
@@ -182,7 +182,7 @@
             </ol>
         </div>
         <div class="key_takeaways editable block" id="fwk-shafer-ch04_s03_s03_n04">
-            <h3 class="title">Key Takeaways</h3>
+            <h3 class="title">Poin Utamas</h3>
             <ul class="itemizedlist" id="fwk-shafer-ch04_s03_s03_o05" mark="bullet">
                 <li>The discrete random variable <em class="emphasis">X</em> that counts the number of successes in <em class="emphasis">n</em> identical, independent trials of a procedure that always results in either of two outcomes, “success” or “failure,” and in which the probability of success on each trial is the same number <em class="emphasis">p</em>, is called the binomial random variable with parameters <em class="emphasis">n</em> and <em class="emphasis">p</em>.</li>
                 <li>There is a formula for the probability that the binomial random variable with parameters <em class="emphasis">n</em> and <em class="emphasis">p</em> will take a particular value <em class="emphasis">x</em>.</li>
@@ -191,7 +191,7 @@
             </ul>
         </div>
         <div class="qandaset block" id="fwk-shafer-ch04_s03_qs01" defaultlabel="number">
-            <h3 class="title">Exercises</h3>
+            <h3 class="title">Latihans</h3>
             <ol class="qandadiv" id="fwk-shafer-ch04_s03_qs01_qd01">
                 <h3 class="title">Basic</h3>
                 <li class="qandaentry" id="fwk-shafer-ch04_s03_qs01_qd01_qa01">
@@ -491,7 +491,7 @@ the ten skeins will contain a knot; (ii) at most one will.</li>
                 </li>
             </ol>
             <ol class="qandadiv" id="fwk-shafer-ch04_s03_qs01_qd03" start="28">
-                <h3 class="title">Additional Exercises</h3>
+                <h3 class="title">Additional Latihans</h3>
                 <li class="qandaentry" id="fwk-shafer-ch04_s03_qs01_qd03_qa28">
                     <div class="question">
                         <p class="para" id="fwk-shafer-ch04_s03_qs01_p37">When dropped on a hard surface a thumbtack lands with its sharp point touching the surface with probability 2/3; it lands with its sharp point directed up into the air with probability 1/3. The tack is dropped and its landing position observed 15 times.</p>
@@ -764,15 +764,15 @@ the ten skeins will contain a knot; (ii) at most one will.</li>
   <div id=navbar-bottom class="navbar">
     <div class="navbar-part left">
       
-        <a href="s08-02-probability-distributions-for-.html"><img src="shared/images/batch-left.png"></a> <a href="s08-02-probability-distributions-for-.html">Previous Section</a>
+        <a href="s08-02-probability-distributions-for-.html"><img src="shared/images/batch-left.png"></a> <a href="s08-02-probability-distributions-for-.html">Bagian Sebelumnya</a>
       
     </div>
     <div class="navbar-part middle">
-      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Daftar Isi</a>
     </div>
     <div class="navbar-part right">
       
-        <a href="s09-01-continuous-random-variables.html">Next Section</a> <a href="s09-01-continuous-random-variables.html"><img src="shared/images/batch-right.png"></a>
+        <a href="s09-01-continuous-random-variables.html">Bagian Selanjutnya</a> <a href="s09-01-continuous-random-variables.html"><img src="shared/images/batch-right.png"></a>
       
     </div>
   </div>

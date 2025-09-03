@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <link href="shared/bookhub.css" rel="stylesheet" type="text/css">
-  <title>Basic Concepts of Probability</title>
+  <title>Konsep Dasar Probabilitas</title>
 </head>
 <body>
 
@@ -11,15 +11,15 @@
   <div id=navbar-top class="navbar">
     <div class="navbar-part left">
       
-        <a href="s06-descriptive-statistics.html"><img src="shared/images/batch-left.png"></a> <a href="s06-descriptive-statistics.html">Previous Chapter</a>
+        <a href="s06-descriptive-statistics.html"><img src="shared/images/batch-left.png"></a> <a href="s06-descriptive-statistics.html">Bab Sebelumnya</a>
       
     </div>
     <div class="navbar-part middle">
-      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Daftar Isi</a>
     </div>
     <div class="navbar-part right">
       
-        <a href="s08-discrete-random-variables.html">Next Chapter</a> <a href="s08-discrete-random-variables.html"><img src="shared/images/batch-right.png"></a>
+        <a href="s08-discrete-random-variables.html">Bab Selanjutnya</a> <a href="s08-discrete-random-variables.html"><img src="shared/images/batch-right.png"></a>
       
     </div>
   </div>
@@ -34,7 +34,7 @@
     <h2 class="title editable block">
 <span class="title-prefix">3.1</span> Sample Spaces, Events, and Their Probabilities</h2>
     <div class="learning_objectives editable block" id="fwk-shafer-ch03_s01_n01">
-        <h3 class="title">Learning Objectives</h3>
+        <h3 class="title">Tujuan Pembelajarans</h3>
         <ol class="orderedlist" id="fwk-shafer-ch03_s01_o01" numeration="arabic">
             <li>To learn the concept of the sample space associated with a random experiment.</li>
             <li>To learn the concept of an event associated with a random experiment.</li>
@@ -45,40 +45,40 @@
         <h2 class="title editable block">Sample Spaces and Events</h2>
         <p class="para editable block" id="fwk-shafer-ch03_s01_s01_p01">Rolling an ordinary six-sided die is a familiar example of a <em class="emphasis">random experiment</em>, an action for which all possible outcomes can be listed, but for which the actual outcome on any given trial of the experiment cannot be predicted with certainty. In such a situation we wish to assign to each outcome, such as rolling a two, a number, called the <em class="emphasis">probability</em> of the outcome, that indicates how likely it is that the outcome will occur. Similarly, we would like to assign a probability to any <em class="emphasis">event</em>, or collection of outcomes, such as rolling an even number, which indicates how likely it is that the event will occur if the experiment is performed. This section provides a framework for discussing probability problems, using the terms just mentioned.</p>
         <div class="callout editable block" id="fwk-shafer-ch03_s01_s01_n01">
-            <h3 class="title">Definition</h3>
+            <h3 class="title">Definisi</h3>
             <p class="para" id="fwk-shafer-ch03_s01_s01_p02"><em class="emphasis">A</em> <strong class="emphasis bold">random experiment</strong> <em class="emphasis">is a mechanism that produces a definite outcome that cannot be predicted with certainty. The</em> <span class="margin_term"><a class="glossterm">sample space</a><span class="glossdef">The set of all possible outcomes of a random experiment.</span></span> <em class="emphasis">associated with a random experiment is the set of all possible outcomes. An</em> <span class="margin_term"><a class="glossterm">event</a><span class="glossdef">Any set of outcomes.</span></span> <em class="emphasis">is a subset of the sample space.</em></p>
         </div>
         <div class="callout editable block" id="fwk-shafer-ch03_s01_s01_n02">
-            <h3 class="title">Definition</h3>
+            <h3 class="title">Definisi</h3>
             <p class="para" id="fwk-shafer-ch03_s01_s01_p03"><em class="emphasis">An event</em> <em class="emphasis">E</em> <em class="emphasis">is said to</em> <strong class="emphasis bold">occur</strong> <em class="emphasis">on a particular trial of the experiment if the outcome observed is an element of the set</em> <em class="emphasis">E</em>.</p>
         </div>
         <div class="exercises block" id="fwk-shafer-ch03_s01_s01_n03">
-            <h3 class="title">Example 1</h3>
+            <h3 class="title">Contoh 1</h3>
             <p class="para" id="fwk-shafer-ch03_s01_s01_p04">Construct a sample space for the experiment that consists of tossing a single coin.</p>
-            <p class="simpara">Solution:</p>
+            <p class="simpara">Solusi:</p>
             <p class="para" id="fwk-shafer-ch03_s01_s01_p05">The outcomes could be labeled <em class="emphasis">h</em> for heads and <em class="emphasis">t</em> for tails. Then the sample space is the set <span class="inlineequation" id="shafer-20121106-125753-092141"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch03-m0001" display="inline"><mi>S</mi><mo>=</mo><mrow><mo>{</mo><mrow><mi>h</mi><mo>,</mo><mi>t</mi></mrow><mo>}</mo></mrow><mo>.</mo></math></span></p>
         </div>
         <div class="exercises block" id="fwk-shafer-ch03_s01_s01_n04">
-            <h3 class="title">Example 2</h3>
+            <h3 class="title">Contoh 2</h3>
             <p class="para" id="fwk-shafer-ch03_s01_s01_p06">Construct a sample space for the experiment that consists of rolling a single die. Find the events that correspond to the phrases “an even number is rolled” and “a number greater than two is rolled.”</p>
-            <p class="simpara">Solution:</p>
+            <p class="simpara">Solusi:</p>
             <p class="para" id="fwk-shafer-ch03_s01_s01_p07">The outcomes could be labeled according to the number of dots on the top face of the die. Then the sample space is the set <span class="inlineequation" id="shafer-20121106-125753-092158"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch03-m0002" display="inline"><mi>S</mi><mo>=</mo><mrow><mo>{</mo><mrow><mn>1,2,3,4,5,6</mn></mrow><mo>}</mo></mrow><mo>.</mo></math></span></p>
             <p class="para" id="fwk-shafer-ch03_s01_s01_p08">The outcomes that are even are 2, 4, and 6, so the event that corresponds to the phrase “an even number is rolled” is the set {2,4,6}, which it is natural to denote by the letter <em class="emphasis">E</em>. We write <span class="inlineequation" id="shafer-20121106-125753-092174"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch03-m0003" display="inline"><mi>E</mi><mo>=</mo><mrow><mo>{</mo><mrow><mn>2,4,6</mn></mrow><mo>}</mo></mrow><mo>.</mo></math></span></p>
             <p class="para" id="fwk-shafer-ch03_s01_s01_p09">Similarly the event that corresponds to the phrase “a number greater than two is rolled” is the set <span class="inlineequation" id="shafer-20121106-125753-092196"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch03-m0004" display="inline"><mi>T</mi><mo>=</mo><mrow><mo>{</mo><mrow><mn>3,4,5,6</mn></mrow><mo>}</mo></mrow></math></span>, which we have denoted <em class="emphasis">T</em>.</p>
         </div>
-        <p class="para editable block" id="fwk-shafer-ch03_s01_s01_p10">A graphical representation of a sample space and events is a <strong class="emphasis bold">Venn diagram</strong>, as shown in <a class="xref" href="#fwk-shafer-ch03_s01_s01_f01">Figure 3.1 "Venn Diagrams for Two Sample Spaces"</a> for <a class="xref" href="#fwk-shafer-ch03_s01_s01_n03" xrefstyle="select: title">Note 3.6 "Example 1"</a> and <a class="xref" href="#fwk-shafer-ch03_s01_s01_n04" xrefstyle="select: title">Note 3.7 "Example 2"</a>. In general the sample space <em class="emphasis">S</em> is represented by a rectangle, outcomes by points within the rectangle, and events by ovals that enclose the outcomes that compose them.</p>
+        <p class="para editable block" id="fwk-shafer-ch03_s01_s01_p10">A graphical representation of a sample space and events is a <strong class="emphasis bold">Venn diagram</strong>, as shown in <a class="xref" href="#fwk-shafer-ch03_s01_s01_f01">Figure 3.1 "Venn Diagrams for Two Sample Spaces"</a> for <a class="xref" href="#fwk-shafer-ch03_s01_s01_n03" xrefstyle="select: title">Note 3.6 "Contoh 1"</a> and <a class="xref" href="#fwk-shafer-ch03_s01_s01_n04" xrefstyle="select: title">Note 3.7 "Contoh 2"</a>. In general the sample space <em class="emphasis">S</em> is represented by a rectangle, outcomes by points within the rectangle, and events by ovals that enclose the outcomes that compose them.</p>
         <div class="figure large editable block" id="fwk-shafer-ch03_s01_s01_f01">
             <p class="title"><span class="title-prefix">Figure 3.1</span> Venn Diagrams for Two Sample Spaces</p>
             <img src="section_07/97b468eaa2da56c52e300c556c23a24f.jpg">
         </div>
         <div class="exercises block" id="fwk-shafer-ch03_s01_s01_n05">
-            <h3 class="title">Example 3</h3>
+            <h3 class="title">Contoh 3</h3>
             <p class="para" id="fwk-shafer-ch03_s01_s01_p11">A random experiment consists of tossing two coins.</p>
             <ol class="orderedlist" id="fwk-shafer-ch03_s01_s01_o01" numeration="loweralpha">
                 <li>Construct a sample space for the situation that the coins are indistinguishable, such as two brand new pennies.</li>
                 <li>Construct a sample space for the situation that the coins are distinguishable, such as one a penny and the other a nickel.</li>
             </ol>
-            <p class="simpara">Solution:</p>
+            <p class="simpara">Solusi:</p>
             <ol class="orderedlist" id="fwk-shafer-ch03_s01_s01_o02" numeration="loweralpha">
                 <li>After the coins are tossed one sees either two heads, which could be labeled <span class="inlineequation" id="shafer-20121106-125753-092212"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch03-m0005" display="inline"><mn>2</mn><mi>h</mi></math></span>, two tails, which could be labeled <span class="inlineequation" id="shafer-20121106-125753-092228"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch03-m0006" display="inline"><mn>2</mn><mi>t</mi></math></span>, or coins that differ, which could be labeled <em class="emphasis">d</em>. Thus a sample space is <span class="inlineequation" id="shafer-20121106-125753-092244"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch03-m0007" display="inline"><mi>S</mi><mo>=</mo><mrow><mo>{</mo><mrow><mn>2</mn><mi>h</mi><mo>,</mo><mn>2</mn><mi>t</mi><mo>,</mo><mi>d</mi></mrow><mo>}</mo></mrow><mo>.</mo></math></span>
 </li>
@@ -88,9 +88,9 @@
         </div>
         <p class="para editable block" id="fwk-shafer-ch03_s01_s01_p12">A device that can be helpful in identifying all possible outcomes of a random experiment, particularly one that can be viewed as proceeding in stages, is what is called a <strong class="emphasis bold">tree diagram</strong>. It is described in the following example.</p>
         <div class="exercises block" id="fwk-shafer-ch03_s01_s01_n06">
-            <h3 class="title">Example 4</h3>
+            <h3 class="title">Contoh 4</h3>
             <p class="para" id="fwk-shafer-ch03_s01_s01_p13">Construct a sample space that describes all three-child families according to the genders of the children with respect to birth order.</p>
-            <p class="simpara">Solution:</p>
+            <p class="simpara">Solusi:</p>
             <p class="para" id="fwk-shafer-ch03_s01_s01_p14">Two of the outcomes are “two boys then a girl,” which we might denote <span class="inlineequation" id="shafer-20121106-125753-092275"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch03-m0009" display="inline"><mi>b</mi><mi>b</mi><mi>g</mi></math></span>, and “a girl then two boys,” which we would denote <span class="inlineequation" id="shafer-20121106-125753-092291"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch03-m0010" display="inline"><mi>g</mi><mi>b</mi><mi>b</mi><mo>.</mo></math></span> Clearly there are many outcomes, and when we try to list all of them it could be difficult to be sure that we have found them all unless we proceed systematically. The tree diagram shown in <a class="xref" href="#fwk-shafer-ch03_s01_s01_f02">Figure 3.2 "Tree Diagram For Three-Child Families"</a>, gives a systematic approach.</p>
             <div class="figure medium small-height" id="fwk-shafer-ch03_s01_s01_f02">
                 <p class="title"><span class="title-prefix">Figure 3.2</span> Tree Diagram For Three-Child Families</p>
@@ -105,11 +105,11 @@
     <div class="section" id="fwk-shafer-ch03_s01_s02" version="5.0" lang="en">
         <h2 class="title editable block">Probability</h2>
         <div class="callout editable block" id="fwk-shafer-ch03_s01_s02_n01">
-            <h3 class="title">Definition</h3>
+            <h3 class="title">Definisi</h3>
             <p class="para" id="fwk-shafer-ch03_s01_s02_p01"><em class="emphasis">The</em> <span class="margin_term"><a class="glossterm">probability of an outcome</a><span class="glossdef">A number that measures the likelihood of the outcome.</span></span> <em class="emphasis">e</em> <em class="emphasis">in a sample space</em> <em class="emphasis">S</em> <em class="emphasis">is a number</em> <em class="emphasis">p</em> <em class="emphasis">between 0 and 1 that measures the likelihood that</em> <em class="emphasis">e</em> <em class="emphasis">will occur on a single trial of the corresponding random experiment. The value</em> <em class="emphasis">p</em> = 0 <em class="emphasis">corresponds to the outcome</em> <em class="emphasis">e</em> <em class="emphasis">being impossible and the value</em> <em class="emphasis">p</em> = 1 <em class="emphasis">corresponds to the outcome</em> <em class="emphasis">e</em> <em class="emphasis">being certain.</em></p>
         </div>
         <div class="callout block" id="fwk-shafer-ch03_s01_s02_n02">
-            <h3 class="title">Definition</h3>
+            <h3 class="title">Definisi</h3>
             <p class="para" id="fwk-shafer-ch03_s01_s02_p02"><em class="emphasis">The</em> <span class="margin_term"><a class="glossterm">probability of an event</a><span class="glossdef">A number that measures the likelihood of the event.</span></span> <em class="emphasis">A</em> <em class="emphasis">is the sum of the probabilities of the individual outcomes of which it is composed. It is denoted</em> <span class="inlineequation" id="shafer-20121106-125753-092329"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch03-m0012" display="inline"><mi>P</mi><mrow><mo>(</mo><mrow><mi>A</mi></mrow><mo>)</mo></mrow><mo>.</mo></math></span></p>
         </div>
         <p class="para editable block" id="fwk-shafer-ch03_s01_s02_p03">The following formula expresses the content of the definition of the probability of an event:</p>
@@ -125,24 +125,24 @@
         <p class="para editable block" id="fwk-shafer-ch03_s01_s02_p06">Since the whole sample space <em class="emphasis">S</em> is an event that is certain to occur, the sum of the probabilities of all the outcomes must be the number 1.</p>
         <p class="para editable block" id="fwk-shafer-ch03_s01_s02_p07">In ordinary language probabilities are frequently expressed as percentages. For example, we would say that there is a 70% chance of rain tomorrow, meaning that the probability of rain is 0.70. We will use this practice here, but in all the computational formulas that follow we will use the form 0.70 and not 70%.</p>
         <div class="exercises block" id="fwk-shafer-ch03_s01_s02_n04">
-            <h3 class="title">Example 5</h3>
+            <h3 class="title">Contoh 5</h3>
             <p class="para" id="fwk-shafer-ch03_s01_s02_p08">A coin is called “balanced” or “fair” if each side is equally likely to land up. Assign a probability to each outcome in the sample space for the experiment that consists of tossing a single fair coin.</p>
-            <p class="simpara">Solution:</p>
+            <p class="simpara">Solusi:</p>
             <p class="para" id="fwk-shafer-ch03_s01_s02_p09">With the outcomes labeled <em class="emphasis">h</em> for heads and <em class="emphasis">t</em> for tails, the sample space is the set <span class="inlineequation" id="shafer-20121106-125753-092377"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch03-m0015" display="inline"><mi>S</mi><mo>=</mo><mrow><mo>{</mo><mrow><mi>h</mi><mo>,</mo><mi>t</mi></mrow><mo>}</mo></mrow><mo>.</mo></math></span> Since the outcomes have the same probabilities, which must add up to 1, each outcome is assigned probability 1/2.</p>
         </div>
         <div class="exercises block" id="fwk-shafer-ch03_s01_s02_n05">
-            <h3 class="title">Example 6</h3>
+            <h3 class="title">Contoh 6</h3>
             <p class="para" id="fwk-shafer-ch03_s01_s02_p10">A die is called “balanced” or “fair” if each side is equally likely to land on top. Assign a probability to each outcome in the sample space for the experiment that consists of tossing a single fair die. Find the probabilities of the events <em class="emphasis">E</em>: “an even number is rolled” and <em class="emphasis">T</em>: “a number greater than two is rolled.”</p>
-            <p class="simpara">Solution:</p>
+            <p class="simpara">Solusi:</p>
             <p class="para" id="fwk-shafer-ch03_s01_s02_p11">With outcomes labeled according to the number of dots on the top face of the die, the sample space is the set <span class="inlineequation" id="shafer-20121106-125753-092393"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch03-m0016" display="inline"><mi>S</mi><mo>=</mo><mrow><mo>{</mo><mrow><mn>1,2,3,4,5,6</mn></mrow><mo>}</mo></mrow><mo>.</mo></math></span> Since there are six equally likely outcomes, which must add up to 1, each is assigned probability 1/6.</p>
             <p class="para" id="fwk-shafer-ch03_s01_s02_p12">Since <span class="inlineequation" id="shafer-20121106-125753-092410"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch03-m0017" display="inline"><mi>E</mi><mo>=</mo><mrow><mo>{</mo><mrow><mn>2,4,6</mn></mrow><mo>}</mo></mrow></math></span>, <span class="inlineequation" id="shafer-20121106-125753-092425"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch03-m0018" display="inline"><mi>P</mi><mrow><mo>(</mo><mrow><mi>E</mi></mrow><mo>)</mo></mrow><mo>=</mo><mn>1</mn><mo>∕</mo><mn>6</mn><mo>+</mo><mn>1</mn><mo>∕</mo><mn>6</mn><mo>+</mo><mn>1</mn><mo>∕</mo><mn>6</mn><mo>=</mo><mn>3</mn><mo>∕</mo><mn>6</mn><mo>=</mo><mn>1</mn><mo>∕</mo><mn>2</mn><mo>.</mo></math></span></p>
             <p class="para" id="fwk-shafer-ch03_s01_s02_p13">Since <span class="inlineequation" id="shafer-20121106-125753-092441"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch03-m0019" display="inline"><mi>T</mi><mo>=</mo><mrow><mo>{</mo><mrow><mn>3,4,5,6</mn></mrow><mo>}</mo></mrow></math></span>, <span class="inlineequation" id="shafer-20121106-125753-092457"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch03-m0020" display="inline"><mi>P</mi><mrow><mo>(</mo><mrow><mi>T</mi></mrow><mo>)</mo></mrow><mo>=</mo><mn>4</mn><mo>∕</mo><mn>6</mn><mo>=</mo><mn>2</mn><mo>∕</mo><mn>3</mn><mo>.</mo></math></span></p>
         </div>
         <div class="exercises block" id="fwk-shafer-ch03_s01_s02_n06">
-            <h3 class="title">Example 7</h3>
+            <h3 class="title">Contoh 7</h3>
             <p class="para" id="fwk-shafer-ch03_s01_s02_p14">Two fair coins are tossed. Find the probability that the coins match, i.e., either both land heads or both land tails.</p>
-            <p class="simpara">Solution:</p>
-            <p class="para" id="fwk-shafer-ch03_s01_s02_p15">In <a class="xref" href="#fwk-shafer-ch03_s01_s01_n05" xrefstyle="select: title">Note 3.8 "Example 3"</a> we constructed the sample space <span class="inlineequation" id="shafer-20121106-125753-092479"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch03-m0021" display="inline"><mi>S</mi><mo>=</mo><mrow><mo>{</mo><mrow><mn>2</mn><mi>h</mi><mo>,</mo><mn>2</mn><mi>t</mi><mo>,</mo><mi>d</mi></mrow><mo>}</mo></mrow></math></span> for the situation in which the coins are identical and the sample space <span class="inlineequation" id="shafer-20121106-125753-092495"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch03-m0022" display="inline"><mrow><mi>S</mi></mrow><mrow><mi>′</mi></mrow><mo>=</mo><mrow><mo>{</mo><mrow><mi>h</mi><mi>h</mi><mo>,</mo><mi>h</mi><mi>t</mi><mo>,</mo><mi>t</mi><mi>h</mi><mo>,</mo><mi>t</mi><mi>t</mi></mrow><mo>}</mo></mrow></math></span> for the situation in which the two coins can be told apart.</p>
+            <p class="simpara">Solusi:</p>
+            <p class="para" id="fwk-shafer-ch03_s01_s02_p15">In <a class="xref" href="#fwk-shafer-ch03_s01_s01_n05" xrefstyle="select: title">Note 3.8 "Contoh 3"</a> we constructed the sample space <span class="inlineequation" id="shafer-20121106-125753-092479"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch03-m0021" display="inline"><mi>S</mi><mo>=</mo><mrow><mo>{</mo><mrow><mn>2</mn><mi>h</mi><mo>,</mo><mn>2</mn><mi>t</mi><mo>,</mo><mi>d</mi></mrow><mo>}</mo></mrow></math></span> for the situation in which the coins are identical and the sample space <span class="inlineequation" id="shafer-20121106-125753-092495"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch03-m0022" display="inline"><mrow><mi>S</mi></mrow><mrow><mi>′</mi></mrow><mo>=</mo><mrow><mo>{</mo><mrow><mi>h</mi><mi>h</mi><mo>,</mo><mi>h</mi><mi>t</mi><mo>,</mo><mi>t</mi><mi>h</mi><mo>,</mo><mi>t</mi><mi>t</mi></mrow><mo>}</mo></mrow></math></span> for the situation in which the two coins can be told apart.</p>
             <p class="para" id="fwk-shafer-ch03_s01_s02_p16">The theory of probability does not tell us <em class="emphasis">how</em> to assign probabilities to the outcomes, only what to do with them once they are assigned. Specifically, using sample space <em class="emphasis">S</em>, matching coins is the event <span class="inlineequation" id="shafer-20121106-125753-092512"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch03-m0023" display="inline"><mi>M</mi><mo>=</mo><mrow><mo>{</mo><mrow><mn>2</mn><mi>h</mi><mo>,</mo><mn>2</mn><mi>t</mi></mrow><mo>}</mo></mrow></math></span>, which has probability <span class="inlineequation" id="shafer-20121106-125753-092528"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch03-m0024" display="inline"><mi>P</mi><mrow><mo>(</mo><mrow><mn>2</mn><mi>h</mi></mrow><mo>)</mo></mrow><mo>+</mo><mi>P</mi><mrow><mo>(</mo><mrow><mn>2</mn><mi>t</mi></mrow><mo>)</mo></mrow><mo>.</mo></math></span> Using sample space <span class="inlineequation" id="shafer-20121106-125753-092544"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch03-m0025" display="inline"><mrow><mi>S</mi><mi>′</mi></mrow></math></span>, matching coins is the event <span class="inlineequation" id="shafer-20121106-125753-092560"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch03-m0026" display="inline"><mi>M</mi><mi>′</mi><mo>=</mo><mrow><mo>{</mo><mrow><mi>h</mi><mi>h</mi><mo>,</mo><mi>t</mi><mi>t</mi></mrow><mo>}</mo></mrow></math></span>, which has probability <span class="inlineequation" id="shafer-20121106-125753-092575"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch03-m0027" display="inline"><mi>P</mi><mrow><mo>(</mo><mrow><mi>h</mi><mi>h</mi></mrow><mo>)</mo></mrow><mo>+</mo><mi>P</mi><mrow><mo>(</mo><mrow><mi>t</mi><mi>t</mi></mrow><mo>)</mo></mrow><mo>.</mo></math></span> In the physical world it should make no difference whether the coins are identical or not, and so we would like to assign probabilities to the outcomes so that the numbers <span class="inlineequation" id="shafer-20121106-125753-092597"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch03-m0028" display="inline"><mi>P</mi><mrow><mo>(</mo><mrow><mi>M</mi></mrow><mo>)</mo></mrow></math></span> and <span class="inlineequation" id="shafer-20121106-125753-092614"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch03-m0029" display="inline"><mi>P</mi><mrow><mo>(</mo><mrow><mrow><mi>M</mi><mi>′</mi></mrow></mrow><mo>)</mo></mrow></math></span> are the same and best match what we observe when actual physical experiments are performed with coins that seem to be fair. Actual experience suggests that the outcomes in <span class="inlineequation" id="shafer-20121106-125753-092634"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch03-m0030" display="inline"><mrow><mi>S</mi><mi>′</mi></mrow></math></span> are equally likely, so we assign to each probability 1∕4, and then</p>
             <span class="informalequation" id="shafer-20121106-125753-092650"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch03-m0031" display="block"><mrow><mi>P</mi><mrow><mo>(</mo><mrow><mrow><mi>M</mi><mi>′</mi></mrow></mrow><mo>)</mo></mrow><mo>=</mo><mi>P</mi><mrow><mo>(</mo><mrow><mi>h</mi><mi>h</mi></mrow><mo>)</mo></mrow><mo>+</mo><mi>P</mi><mrow><mo>(</mo><mrow><mi>t</mi><mi>t</mi></mrow><mo>)</mo></mrow><mo>=</mo><mfrac><mrow><mn>1</mn></mrow><mrow><mn>4</mn></mrow></mfrac><mo>+</mo><mfrac><mrow><mn>1</mn></mrow><mrow><mn>4</mn></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>1</mn></mrow><mrow><mn>2</mn></mrow></mfrac></mrow></math></span>
             <p class="para" id="fwk-shafer-ch03_s01_s02_p17">Similarly, from experience appropriate choices for the outcomes in <em class="emphasis">S</em> are:</p>
@@ -152,7 +152,7 @@
         </div>
         <p class="para editable block" id="fwk-shafer-ch03_s01_s02_p19">The previous three examples illustrate how probabilities can be computed simply by counting when the sample space consists of a finite number of equally likely outcomes. In some situations the individual outcomes of any sample space that represents the experiment are unavoidably unequally likely, in which case probabilities cannot be computed merely by counting, but the computational formula given in the definition of the probability of an event must be used.</p>
         <div class="exercises block" id="fwk-shafer-ch03_s01_s02_n07">
-            <h3 class="title">Example 8</h3>
+            <h3 class="title">Contoh 8</h3>
             <p class="para" id="fwk-shafer-ch03_s01_s02_p20">The breakdown of the student body in a local high school according to race and ethnicity is 51% white, 27% black, 11% Hispanic, 6% Asian, and 5% for all others. A student is randomly selected from this high school. (To select “randomly” means that every student has the same chance of being selected.) Find the probabilities of the following events:</p>
             <ol class="orderedlist" id="fwk-shafer-ch03_s01_s02_o01" numeration="loweralpha">
                 <li>
@@ -162,7 +162,7 @@
                 <li>
 <em class="emphasis">N</em>: the student is not black.</li>
             </ol>
-            <p class="simpara">Solution:</p>
+            <p class="simpara">Solusi:</p>
             <p class="para" id="fwk-shafer-ch03_s01_s02_p21">The experiment is the action of randomly selecting a student from the student population of the high school. An obvious sample space is <span class="inlineequation" id="shafer-20121106-125753-092698"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch03-m0034" display="inline"><mi>S</mi><mo>=</mo><mrow><mo>{</mo><mrow><mi>w</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>h</mi><mo>,</mo><mi>a</mi><mo>,</mo><mi>o</mi></mrow><mo>}</mo></mrow><mo>.</mo></math></span> Since 51% of the students are white and all students have the same chance of being selected, <span class="inlineequation" id="shafer-20121106-125753-092714"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch03-m0035" display="inline"><mi>P</mi><mrow><mo>(</mo><mrow><mi>w</mi></mrow><mo>)</mo></mrow><mo>=</mo><mn>0.51</mn></math></span>, and similarly for the other outcomes. This information is summarized in the following table:</p>
             <span class="informalequation" id="shafer-20121106-125753-092730"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch03-m0036" display="block"><mrow><mtable columnspacing="0.5em" columnlines="solid none none none none" rowlines="solid"><mtr><mtd columnalign="left"><mrow><mtext>Outcome</mtext></mrow></mtd><mtd columnalign="center"><mi>w</mi></mtd><mtd columnalign="center"><mi>b</mi></mtd><mtd columnalign="center"><mi>h</mi></mtd><mtd columnalign="center"><mi>a</mi></mtd><mtd columnalign="center"><mi>o</mi></mtd></mtr><mtr><mtd columnalign="left"><mrow><mtext>Probability</mtext></mrow></mtd><mtd columnalign="center"><mrow><mn>0.51</mn></mrow></mtd><mtd columnalign="center"><mrow><mn>0.27</mn></mrow></mtd><mtd columnalign="center"><mrow><mn>0.11</mn></mrow></mtd><mtd columnalign="center"><mrow><mn>0.06</mn></mrow></mtd><mtd columnalign="center"><mrow><mn>0.05</mn></mrow></mtd></mtr></mtable></mrow></math></span>
             <ol class="orderedlist" id="fwk-shafer-ch03_s01_s02_o02" numeration="loweralpha">
@@ -175,8 +175,8 @@
             </ol>
         </div>
         <div class="exercises block" id="fwk-shafer-ch03_s01_s02_n08">
-            <h3 class="title">Example 9</h3>
-            <p class="para" id="fwk-shafer-ch03_s01_s02_p22">The student body in the high school considered in <a class="xref" href="#fwk-shafer-ch03_s01_s02_n07" xrefstyle="select: title">Note 3.18 "Example 8"</a> may be broken down into ten categories as follows: 25% white male, 26% white female, 12% black male, 15% black female, 6% Hispanic male, 5% Hispanic female, 3% Asian male, 3% Asian female, 1% male of other minorities combined, and 4% female of other minorities combined. A student is randomly selected from this high school. Find the probabilities of the following events:</p>
+            <h3 class="title">Contoh 9</h3>
+            <p class="para" id="fwk-shafer-ch03_s01_s02_p22">The student body in the high school considered in <a class="xref" href="#fwk-shafer-ch03_s01_s02_n07" xrefstyle="select: title">Note 3.18 "Contoh 8"</a> may be broken down into ten categories as follows: 25% white male, 26% white female, 12% black male, 15% black female, 6% Hispanic male, 5% Hispanic female, 3% Asian male, 3% Asian female, 1% male of other minorities combined, and 4% female of other minorities combined. A student is randomly selected from this high school. Find the probabilities of the following events:</p>
             <ol class="orderedlist" id="fwk-shafer-ch03_s01_s02_o03" numeration="loweralpha">
                 <li>
 <em class="emphasis">B</em>: the student is black,</li>
@@ -185,7 +185,7 @@
                 <li>
 <span class="inlineequation" id="shafer-20121106-125753-092864"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch03-m0044" display="inline"><mi>F</mi><mi>N</mi></math></span>: the student is female and is not black.</li>
             </ol>
-            <p class="simpara">Solution:</p>
+            <p class="simpara">Solusi:</p>
             <p class="para" id="fwk-shafer-ch03_s01_s02_p23">Now the sample space is <span class="inlineequation" id="shafer-20121106-125753-092886"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-shafer-ch03-m0045" display="inline"><mi>S</mi><mo>=</mo><mrow><mo>{</mo><mrow><mi>w</mi><mi>m</mi><mo>,</mo><mi>b</mi><mi>m</mi><mo>,</mo><mi>h</mi><mi>m</mi><mo>,</mo><mi>a</mi><mi>m</mi><mo>,</mo><mi>o</mi><mi>m</mi><mo>,</mo><mi>w</mi><mi>f</mi><mo>,</mo><mi>b</mi><mi>f</mi><mo>,</mo><mi>h</mi><mi>f</mi><mo>,</mo><mi>a</mi><mi>f</mi><mo>,</mo><mi>o</mi><mi>f</mi></mrow><mo>}</mo></mrow><mo>.</mo></math></span> The information given in the example can be summarized in the following table, called a <em class="emphasis">two-way</em> <em class="emphasis">contingency table</em>:</p>
             <div class="informaltable">
                 <table cellpadding="0" cellspacing="0">
@@ -232,7 +232,7 @@
             </ol>
         </div>
         <div class="key_takeaways editable block" id="fwk-shafer-ch03_s01_s02_n09">
-            <h3 class="title">Key Takeaways</h3>
+            <h3 class="title">Poin Utamas</h3>
             <ul class="itemizedlist" id="fwk-shafer-ch03_s01_s02_l01" mark="bullet">
                 <li>The sample space of a random experiment is the collection of all possible outcomes.</li>
                 <li>An event associated with a random experiment is a subset of the sample space.</li>
@@ -241,7 +241,7 @@
             </ul>
         </div>
         <div class="qandaset block" id="fwk-shafer-ch03_s01_qs01" defaultlabel="number">
-            <h3 class="title">Exercises</h3>
+            <h3 class="title">Latihans</h3>
             <ol class="qandadiv" id="fwk-shafer-ch03_s01_qs01_qd01">
                 <h3 class="title">Basic</h3>
                 <li class="qandaentry" id="fwk-shafer-ch03_s01_qs01_qd01_qa01">
@@ -266,7 +266,7 @@
                 </li>
                 <li class="qandaentry" id="fwk-shafer-ch03_s01_qs01_qd01_qa05">
                     <div class="question">
-                        <p class="para" id="fwk-shafer-ch03_s01_qs01_p09">In the situation of Exercise 1, list the outcomes that comprise each of the following events.</p>
+                        <p class="para" id="fwk-shafer-ch03_s01_qs01_p09">In the situation of Latihan 1, list the outcomes that comprise each of the following events.</p>
                         <ol class="orderedlist" id="fwk-shafer-ch03_s01_qs01_o01" numeration="loweralpha">
                             <li>At least one marble of each color is drawn.</li>
                             <li>No white marble is drawn.</li>
@@ -275,7 +275,7 @@
                 </li>
                 <li class="qandaentry" id="fwk-shafer-ch03_s01_qs01_qd01_qa06">
                     <div class="question">
-                        <p class="para" id="fwk-shafer-ch03_s01_qs01_p10">In the situation of Exercise 2, list the outcomes that comprise each of the following events.</p>
+                        <p class="para" id="fwk-shafer-ch03_s01_qs01_p10">In the situation of Latihan 2, list the outcomes that comprise each of the following events.</p>
                         <ol class="orderedlist" id="fwk-shafer-ch03_s01_qs01_o03" numeration="loweralpha">
                             <li>At least one marble of each color is drawn.</li>
                             <li>No white marble is drawn.</li>
@@ -285,7 +285,7 @@
                 </li>
                 <li class="qandaentry" id="fwk-shafer-ch03_s01_qs01_qd01_qa07">
                     <div class="question">
-                        <p class="para" id="fwk-shafer-ch03_s01_qs01_p11">In the situation of Exercise 3, list the outcomes that comprise each of the following events.</p>
+                        <p class="para" id="fwk-shafer-ch03_s01_qs01_p11">In the situation of Latihan 3, list the outcomes that comprise each of the following events.</p>
                         <ol class="orderedlist" id="fwk-shafer-ch03_s01_qs01_o05" numeration="loweralpha">
                             <li>No yellow marble is drawn.</li>
                             <li>The two marbles drawn have the same color.</li>
@@ -295,7 +295,7 @@
                 </li>
                 <li class="qandaentry" id="fwk-shafer-ch03_s01_qs01_qd01_qa08">
                     <div class="question">
-                        <p class="para" id="fwk-shafer-ch03_s01_qs01_p12">In the situation of Exercise 4, list the outcomes that comprise each of the following events.</p>
+                        <p class="para" id="fwk-shafer-ch03_s01_qs01_p12">In the situation of Latihan 4, list the outcomes that comprise each of the following events.</p>
                         <ol class="orderedlist" id="fwk-shafer-ch03_s01_qs01_o07" numeration="loweralpha">
                             <li>No yellow marble is drawn.</li>
                             <li>The three marbles drawn have the same color.</li>
@@ -305,22 +305,22 @@
                 </li>
                 <li class="qandaentry" id="fwk-shafer-ch03_s01_qs01_qd01_qa09">
                     <div class="question">
-                        <p class="para" id="fwk-shafer-ch03_s01_qs01_p13">Assuming that each outcome is equally likely, find the probability of each event in Exercise 5.</p>
+                        <p class="para" id="fwk-shafer-ch03_s01_qs01_p13">Assuming that each outcome is equally likely, find the probability of each event in Latihan 5.</p>
                     </div>
                 </li>
                 <li class="qandaentry" id="fwk-shafer-ch03_s01_qs01_qd01_qa10">
                     <div class="question">
-                        <p class="para" id="fwk-shafer-ch03_s01_qs01_p14">Assuming that each outcome is equally likely, find the probability of each event in Exercise 6.</p>
+                        <p class="para" id="fwk-shafer-ch03_s01_qs01_p14">Assuming that each outcome is equally likely, find the probability of each event in Latihan 6.</p>
                     </div>
                 </li>
                 <li class="qandaentry" id="fwk-shafer-ch03_s01_qs01_qd01_qa11">
                     <div class="question">
-                        <p class="para" id="fwk-shafer-ch03_s01_qs01_p15">Assuming that each outcome is equally likely, find the probability of each event in Exercise 7.</p>
+                        <p class="para" id="fwk-shafer-ch03_s01_qs01_p15">Assuming that each outcome is equally likely, find the probability of each event in Latihan 7.</p>
                     </div>
                 </li>
                 <li class="qandaentry" id="fwk-shafer-ch03_s01_qs01_qd01_qa12">
                     <div class="question">
-                        <p class="para" id="fwk-shafer-ch03_s01_qs01_p16">Assuming that each outcome is equally likely, find the probability of each event in Exercise 8.</p>
+                        <p class="para" id="fwk-shafer-ch03_s01_qs01_p16">Assuming that each outcome is equally likely, find the probability of each event in Latihan 8.</p>
                     </div>
                 </li>
                 <li class="qandaentry" id="fwk-shafer-ch03_s01_qs01_qd01_qa13">
@@ -378,7 +378,7 @@
                 <h3 class="title">Applications</h3>
                 <li class="qandaentry" id="fwk-shafer-ch03_s01_qs01_qd02_qa17">
                     <div class="question">
-                        <p class="para" id="fwk-shafer-ch03_s01_qs01_p21">The sample space that describes all three-child families according to the genders of the children with respect to birth order was constructed in <a class="xref" href="#fwk-shafer-ch03_s01_s01_n06" xrefstyle="select: title">Note 3.9 "Example 4"</a>. Identify the outcomes that comprise each of the following events in the experiment of selecting a three-child family at random.</p>
+                        <p class="para" id="fwk-shafer-ch03_s01_qs01_p21">The sample space that describes all three-child families according to the genders of the children with respect to birth order was constructed in <a class="xref" href="#fwk-shafer-ch03_s01_s01_n06" xrefstyle="select: title">Note 3.9 "Contoh 4"</a>. Identify the outcomes that comprise each of the following events in the experiment of selecting a three-child family at random.</p>
                         <ol class="orderedlist" id="fwk-shafer-ch03_s01_qs01_o21" numeration="loweralpha">
                             <li>At least one child is a girl.</li>
                             <li>At most one child is a girl.</li>
@@ -390,7 +390,7 @@
                 </li>
                 <li class="qandaentry" id="fwk-shafer-ch03_s01_qs01_qd02_qa18">
                     <div class="question">
-                        <p class="para" id="fwk-shafer-ch03_s01_qs01_p22">The sample space that describes three tosses of a coin is the same as the one constructed in <a class="xref" href="#fwk-shafer-ch03_s01_s01_n06" xrefstyle="select: title">Note 3.9 "Example 4"</a> with “boy” replaced by “heads” and “girl” replaced by “tails.” Identify the outcomes that comprise each of the following events in the experiment of tossing a coin three times.</p>
+                        <p class="para" id="fwk-shafer-ch03_s01_qs01_p22">The sample space that describes three tosses of a coin is the same as the one constructed in <a class="xref" href="#fwk-shafer-ch03_s01_s01_n06" xrefstyle="select: title">Note 3.9 "Contoh 4"</a> with “boy” replaced by “heads” and “girl” replaced by “tails.” Identify the outcomes that comprise each of the following events in the experiment of tossing a coin three times.</p>
                         <ol class="orderedlist" id="fwk-shafer-ch03_s01_qs01_o23" numeration="loweralpha">
                             <li>The coin lands heads more often than tails.</li>
                             <li>The coin lands heads the same number of times as it lands tails.</li>
@@ -401,17 +401,17 @@
                 </li>
                 <li class="qandaentry" id="fwk-shafer-ch03_s01_qs01_qd02_qa19">
                     <div class="question">
-                        <p class="para" id="fwk-shafer-ch03_s01_qs01_p23">Assuming that the outcomes are equally likely, find the probability of each event in Exercise 17.</p>
+                        <p class="para" id="fwk-shafer-ch03_s01_qs01_p23">Assuming that the outcomes are equally likely, find the probability of each event in Latihan 17.</p>
                     </div>
                 </li>
                 <li class="qandaentry" id="fwk-shafer-ch03_s01_qs01_qd02_qa20">
                     <div class="question">
-                        <p class="para" id="fwk-shafer-ch03_s01_qs01_p24">Assuming that the outcomes are equally likely, find the probability of each event in Exercise 18.</p>
+                        <p class="para" id="fwk-shafer-ch03_s01_qs01_p24">Assuming that the outcomes are equally likely, find the probability of each event in Latihan 18.</p>
                     </div>
                 </li>
             </ol>
             <ol class="qandadiv" id="fwk-shafer-ch03_s01_qs01_qd03" start="21">
-                <h3 class="title">Additional Exercises</h3>
+                <h3 class="title">Additional Latihans</h3>
                 <li class="qandaentry" id="fwk-shafer-ch03_s01_qs01_qd03_qa21">
                     <div class="question">
                         <p class="para" id="fwk-shafer-ch03_s01_qs01_p25">The following two-way contingency table gives the breakdown of the population in a particular locale according to age and tobacco usage:</p>
@@ -599,7 +599,7 @@
                 </li>
             </ol>
             <ol class="qandadiv" id="fwk-shafer-ch03_s01_qs01_qd04" start="25">
-                <h3 class="title">Large Data Set Exercises</h3>
+                <h3 class="title">Large Data Set Latihans</h3>
                 <p class="para"><em>Note: These data sets are missing, but the questions are provided here for reference.</em></p>
                 <li class="qandaentry" id="fwk-shafer-ch03_s01_qs01_qd04_qa25">
                     <div class="question">
@@ -795,7 +795,7 @@
     <h2 class="title editable block">
 <span class="title-prefix">3.2</span> Complements, Intersections, and Unions</h2>
     <div class="learning_objectives editable block" id="fwk-shafer-ch03_s02_n01">
-        <h3 class="title">Learning Objectives</h3>
+        <h3 class="title">Tujuan Pembelajarans</h3>
         <ol class="orderedlist" id="fwk-shafer-ch03_s02_o01" numeration="arabic">
             <li>To learn how some events are naturally expressible in terms of other events.</li>
             <li>To learn how to use special formulas for the probability of an event that is expressed in terms of one or more other events.</li>
@@ -805,13 +805,13 @@
     <div class="section" id="fwk-shafer-ch03_s02_s01" version="5.0" lang="en">
         <h2 class="title editable block">Complements</h2>
         <div class="callout editable block" id="fwk-shafer-ch03_s02_s01_n01">
-            <h3 class="title">Definition</h3>
+            <h3 class="title">Definisi</h3>
             <p class="para" id="fwk-shafer-ch03_s02_s01_p01"><em class="emphasis">The</em> <span class="margin_term"><a class="glossterm">complement of an event</a><span class="glossdef">The event does not occur.</span></span> <em class="emphasis">A</em> <em class="emphasis">in a sample space</em> <em class="emphasis">S</em>, <em class="emphasis">denoted</em> <em class="emphasis">A</em><sup class="superscript">c</sup>, <em class="emphasis">is the collection of all outcomes in</em> <em class="emphasis">S</em> <em class="emphasis">that are not elements of the set</em> <em class="emphasis">A</em>. <em class="emphasis">It corresponds to negating any description in words of the event</em> <em class="emphasis">A</em>.</p>
         </div>
         <div class="exercises block" id="fwk-shafer-ch03_s02_s01_n02">
-            <h3 class="title">Example 10</h3>
+            <h3 class="title">Contoh 10</h3>
             <p class="para" id="fwk-shafer-ch03_s02_s01_p02">Two events connected with the experiment of rolling a single die are <em class="emphasis">E</em>: “the number rolled is even” and <em class="emphasis">T</em>: “the number rolled is greater than two.” Find the complement of each.</p>
-            <p class="simpara">Solution:</p>
+            <p class="simpara">Solusi:</p>
             <p class="para" id="fwk-shafer-ch03_s02_s01_p03">In the sample space <span class="inlineequation" id="shafer-20121106-125753-093988"><math xml:id="fwk-shafer-ch03-m0110" display="inline"><mi>S</mi><mo>=</mo><mrow><mo>{</mo><mrow><mn>1,2,3,4,5,6</mn></mrow><mo>}</mo></mrow></math></span> the corresponding sets of outcomes are <span class="inlineequation" id="shafer-20121106-125753-094004"><math xml:id="fwk-shafer-ch03-m0111" display="inline"><mi>E</mi><mo>=</mo><mrow><mo>{</mo><mrow><mn>2,4,6</mn></mrow><mo>}</mo></mrow></math></span> and <span class="inlineequation" id="shafer-20121106-125753-094021"><math xml:id="fwk-shafer-ch03-m0112" display="inline"><mi>T</mi><mo>=</mo><mrow><mo>{</mo><mrow><mn>3,4,5,6</mn></mrow><mo>}</mo></mrow><mo>.</mo></math></span> The complements are <span class="inlineequation" id="shafer-20121106-125753-094036"><math xml:id="fwk-shafer-ch03-m0113" display="inline"><msup><mrow><mi>E</mi></mrow><mrow><mi>c</mi></mrow></msup><mo>=</mo><mrow><mo>{</mo><mrow><mn>1,3,5</mn></mrow><mo>}</mo></mrow></math></span> and <span class="inlineequation" id="shafer-20121106-125753-094060"><math xml:id="fwk-shafer-ch03-m0114" display="inline"><msup><mrow><mi>T</mi></mrow><mrow><mi>c</mi></mrow></msup><mo>=</mo><mrow><mo>{</mo><mrow><mn>1,2</mn></mrow><mo>}</mo></mrow><mo>.</mo></math></span></p>
             <p class="para" id="fwk-shafer-ch03_s02_s01_p04">In words the complements are described by “the number rolled is not even” and “the number rolled is not greater than two.” Of course easier descriptions would be “the number rolled is odd” and “the number rolled is less than three.”</p>
         </div>
@@ -822,9 +822,9 @@
         </div>
         <p class="para editable block" id="fwk-shafer-ch03_s02_s01_p06">This formula is particularly useful when finding the probability of an event directly is difficult.</p>
         <div class="exercises block" id="fwk-shafer-ch03_s02_s01_n04">
-            <h3 class="title">Example 11</h3>
+            <h3 class="title">Contoh 11</h3>
             <p class="para" id="fwk-shafer-ch03_s02_s01_p07">Find the probability that at least one heads will appear in five tosses of a fair coin.</p>
-            <p class="simpara">Solution:</p>
+            <p class="simpara">Solusi:</p>
             <p class="para" id="fwk-shafer-ch03_s02_s01_p08">Identify outcomes by lists of five <em class="emphasis">h</em>s and <em class="emphasis">t</em>s, such as <span class="inlineequation" id="shafer-20121106-125753-094100"><math xml:id="fwk-shafer-ch03-m0116" display="inline"><mi>t</mi><mi>t</mi><mi>h</mi><mi>t</mi><mi>t</mi></math></span> and <span class="inlineequation" id="shafer-20121106-125753-094116"><math xml:id="fwk-shafer-ch03-m0117" display="inline"><mi>h</mi><mi>h</mi><mi>t</mi><mi>t</mi><mi>t</mi><mo>.</mo></math></span> Although it is tedious to list them all, it is not difficult to count them. Think of using a tree diagram to do so. There are two choices for the first toss. For each of these there are two choices for the second toss, hence <span class="inlineequation" id="shafer-20121106-125753-094132"><math xml:id="fwk-shafer-ch03-m0118" display="inline"><mn>2</mn><mo>×</mo><mn>2</mn><mo>=</mo><mn>4</mn></math></span> outcomes for two tosses. For each of these four outcomes, there are two possibilities for the third toss, hence <span class="inlineequation" id="shafer-20121106-125753-094148"><math xml:id="fwk-shafer-ch03-m0119" display="inline"><mn>4</mn><mo>×</mo><mn>2</mn><mo>=</mo><mn>8</mn></math></span> outcomes for three tosses. Similarly, there are <span class="inlineequation" id="shafer-20121106-125753-094164"><math xml:id="fwk-shafer-ch03-m0120" display="inline"><mn>8</mn><mo>×</mo><mn>2</mn><mo>=</mo><mn>16</mn></math></span> outcomes for four tosses and finally <span class="inlineequation" id="shafer-20121106-125753-094180"><math xml:id="fwk-shafer-ch03-m0121" display="inline"><mn>16</mn><mo>×</mo><mn>2</mn><mo>=</mo><mn>32</mn></math></span> outcomes for five tosses.</p>
             <p class="para" id="fwk-shafer-ch03_s02_s01_p09">Let <em class="emphasis">O</em> denote the event “at least one heads.” There are many ways to obtain at least one heads, but only one way to fail to do so: all tails. Thus although it is difficult to list all the outcomes that form <em class="emphasis">O</em>, it is easy to write <span class="inlineequation" id="shafer-20121106-125753-094203"><math xml:id="fwk-shafer-ch03-m0122" display="inline"><msup><mrow><mi>O</mi></mrow><mrow><mi>c</mi></mrow></msup><mo>=</mo><mrow><mo>{</mo><mrow><mi>t</mi><mi>t</mi><mi>t</mi><mi>t</mi><mi>t</mi></mrow><mo>}</mo></mrow><mo>.</mo></math></span> Since there are 32 equally likely outcomes, each has probability 1/32, so <span class="inlineequation" id="shafer-20121106-125753-094219"><math xml:id="fwk-shafer-ch03-m0123" display="inline"><mi>P</mi><mrow><mo>(</mo><mrow><msup><mrow><mi>O</mi></mrow><mrow><mi>c</mi></mrow></msup></mrow><mo>)</mo></mrow><mo>=</mo><mn>1</mn><mo>∕</mo><mn>32</mn></math></span>, hence <span class="inlineequation" id="shafer-20121106-125753-094235"><math xml:id="fwk-shafer-ch03-m0124" display="inline"><mi>P</mi><mrow><mo>(</mo><mrow><mi>O</mi></mrow><mo>)</mo></mrow><mo>=</mo><mn>1</mn><mo>−</mo><mn>1</mn><mo>∕</mo><mn>32</mn><mo>≈</mo><mn>0.97</mn></math></span> or about a 97% chance.</p>
         </div>
@@ -832,7 +832,7 @@
     <div class="section" id="fwk-shafer-ch03_s02_s02" version="5.0" lang="en">
         <h2 class="title editable block">Intersection of Events</h2>
         <div class="callout editable block" id="fwk-shafer-ch03_s02_s02_n01">
-            <h3 class="title">Definition</h3>
+            <h3 class="title">Definisi</h3>
             <p class="para" id="fwk-shafer-ch03_s02_s02_p01"><em class="emphasis">The</em> <span class="margin_term"><a class="glossterm">intersection of events</a><span class="glossdef">Both events occur.</span></span> <em class="emphasis">A</em> <em class="emphasis">and</em> <em class="emphasis">B</em>, <em class="emphasis">denoted</em> <em class="emphasis">A</em> ∩ <em class="emphasis">B</em>, <em class="emphasis">is the collection of all outcomes that are elements of both of the sets</em> <em class="emphasis">A</em> <em class="emphasis">and</em> <em class="emphasis">B</em>. <em class="emphasis">It corresponds to combining descriptions of the two events using the word “and.”</em></p>
         </div>
         <p class="para editable block" id="fwk-shafer-ch03_s02_s02_p02">To say that the event <em class="emphasis">A</em> ∩ <em class="emphasis">B</em> occurred means that on a particular trial of the experiment both <em class="emphasis">A</em> and <em class="emphasis">B</em> occurred. A visual representation of the intersection of events <em class="emphasis">A</em> and <em class="emphasis">B</em> in a sample space <em class="emphasis">S</em> is given in <a class="xref" href="#fwk-shafer-ch03_s02_s02_f01">Figure 3.4 "The Intersection of Events "</a>. The intersection corresponds to the shaded lens-shaped region that lies within both ovals.</p>
@@ -841,20 +841,20 @@
             <img src="section_07/c839ee4bf3bb6c5efce796861aee5142.jpg">
         </div>
         <div class="exercises block" id="fwk-shafer-ch03_s02_s02_n02">
-            <h3 class="title">Example 12</h3>
+            <h3 class="title">Contoh 12</h3>
             <p class="para" id="fwk-shafer-ch03_s02_s02_p03">In the experiment of rolling a single die, find the intersection <em class="emphasis">E</em> ∩ <em class="emphasis">T</em> of the events <em class="emphasis">E</em>: “the number rolled is even” and <em class="emphasis">T</em>: “the number rolled is greater than two.”</p>
-            <p class="simpara">Solution:</p>
+            <p class="simpara">Solusi:</p>
             <p class="para" id="fwk-shafer-ch03_s02_s02_p04">The sample space is <span class="inlineequation" id="shafer-20121106-125753-094250"><math xml:id="fwk-shafer-ch03-m0125" display="inline"><mi>S</mi><mo>=</mo><mrow><mo>{</mo><mrow><mn>1,2,3,4,5,6</mn></mrow><mo>}</mo></mrow><mo>.</mo></math></span> Since the outcomes that are common to <span class="inlineequation" id="shafer-20121106-125753-094266"><math xml:id="fwk-shafer-ch03-m0126" display="inline"><mi>E</mi><mo>=</mo><mrow><mo>{</mo><mrow><mn>2,4,6</mn></mrow><mo>}</mo></mrow></math></span> and <span class="inlineequation" id="shafer-20121106-125753-094282"><math xml:id="fwk-shafer-ch03-m0127" display="inline"><mi>T</mi><mo>=</mo><mrow><mo>{</mo><mrow><mn>3,4,5,6</mn></mrow><mo>}</mo></mrow></math></span> are 4 and 6, <span class="inlineequation" id="shafer-20121106-125753-094298"><math xml:id="fwk-shafer-ch03-m0128" display="inline"><mi>E</mi><mo>∩</mo><mi>T</mi><mo>=</mo><mrow><mo>{</mo><mrow><mn>4,6</mn></mrow><mo>}</mo></mrow><mo>.</mo></math></span></p>
             <p class="para" id="fwk-shafer-ch03_s02_s02_p05">In words the intersection is described by “the number rolled is even and is greater than two.” The only numbers between one and six that are both even and greater than two are four and six, corresponding to <em class="emphasis">E</em> ∩ <em class="emphasis">T</em> given above.</p>
         </div>
         <div class="exercises block" id="fwk-shafer-ch03_s02_s02_n03">
-            <h3 class="title">Example 13</h3>
+            <h3 class="title">Contoh 13</h3>
             <p class="para" id="fwk-shafer-ch03_s02_s02_p06">A single die is rolled.</p>
             <ol class="orderedlist" id="fwk-shafer-ch03_s02_s02_o01" numeration="loweralpha">
                 <li>Suppose the die is fair. Find the probability that the number rolled is both even and greater than two.</li>
                 <li>Suppose the die has been “loaded” so that <span class="inlineequation" id="shafer-20121106-125753-094313"><math xml:id="fwk-shafer-ch03-m0129" display="inline"><mi>P</mi><mrow><mo>(</mo><mrow><mn>1</mn></mrow><mo>)</mo></mrow><mo>=</mo><mn>1</mn><mo>∕</mo><mn>12</mn></math></span>, <span class="inlineequation" id="shafer-20121106-125753-094330"><math xml:id="fwk-shafer-ch03-m0130" display="inline"><mi>P</mi><mrow><mo>(</mo><mrow><mn>6</mn></mrow><mo>)</mo></mrow><mo>=</mo><mn>3</mn><mo>∕</mo><mn>12</mn></math></span>, and the remaining four outcomes are equally likely with one another. Now find the probability that the number rolled is both even and greater than two.</li>
             </ol>
-            <p class="simpara">Solution:</p>
+            <p class="simpara">Solusi:</p>
             <p class="para" id="fwk-shafer-ch03_s02_s02_p07">In both cases the sample space is <span class="inlineequation" id="shafer-20121106-125753-094352"><math xml:id="fwk-shafer-ch03-m0131" display="inline"><mi>S</mi><mo>=</mo><mrow><mo>{</mo><mrow><mn>1,2,3,4,5,6</mn></mrow><mo>}</mo></mrow></math></span> and the event in question is the intersection <span class="inlineequation" id="shafer-20121106-125753-094368"><math xml:id="fwk-shafer-ch03-m0132" display="inline"><mi>E</mi><mo>∩</mo><mi>T</mi><mo>=</mo><mrow><mo>{</mo><mrow><mn>4,6</mn></mrow><mo>}</mo></mrow></math></span> of the previous example.</p>
             <ol class="orderedlist" id="fwk-shafer-ch03_s02_s02_o02" numeration="loweralpha">
                 <li>Since the die is fair, all outcomes are equally likely, so by counting we have <span class="inlineequation" id="shafer-20121106-125753-094385"><math xml:id="fwk-shafer-ch03-m0133" display="inline"><mi>P</mi><mrow><mo>(</mo><mrow><mi>E</mi><mo>∩</mo><mi>T</mi></mrow><mo>)</mo></mrow><mo>=</mo><mn>2</mn><mo>∕</mo><mn>6</mn><mo>.</mo></math></span>
@@ -870,7 +870,7 @@
             <span class="informalequation" id="shafer-20121106-125753-094503"><math xml:id="fwk-shafer-ch03-m0140" display="block"><mrow><mi>P</mi><mrow><mo>(</mo><mrow><mi>E</mi><mo>∩</mo><mi>T</mi></mrow><mo>)</mo></mrow><mo>=</mo><mi>P</mi><mrow><mo>(</mo><mrow><mn>4</mn></mrow><mo>)</mo></mrow><mo>+</mo><mi>P</mi><mrow><mo>(</mo><mrow><mn>6</mn></mrow><mo>)</mo></mrow><mo>=</mo><mfrac><mrow><mn>1</mn></mrow><mrow><mn>6</mn></mrow></mfrac><mo>+</mo><mfrac><mrow><mn>3</mn></mrow><mrow><mn>12</mn></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>5</mn></mrow><mrow><mn>12</mn></mrow></mfrac></mrow></math></span>
         </div>
         <div class="callout editable block" id="fwk-shafer-ch03_s02_s02_n04">
-            <h3 class="title">Definition</h3>
+            <h3 class="title">Definisi</h3>
             <p class="para" id="fwk-shafer-ch03_s02_s02_p10"><em class="emphasis">Events</em> <em class="emphasis">A</em> <em class="emphasis">and</em> <em class="emphasis">B</em> <em class="emphasis">are</em> <span class="margin_term"><a class="glossterm">mutually exclusive</a><span class="glossdef">Events that cannot both occur at once.</span></span> <em class="emphasis">if they have no elements in common.</em></p>
         </div>
         <p class="para editable block" id="fwk-shafer-ch03_s02_s02_p11">For <em class="emphasis">A</em> and <em class="emphasis">B</em> to have no outcomes in common means precisely that it is impossible for both <em class="emphasis">A</em> and <em class="emphasis">B</em> to occur on a single trial of the random experiment. This gives the following rule.</p>
@@ -881,16 +881,16 @@
         </div>
         <p class="para editable block" id="fwk-shafer-ch03_s02_s02_p13">Any event <em class="emphasis">A</em> and its complement <em class="emphasis">A</em><sup class="superscript">c</sup> are mutually exclusive, but <em class="emphasis">A</em> and <em class="emphasis">B</em> can be mutually exclusive without being complements.</p>
         <div class="exercises block" id="fwk-shafer-ch03_s02_s02_n06">
-            <h3 class="title">Example 14</h3>
+            <h3 class="title">Contoh 14</h3>
             <p class="para" id="fwk-shafer-ch03_s02_s02_p14">In the experiment of rolling a single die, find three choices for an event <em class="emphasis">A</em> so that the events <em class="emphasis">A</em> and <em class="emphasis">E</em>: “the number rolled is even” are mutually exclusive.</p>
-            <p class="simpara">Solution:</p>
+            <p class="simpara">Solusi:</p>
             <p class="para" id="fwk-shafer-ch03_s02_s02_p15">Since <span class="inlineequation" id="shafer-20121106-125753-094535"><math xml:id="fwk-shafer-ch03-m0142" display="inline"><mi>E</mi><mo>=</mo><mrow><mo>{</mo><mrow><mn>2,4,6</mn></mrow><mo>}</mo></mrow></math></span> and we want <em class="emphasis">A</em> to have no elements in common with <em class="emphasis">E</em>, any event that does not contain any even number will do. Three choices are {1,3,5} (the complement <em class="emphasis">E</em><sup class="superscript">c</sup>, the odds), {1,3}, and {5}.</p>
         </div>
     </div>
     <div class="section" id="fwk-shafer-ch03_s02_s03" version="5.0" lang="en">
         <h2 class="title editable block">Union of Events</h2>
         <div class="callout editable block" id="fwk-shafer-ch03_s02_s03_n01">
-            <h3 class="title">Definition</h3>
+            <h3 class="title">Definisi</h3>
             <p class="para" id="fwk-shafer-ch03_s02_s03_p01"><em class="emphasis">The</em> <span class="margin_term"><a class="glossterm">union of events</a><span class="glossdef">One or the other event occurs.</span></span> <em class="emphasis">A</em> <em class="emphasis">and</em> <em class="emphasis">B</em>, <em class="emphasis">denoted</em> <em class="emphasis">A</em> ∪ <em class="emphasis">B</em>, <em class="emphasis">is the collection of all outcomes that are elements of one or the other of the sets</em> <em class="emphasis">A</em> <em class="emphasis">and</em> <em class="emphasis">B</em>, <em class="emphasis">or of both of them. It corresponds to combining descriptions of the two events using the word “or.”</em></p>
         </div>
         <p class="para editable block" id="fwk-shafer-ch03_s02_s03_p02">To say that the event <em class="emphasis">A</em> ∪ <em class="emphasis">B</em> occurred means that on a particular trial of the experiment either <em class="emphasis">A</em> or <em class="emphasis">B</em> occurred (or both did). A visual representation of the union of events <em class="emphasis">A</em> and <em class="emphasis">B</em> in a sample space <em class="emphasis">S</em> is given in <a class="xref" href="#fwk-shafer-ch03_s02_s03_f01">Figure 3.5 "The Union of Events "</a>. The union corresponds to the shaded region.</p>
@@ -899,16 +899,16 @@
             <img src="section_07/2b9ac417d3f9501644f5bcc1cfdd8ebb.jpg">
         </div>
         <div class="exercises block" id="fwk-shafer-ch03_s02_s03_n02">
-            <h3 class="title">Example 15</h3>
+            <h3 class="title">Contoh 15</h3>
             <p class="para" id="fwk-shafer-ch03_s02_s03_p03">In the experiment of rolling a single die, find the union of the events <em class="emphasis">E</em>: “the number rolled is even” and <em class="emphasis">T</em>: “the number rolled is greater than two.”</p>
-            <p class="simpara">Solution:</p>
+            <p class="simpara">Solusi:</p>
             <p class="para" id="fwk-shafer-ch03_s02_s03_p04">Since the outcomes that are in either <span class="inlineequation" id="shafer-20121106-125753-094551"><math xml:id="fwk-shafer-ch03-m0143" display="inline"><mi>E</mi><mo>=</mo><mrow><mo>{</mo><mrow><mn>2,4,6</mn></mrow><mo>}</mo></mrow></math></span> or <span class="inlineequation" id="shafer-20121106-125753-094568"><math xml:id="fwk-shafer-ch03-m0144" display="inline"><mi>T</mi><mo>=</mo><mrow><mo>{</mo><mrow><mn>3,4,5,6</mn></mrow><mo>}</mo></mrow></math></span> (or both) are 2, 3, 4, 5, and 6, <span class="inlineequation" id="shafer-20121106-125753-094584"><math xml:id="fwk-shafer-ch03-m0145" display="inline"><mi>E</mi><mo>∪</mo><mi>T</mi><mo>=</mo><mrow><mo>{</mo><mrow><mn>2,3,4,5,6</mn></mrow><mo>}</mo></mrow><mo>.</mo></math></span> Note that an outcome such as 4 that is in both sets is still listed only once (although strictly speaking it is not incorrect to list it twice).</p>
             <p class="para" id="fwk-shafer-ch03_s02_s03_p05">In words the union is described by “the number rolled is even or is greater than two.” Every number between one and six except the number one is either even or is greater than two, corresponding to <em class="emphasis">E</em> ∪ <em class="emphasis">T</em> given above.</p>
         </div>
         <div class="exercises block" id="fwk-shafer-ch03_s02_s03_n03">
-            <h3 class="title">Example 16</h3>
+            <h3 class="title">Contoh 16</h3>
             <p class="para" id="fwk-shafer-ch03_s02_s03_p06">A two-child family is selected at random. Let <em class="emphasis">B</em> denote the event that at least one child is a boy, let <em class="emphasis">D</em> denote the event that the genders of the two children differ, and let <em class="emphasis">M</em> denote the event that the genders of the two children match. Find <em class="emphasis">B</em> ∪ <em class="emphasis">D</em> and <span class="inlineequation" id="shafer-20121106-125753-094600"><math xml:id="fwk-shafer-ch03-m0146" display="inline"><mi>B</mi><mo>∪</mo><mi>M</mi><mo>.</mo></math></span></p>
-            <p class="simpara">Solution:</p>
+            <p class="simpara">Solusi:</p>
             <p class="para" id="fwk-shafer-ch03_s02_s03_p07">A sample space for this experiment is <span class="inlineequation" id="shafer-20121106-125753-094624"><math xml:id="fwk-shafer-ch03-m0147" display="inline"><mi>S</mi><mo>=</mo><mrow><mo>{</mo><mrow><mi>b</mi><mi>b</mi><mo>,</mo><mi>b</mi><mi>g</mi><mo>,</mo><mi>g</mi><mi>b</mi><mo>,</mo><mi>g</mi><mi>g</mi></mrow><mo>}</mo></mrow></math></span>, where the first letter denotes the gender of the firstborn child and the second letter denotes the gender of the second child. The events <em class="emphasis">B</em>, <em class="emphasis">D</em>, and <em class="emphasis">M</em> are</p>
             <span class="informalequation" id="shafer-20121106-125753-094639"><math xml:id="fwk-shafer-ch03-m0148" display="block"><mrow><mi>B</mi><mo>=</mo><mrow><mo>{</mo><mrow><mi>b</mi><mi>b</mi><mo>,</mo><mi>b</mi><mi>g</mi><mo>,</mo><mi>g</mi><mi>b</mi></mrow><mo>}</mo></mrow><mtext> </mtext><mi>D</mi><mo>=</mo><mrow><mo>{</mo><mrow><mi>b</mi><mi>g</mi><mo>,</mo><mi>g</mi><mi>b</mi></mrow><mo>}</mo></mrow><mtext> </mtext><mi>M</mi><mo>=</mo><mrow><mo>{</mo><mrow><mi>b</mi><mi>b</mi><mo>,</mo><mi>g</mi><mi>g</mi></mrow><mo>}</mo></mrow></mrow></math></span>
             <p class="para" id="fwk-shafer-ch03_s02_s03_p08">Each outcome in <em class="emphasis">D</em> is already in <em class="emphasis">B</em>, so the outcomes that are in at least one or the other of the sets <em class="emphasis">B</em> and <em class="emphasis">D</em> is just the set <em class="emphasis">B</em> itself: <span class="inlineequation" id="shafer-20121106-125753-094656"><math xml:id="fwk-shafer-ch03-m0149" display="inline"><mi>B</mi><mo>∪</mo><mi>D</mi><mo>=</mo><mrow><mo>{</mo><mrow><mi>b</mi><mi>b</mi><mo>,</mo><mi>b</mi><mi>g</mi><mo>,</mo><mi>g</mi><mi>b</mi></mrow><mo>}</mo></mrow><mo>=</mo><mi>B</mi><mo>.</mo></math></span></p>
@@ -921,13 +921,13 @@
         </div>
         <p class="para editable block" id="fwk-shafer-ch03_s02_s03_p11">The next example, in which we compute the probability of a union both by counting and by using the formula, shows why the last term in the formula is needed.</p>
         <div class="exercises block" id="fwk-shafer-ch03_s02_s03_n05">
-            <h3 class="title">Example 17</h3>
+            <h3 class="title">Contoh 17</h3>
             <p class="para" id="fwk-shafer-ch03_s02_s03_p12">Two fair dice are thrown. Find the probabilities of the following events:</p>
             <ol class="orderedlist" id="fwk-shafer-ch03_s02_s03_o01" numeration="loweralpha">
                 <li>both dice show a four</li>
                 <li>at least one die shows a four</li>
             </ol>
-            <p class="simpara">Solution:</p>
+            <p class="simpara">Solusi:</p>
             <p class="para" id="fwk-shafer-ch03_s02_s03_p13">As was the case with tossing two identical coins, actual experience dictates that for the sample space to have equally likely outcomes we should list outcomes as if we could distinguish the two dice. We could imagine that one of them is red and the other is green. Then any outcome can be labeled as a pair of numbers as in the following display, where the first number in the pair is the number of dots on the top face of the green die and the second number in the pair is the number of dots on the top face of the red die.</p>
             <span class="informalequation" id="shafer-20121106-125753-094721"><math xml:id="fwk-shafer-ch03-m0153" display="block"><mrow><mtable columnspacing="0.5em"><mtr><mtd><mrow><mn>11</mn></mrow></mtd><mtd><mrow><mn>12</mn></mrow></mtd><mtd><mrow><mn>13</mn></mrow></mtd><mtd><mrow><mn>14</mn></mrow></mtd><mtd><mrow><mn>15</mn></mrow></mtd><mtd><mrow><mn>16</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn>21</mn></mrow></mtd><mtd><mrow><mn>22</mn></mrow></mtd><mtd><mrow><mn>23</mn></mrow></mtd><mtd><mrow><mn>24</mn></mrow></mtd><mtd><mrow><mn>25</mn></mrow></mtd><mtd><mrow><mn>26</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn>31</mn></mrow></mtd><mtd><mrow><mn>32</mn></mrow></mtd><mtd><mrow><mn>33</mn></mrow></mtd><mtd><mrow><mn>34</mn></mrow></mtd><mtd><mrow><mn>35</mn></mrow></mtd><mtd><mrow><mn>36</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn>41</mn></mrow></mtd><mtd><mrow><mn>42</mn></mrow></mtd><mtd><mrow><mn>43</mn></mrow></mtd><mtd><mrow><mn>44</mn></mrow></mtd><mtd><mrow><mn>45</mn></mrow></mtd><mtd><mrow><mn>46</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn>51</mn></mrow></mtd><mtd><mrow><mn>52</mn></mrow></mtd><mtd><mrow><mn>53</mn></mrow></mtd><mtd><mrow><mn>54</mn></mrow></mtd><mtd><mrow><mn>55</mn></mrow></mtd><mtd><mrow><mn>56</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn>61</mn></mrow></mtd><mtd><mrow><mn>62</mn></mrow></mtd><mtd><mrow><mn>63</mn></mrow></mtd><mtd><mrow><mn>64</mn></mrow></mtd><mtd><mrow><mn>65</mn></mrow></mtd><mtd><mrow><mn>66</mn></mrow></mtd></mtr></mtable></mrow></math></span>
             <ol class="orderedlist" id="fwk-shafer-ch03_s02_s03_o02" numeration="loweralpha">
@@ -939,15 +939,15 @@
             </ol>
         </div>
         <div class="exercises block" id="fwk-shafer-ch03_s02_s03_n06">
-            <h3 class="title">Example 18</h3>
+            <h3 class="title">Contoh 18</h3>
             <p class="para" id="fwk-shafer-ch03_s02_s03_p14">A tutoring service specializes in preparing adults for high school equivalence tests. Among all the students seeking help from the service, 63% need help in mathematics, 34% need help in English, and 27% need help in both mathematics and English. What is the percentage of students who need help in either mathematics or English?</p>
-            <p class="simpara">Solution:</p>
+            <p class="simpara">Solusi:</p>
             <p class="para" id="fwk-shafer-ch03_s02_s03_p15">Imagine selecting a student at random, that is, in such a way that every student has the same chance of being selected. Let <em class="emphasis">M</em> denote the event “the student needs help in mathematics” and let <em class="emphasis">E</em> denote the event “the student needs help in English.” The information given is that <span class="inlineequation" id="shafer-20121106-125753-094824"><math xml:id="fwk-shafer-ch03-m0159" display="inline"><mi>P</mi><mrow><mo>(</mo><mrow><mi>M</mi></mrow><mo>)</mo></mrow><mo>=</mo><mn>0.63</mn></math></span>, <span class="inlineequation" id="shafer-20121106-125753-094840"><math xml:id="fwk-shafer-ch03-m0160" display="inline"><mi>P</mi><mrow><mo>(</mo><mrow><mi>E</mi></mrow><mo>)</mo></mrow><mo>=</mo><mn>0.34</mn></math></span>, and <span class="inlineequation" id="shafer-20121106-125753-094856"><math xml:id="fwk-shafer-ch03-m0161" display="inline"><mi>P</mi><mrow><mo>(</mo><mrow><mi>M</mi><mo>∩</mo><mi>E</mi></mrow><mo>)</mo></mrow><mo>=</mo><mn>0.27</mn><mo>.</mo></math></span> The Additive Rule of Probability gives</p>
             <span class="informalequation" id="shafer-20121106-125753-094872"><math xml:id="fwk-shafer-ch03-m0162" display="block"><mrow><mi>P</mi><mrow><mo>(</mo><mrow><mi>M</mi><mo>∪</mo><mi>E</mi></mrow><mo>)</mo></mrow><mo>=</mo><mi>P</mi><mrow><mo>(</mo><mrow><mi>M</mi></mrow><mo>)</mo></mrow><mo>+</mo><mi>P</mi><mrow><mo>(</mo><mrow><mi>E</mi></mrow><mo>)</mo></mrow><mo>−</mo><mi>P</mi><mrow><mo>(</mo><mrow><mi>M</mi><mo>∩</mo><mi>E</mi></mrow><mo>)</mo></mrow><mo>=</mo><mn>0.63</mn><mo>+</mo><mn>0.34</mn><mo>−</mo><mn>0.27</mn><mo>=</mo><mn>0.70</mn></mrow></math></span>
         </div>
         <p class="para block" id="fwk-shafer-ch03_s02_s03_p16">Note how the naïve reasoning that if 63% need help in mathematics and 34% need help in English then 63 plus 34 or 97% need help in one or the other gives a number that is too large. The percentage that need help in both subjects must be subtracted off, else the people needing help in both are counted twice, once for needing help in mathematics and once again for needing help in English. The simple sum of the probabilities would work if the events in question were mutually exclusive, for then <span class="inlineequation" id="shafer-20121106-125753-094887"><math xml:id="fwk-shafer-ch03-m0163" display="inline"><mi>P</mi><mrow><mo>(</mo><mrow><mi>A</mi><mo>∩</mo><mi>B</mi></mrow><mo>)</mo></mrow></math></span> is zero, and makes no difference.</p>
         <div class="exercises block" id="fwk-shafer-ch03_s02_s03_n07">
-            <h3 class="title">Example 19</h3>
+            <h3 class="title">Contoh 19</h3>
             <p class="para" id="fwk-shafer-ch03_s02_s03_p17">Volunteers for a disaster relief effort were classified according to both specialty (<em class="emphasis">C</em>: construction, <em class="emphasis">E</em>: education, <em class="emphasis">M</em>: medicine) and language ability (<em class="emphasis">S</em>: speaks a single language fluently, <em class="emphasis">T</em>: speaks two or more languages fluently). The results are shown in the following <em class="emphasis">two-way classification</em> <em class="emphasis">table</em>:</p>
             <div class="informaltable">
                 <table cellpadding="0" cellspacing="0">
@@ -987,7 +987,7 @@
                 <li>either his specialty is medicine or he speaks two or more languages;</li>
                 <li>his specialty is something other than medicine.</li>
             </ol>
-            <p class="simpara">Solution:</p>
+            <p class="simpara">Solusi:</p>
             <p class="para" id="fwk-shafer-ch03_s02_s03_p20">When information is presented in a two-way classification table it is typically convenient to adjoin to the table the row and column totals, to produce a new table like this:</p>
             <div class="informaltable">
                 <table cellpadding="0" cellspacing="0">
@@ -1047,13 +1047,13 @@
             </ol>
         </div>
         <div class="key_takeaways editable block" id="fwk-shafer-ch03_s02_s03_n08">
-            <h3 class="title">Key Takeaway</h3>
+            <h3 class="title">Poin Utama</h3>
             <ul class="itemizedlist" id="fwk-shafer-ch03_s02_s03_l01" mark="bullet">
                 <li>The probability of an event that is a complement or union of events of known probability can be computed using formulas.</li>
             </ul>
         </div>
         <div class="qandaset block" id="fwk-shafer-ch03_s02_qs01" defaultlabel="number">
-            <h3 class="title">Exercises</h3>
+            <h3 class="title">Latihans</h3>
             <ol class="qandadiv" id="fwk-shafer-ch03_s02_qs01_qd01">
                 <h3 class="title">Basic</h3>
                 <li class="qandaentry" id="fwk-shafer-ch03_s02_qs01_qd01_qa01">
@@ -1488,7 +1488,7 @@
                 </li>
             </ol>
             <ol class="qandadiv" id="fwk-shafer-ch03_s02_qs01_qd03" start="21">
-                <h3 class="title">Additional Exercises</h3>
+                <h3 class="title">Additional Latihans</h3>
                 <li class="qandaentry" id="fwk-shafer-ch03_s02_qs01_qd03_qa21">
                     <div class="question">
                         <p class="para" id="fwk-shafer-ch03_s02_qs01_p30">The sample space for tossing three coins is</p>
@@ -1702,7 +1702,7 @@
     <h2 class="title editable block">
 <span class="title-prefix">3.3</span> Conditional Probability and Independent Events</h2>
     <div class="learning_objectives editable block" id="fwk-shafer-ch03_s03_n01">
-        <h3 class="title">Learning Objectives</h3>
+        <h3 class="title">Tujuan Pembelajarans</h3>
         <ol class="orderedlist" id="fwk-shafer-ch03_s03_o01" numeration="arabic">
             <li>To learn the concept of a conditional probability and how to compute it.</li>
             <li>To learn the concept of independence of events, and how to apply it.</li>
@@ -1712,19 +1712,19 @@
         <h2 class="title editable block">Conditional Probability</h2>
         <p class="para block" id="fwk-shafer-ch03_s03_s01_p01">Suppose a fair die has been rolled and you are asked to give the probability that it was a five. There are six equally likely outcomes, so your answer is 1/6. But suppose that before you give your answer you are given the extra information that the number rolled was odd. Since there are only three odd numbers that are possible, one of which is five, you would certainly revise your estimate of the likelihood that a five was rolled from 1/6 to 1/3. In general, the <em class="emphasis">revised</em> probability that an event <em class="emphasis">A</em> has occurred, taking into account the additional information that another event <em class="emphasis">B</em> has definitely occurred on this trial of the experiment, is called the <em class="emphasis">conditional probability of</em> <em class="emphasis">A</em> <em class="emphasis">given</em> <em class="emphasis">B</em> and is denoted by <span class="inlineequation" id="shafer-20121106-125753-097539"><math xml:id="fwk-shafer-ch03-m0319" display="inline"><mi>P</mi><mrow><mo>(</mo><mrow><mi>A</mi><mo>|</mo><mi>B</mi></mrow><mo>)</mo></mrow><mo>.</mo></math></span> The reasoning employed in this example can be generalized to yield the computational formula in the following definition.</p>
         <div class="callout block" id="fwk-shafer-ch03_s03_s01_n01">
-            <h3 class="title">Definition</h3>
+            <h3 class="title">Definisi</h3>
             <p class="para" id="fwk-shafer-ch03_s03_s01_p02"><em class="emphasis">The</em> <span class="margin_term"><a class="glossterm">conditional probability</a><span class="glossdef">The probability of the event <em class="emphasis">A</em> taking into account the fact that event <em class="emphasis">B</em> is known to have occurred.</span></span> <strong class="emphasis bold">of</strong> <em class="emphasis">A</em> <strong class="emphasis bold">given</strong> <em class="emphasis">B</em>, <em class="emphasis">denoted</em> <span class="inlineequation" id="shafer-20121106-125753-097555"><math xml:id="fwk-shafer-ch03-m0320" display="inline"><mi>P</mi><mrow><mo>(</mo><mrow><mi>A</mi><mo>|</mo><mi>B</mi></mrow><mo>)</mo></mrow></math></span>, <em class="emphasis">is the probability that event</em> <em class="emphasis">A</em> <em class="emphasis">has occurred in a trial of a random experiment for which it is known that event</em> <em class="emphasis">B</em> <em class="emphasis">has definitely occurred. It may be computed by means of the following formula:</em></p>
             <p class="simpara">Rule for Conditional Probability</p>
             <span class="informalequation" id="shafer-20121106-125753-097572"><math xml:id="fwk-shafer-ch03-m0321" display="block"><mrow><mi>P</mi><mrow><mo>(</mo><mrow><mi>A</mi><mo>|</mo><mi>B</mi></mrow><mo>)</mo></mrow><mo>=</mo><mfrac><mrow><mi>P</mi><mrow><mo>(</mo><mrow><mi>A</mi><mo>∩</mo><mi>B</mi></mrow><mo>)</mo></mrow></mrow><mrow><mi>P</mi><mrow><mo>(</mo><mrow><mi>B</mi></mrow><mo>)</mo></mrow></mrow></mfrac></mrow></math></span>
         </div>
         <div class="exercises block" id="fwk-shafer-ch03_s03_s01_n03">
-            <h3 class="title">Example 20</h3>
+            <h3 class="title">Contoh 20</h3>
             <p class="para" id="fwk-shafer-ch03_s03_s01_p03">A fair die is rolled.</p>
             <ol class="orderedlist" id="fwk-shafer-ch03_s03_s01_o01" numeration="loweralpha">
                 <li>Find the probability that the number rolled is a five, given that it is odd.</li>
                 <li>Find the probability that the number rolled is odd, given that it is a five.</li>
             </ol>
-            <p class="simpara">Solution:</p>
+            <p class="simpara">Solusi:</p>
             <p class="para" id="fwk-shafer-ch03_s03_s01_p04">The sample space for this experiment is the set <span class="inlineequation" id="shafer-20121106-125753-097588"><math xml:id="fwk-shafer-ch03-m0322" display="inline"><mi>S</mi><mo>=</mo><mrow><mo>{</mo><mrow><mn>1,2,3,4,5,6</mn></mrow><mo>}</mo></mrow></math></span> consisting of six equally likely outcomes. Let <em class="emphasis">F</em> denote the event “a five is rolled” and let <em class="emphasis">O</em> denote the event “an odd number is rolled,” so that</p>
             <span class="informalequation" id="shafer-20121106-125753-097604"><math xml:id="fwk-shafer-ch03-m0323" display="block"><mrow><mi>F</mi><mo>=</mo><mrow><mo>{</mo><mrow><mn>5</mn></mrow><mo>}</mo></mrow><mtext> </mtext><mtext>and</mtext><mtext> </mtext><mi>O</mi><mo>=</mo><mrow><mo>{</mo><mrow><mn>1,3,5</mn></mrow><mo>}</mo></mrow></mrow></math></span>
             <ol class="orderedlist" id="fwk-shafer-ch03_s03_s01_o02" numeration="loweralpha">
@@ -1746,7 +1746,7 @@
         </div>
         <p class="para editable block" id="fwk-shafer-ch03_s03_s01_p05">Just as we did not need the computational formula in this example, we do not need it when the information is presented in a two-way classification table, as in the next example.</p>
         <div class="exercises block" id="fwk-shafer-ch03_s03_s01_n04">
-            <h3 class="title">Example 21</h3>
+            <h3 class="title">Contoh 21</h3>
             <p class="para" id="fwk-shafer-ch03_s03_s01_p06">In a sample of 902 individuals under 40 who were or had previously been married, each person was classified according to gender and age at first marriage. The results are summarized in the following two-way classification table, where the meaning of the labels is:</p>
             <ul class="itemizedlist" id="fwk-shafer-ch03_s03_s01_l01" mark="none">
                 <li>
@@ -1801,7 +1801,7 @@
                 <li>Find the probability that the individual selected was a teenager at first marriage.</li>
                 <li>Find the probability that the individual selected was a teenager at first marriage, given that the person is male.</li>
             </ol>
-            <p class="simpara">Solution:</p>
+            <p class="simpara">Solusi:</p>
             <p class="para" id="fwk-shafer-ch03_s03_s01_p08">It is natural to let <em class="emphasis">E</em> also denote the event that the person selected was a teenager at first marriage and to let <em class="emphasis">M</em> denote the event that the person selected is male.</p>
             <ol class="orderedlist" id="fwk-shafer-ch03_s03_s01_o04" numeration="loweralpha">
                 <li>According to the table the proportion of individuals in the sample who were in their teens at their first marriage is 125/902. This is the relative frequency of such people in the population, hence <span class="inlineequation" id="shafer-20121106-125753-097794"><math xml:id="fwk-shafer-ch03-m0334" display="inline"><mi>P</mi><mrow><mo>(</mo><mrow><mi>E</mi></mrow><mo>)</mo></mrow><mo>=</mo><mn>125</mn><mo>∕</mo><mn>902</mn><mo>≈</mo><mn>0.139</mn></math></span> or about 14%.</li>
@@ -1835,14 +1835,14 @@
         </div>
         <p class="para editable block" id="fwk-shafer-ch03_s03_s01_p10">In the next example, the computational formula in the definition must be used.</p>
         <div class="exercises block" id="fwk-shafer-ch03_s03_s01_n05">
-            <h3 class="title">Example 22</h3>
+            <h3 class="title">Contoh 22</h3>
             <p class="para" id="fwk-shafer-ch03_s03_s01_p11">Suppose that in an adult population the proportion of people who are both overweight and suffer hypertension is 0.09; the proportion of people who are not overweight but suffer hypertension is 0.11; the proportion of people who are overweight but do not suffer hypertension is 0.02; and the proportion of people who are neither overweight nor suffer hypertension is 0.78. An adult is randomly selected from this population.</p>
             <ol class="orderedlist" id="fwk-shafer-ch03_s03_s01_o05" numeration="loweralpha">
                 <li>Find the probability that the person selected suffers hypertension given that he is overweight.</li>
                 <li>Find the probability that the selected person suffers hypertension given that he is not overweight.</li>
                 <li>Compare the two probabilities just found to give an answer to the question as to whether overweight people tend to suffer from hypertension.</li>
             </ol>
-            <p class="simpara">Solution:</p>
+            <p class="simpara">Solusi:</p>
             <p class="para" id="fwk-shafer-ch03_s03_s01_p12">Let <em class="emphasis">H</em> denote the event “the person selected suffers hypertension.” Let <em class="emphasis">O</em> denote the event “the person selected is overweight.” The probability information given in the problem may be organized into the following contingency table:</p>
             <div class="informaltable">
                 <table cellpadding="0" cellspacing="0">
@@ -1886,7 +1886,7 @@
         <p class="para block" id="fwk-shafer-ch03_s03_s02_p01">Although typically we expect the conditional probability <span class="inlineequation" id="shafer-20121106-125753-097924"><math xml:id="fwk-shafer-ch03-m0342" display="inline"><mi>P</mi><mrow><mo>(</mo><mrow><mi>A</mi><mo>|</mo><mi>B</mi></mrow><mo>)</mo></mrow></math></span> to be different from the probability <span class="inlineequation" id="shafer-20121106-125753-097946"><math xml:id="fwk-shafer-ch03-m0343" display="inline"><mi>P</mi><mrow><mo>(</mo><mrow><mi>A</mi></mrow><mo>)</mo></mrow></math></span> of <em class="emphasis">A</em>, it does not have to be different from <span class="inlineequation" id="shafer-20121106-125753-097962"><math xml:id="fwk-shafer-ch03-m0344" display="inline"><mi>P</mi><mrow><mo>(</mo><mrow><mi>A</mi></mrow><mo>)</mo></mrow><mo>.</mo></math></span> When <span class="inlineequation" id="shafer-20121106-125753-097979"><math xml:id="fwk-shafer-ch03-m0345" display="inline"><mi>P</mi><mrow><mo>(</mo><mrow><mi>A</mi><mo>|</mo><mi>B</mi></mrow><mo>)</mo></mrow><mo>=</mo><mi>P</mi><mrow><mo>(</mo><mrow><mi>A</mi></mrow><mo>)</mo></mrow></math></span>, the occurrence of <em class="emphasis">B</em> has no effect on the likelihood of <em class="emphasis">A</em>. Whether or not the event <em class="emphasis">A</em> has occurred is <em class="emphasis">independent</em> of the event <em class="emphasis">B</em>.</p>
         <p class="para block" id="fwk-shafer-ch03_s03_s02_p02">Using algebra it can be shown that the equality <span class="inlineequation" id="shafer-20121106-125753-097995"><math xml:id="fwk-shafer-ch03-m0346" display="inline"><mi>P</mi><mrow><mo>(</mo><mrow><mi>A</mi><mo>|</mo><mi>B</mi></mrow><mo>)</mo></mrow><mo>=</mo><mi>P</mi><mrow><mo>(</mo><mrow><mi>A</mi></mrow><mo>)</mo></mrow></math></span> holds if and only if the equality <span class="inlineequation" id="shafer-20121106-125753-098011"><math xml:id="fwk-shafer-ch03-m0347" display="inline"><mi>P</mi><mrow><mo>(</mo><mrow><mi>A</mi><mo>∩</mo><mi>B</mi></mrow><mo>)</mo></mrow><mo>=</mo><mi>P</mi><mrow><mo>(</mo><mrow><mi>A</mi></mrow><mo>)</mo></mrow><mo>·</mo><mi>P</mi><mrow><mo>(</mo><mrow><mi>B</mi></mrow><mo>)</mo></mrow></math></span> holds, which in turn is true if and only if <span class="inlineequation" id="shafer-20121106-125753-098027"><math xml:id="fwk-shafer-ch03-m0348" display="inline"><mi>P</mi><mrow><mo>(</mo><mrow><mi>B</mi><mo>|</mo><mi>A</mi></mrow><mo>)</mo></mrow><mo>=</mo><mi>P</mi><mrow><mo>(</mo><mrow><mi>B</mi></mrow><mo>)</mo></mrow><mo>.</mo></math></span> This is the basis for the following definition.</p>
         <div class="callout block" id="fwk-shafer-ch03_s03_s02_n01">
-            <h3 class="title">Definition</h3>
+            <h3 class="title">Definisi</h3>
             <p class="para" id="fwk-shafer-ch03_s03_s02_p03"><em class="emphasis">Events</em> <em class="emphasis">A</em> <em class="emphasis">and</em> <em class="emphasis">B</em> <em class="emphasis">are</em> <span class="margin_term"><a class="glossterm">independent</a><span class="glossdef">Events whose probability of occurring together is the product of their individual probabilities.</span></span> <em class="emphasis">if</em></p>
             <span class="informalequation" id="shafer-20121106-125753-098043"><math xml:id="fwk-shafer-ch03-m0349" display="block"><mrow><mi>P</mi><mrow><mo>(</mo><mrow><mi>A</mi><mo>∩</mo><mi>B</mi></mrow><mo>)</mo></mrow><mo>=</mo><mi>P</mi><mrow><mo>(</mo><mrow><mi>A</mi></mrow><mo>)</mo></mrow><mo>·</mo><mi>P</mi><mrow><mo>(</mo><mrow><mi>B</mi></mrow><mo>)</mo></mrow></mrow></math></span>
             <p class="para" id="fwk-shafer-ch03_s03_s02_p04"><em class="emphasis">If</em> <em class="emphasis">A</em> <em class="emphasis">and</em> <em class="emphasis">B</em> <em class="emphasis">are not independent then they are</em> <strong class="emphasis bold">dependent</strong>.</p>
@@ -1904,14 +1904,14 @@
 </li>
         </ol>
         <div class="exercises block" id="fwk-shafer-ch03_s03_s02_n02">
-            <h3 class="title">Example 23</h3>
+            <h3 class="title">Contoh 23</h3>
             <p class="para" id="fwk-shafer-ch03_s03_s02_p06">A single fair die is rolled. Let <span class="inlineequation" id="shafer-20121106-125753-098264"><math xml:id="fwk-shafer-ch03-m0361" display="inline"><mi>A</mi><mo>=</mo><mrow><mo>{</mo><mrow><mn>3</mn></mrow><mo>}</mo></mrow></math></span> and <span class="inlineequation" id="shafer-20121106-125753-098280"><math xml:id="fwk-shafer-ch03-m0362" display="inline"><mi>B</mi><mo>=</mo><mrow><mo>{</mo><mrow><mn>1,3,5</mn></mrow><mo>}</mo></mrow><mo>.</mo></math></span> Are <em class="emphasis">A</em> and <em class="emphasis">B</em> independent?</p>
-            <p class="simpara">Solution:</p>
+            <p class="simpara">Solusi:</p>
             <p class="para" id="fwk-shafer-ch03_s03_s02_p07">In this example we can compute all three probabilities <span class="inlineequation" id="shafer-20121106-125753-098296"><math xml:id="fwk-shafer-ch03-m0363" display="inline"><mi>P</mi><mrow><mo>(</mo><mrow><mi>A</mi></mrow><mo>)</mo></mrow><mo>=</mo><mn>1</mn><mo>∕</mo><mn>6</mn></math></span>, <span class="inlineequation" id="shafer-20121106-125753-098313"><math xml:id="fwk-shafer-ch03-m0364" display="inline"><mi>P</mi><mrow><mo>(</mo><mrow><mi>B</mi></mrow><mo>)</mo></mrow><mo>=</mo><mn>1</mn><mo>∕</mo><mn>2</mn></math></span>, and <span class="inlineequation" id="shafer-20121106-125753-098328"><math xml:id="fwk-shafer-ch03-m0365" display="inline"><mi>P</mi><mrow><mo>(</mo><mrow><mi>A</mi><mo>∩</mo><mi>B</mi></mrow><mo>)</mo></mrow><mo>=</mo><mi>P</mi><mrow><mo>(</mo><mrow><mrow><mo>{</mo><mrow><mn>3</mn></mrow><mo>}</mo></mrow></mrow><mo>)</mo></mrow><mo>=</mo><mn>1</mn><mo>∕</mo><mn>6</mn><mo>.</mo></math></span> Since the product <span class="inlineequation" id="shafer-20121106-125753-098344"><math xml:id="fwk-shafer-ch03-m0366" display="inline"><mi>P</mi><mrow><mo>(</mo><mrow><mi>A</mi></mrow><mo>)</mo></mrow><mo>·</mo><mi>P</mi><mrow><mo>(</mo><mrow><mi>B</mi></mrow><mo>)</mo></mrow><mo>=</mo><mrow><mo>(</mo><mrow><mn>1</mn><mo>∕</mo><mn>6</mn></mrow><mo>)</mo></mrow><mrow><mo>(</mo><mrow><mn>1</mn><mo>∕</mo><mn>2</mn></mrow><mo>)</mo></mrow><mo>=</mo><mn>1</mn><mo>∕</mo><mn>12</mn></math></span> is not the same number as <span class="inlineequation" id="shafer-20121106-125753-098366"><math xml:id="fwk-shafer-ch03-m0367" display="inline"><mi>P</mi><mrow><mo>(</mo><mrow><mi>A</mi><mo>∩</mo><mi>B</mi></mrow><mo>)</mo></mrow><mo>=</mo><mn>1</mn><mo>∕</mo><mn>6</mn></math></span>, the events <em class="emphasis">A</em> and <em class="emphasis">B</em> are not independent.</p>
         </div>
         <div class="exercises block" id="fwk-shafer-ch03_s03_s02_n03">
-            <h3 class="title">Example 24</h3>
-            <p class="para" id="fwk-shafer-ch03_s03_s02_p08">The two-way classification of married or previously married adults under 40 according to gender and age at first marriage in <a class="xref" href="#fwk-shafer-ch03_s03_s01_n04" xrefstyle="select: title">Note 3.48 "Example 21"</a> produced the table</p>
+            <h3 class="title">Contoh 24</h3>
+            <p class="para" id="fwk-shafer-ch03_s03_s02_p08">The two-way classification of married or previously married adults under 40 according to gender and age at first marriage in <a class="xref" href="#fwk-shafer-ch03_s03_s01_n04" xrefstyle="select: title">Note 3.48 "Contoh 21"</a> produced the table</p>
             <div class="informaltable">
                 <table cellpadding="0" cellspacing="0">
                     <thead>
@@ -1949,7 +1949,7 @@
                 </table>
             </div>
             <p class="para" id="fwk-shafer-ch03_s03_s02_p09">Determine whether or not the events <em class="emphasis">F</em>: “female” and <em class="emphasis">E</em>: “was a teenager at first marriage” are independent.</p>
-            <p class="simpara">Solution:</p>
+            <p class="simpara">Solusi:</p>
             <p class="para" id="fwk-shafer-ch03_s03_s02_p10">The table shows that in the sample of 902 such adults, 452 were female, 125 were teenagers at their first marriage, and 82 were females who were teenagers at their first marriage, so that</p>
             <span class="informalequation" id="shafer-20121106-125753-098382"><math xml:id="fwk-shafer-ch03-m0368" display="block"><mrow><mi>P</mi><mrow><mo>(</mo><mrow><mi>F</mi></mrow><mo>)</mo></mrow><mo>=</mo><mfrac><mrow><mn>452</mn></mrow><mrow><mn>902</mn></mrow></mfrac><mtext> </mtext><mi>P</mi><mrow><mo>(</mo><mrow><mi>E</mi></mrow><mo>)</mo></mrow><mo>=</mo><mfrac><mrow><mn>125</mn></mrow><mrow><mn>902</mn></mrow></mfrac><mtext> </mtext><mi>P</mi><mrow><mo>(</mo><mrow><mi>F</mi><mo>∩</mo><mi>E</mi></mrow><mo>)</mo></mrow><mo>=</mo><mfrac><mrow><mn>82</mn></mrow><mrow><mn>902</mn></mrow></mfrac></mrow></math></span>
             <p class="para" id="fwk-shafer-ch03_s03_s02_p11">Since</p>
@@ -1959,14 +1959,14 @@
             <p class="para" id="fwk-shafer-ch03_s03_s02_p13">we conclude that the two events are not independent.</p>
         </div>
         <div class="exercises block" id="fwk-shafer-ch03_s03_s02_n04">
-            <h3 class="title">Example 25</h3>
+            <h3 class="title">Contoh 25</h3>
             <p class="para" id="fwk-shafer-ch03_s03_s02_p14">Many diagnostic tests for detecting diseases do not test for the disease directly but for a chemical or biological product of the disease, hence are not perfectly reliable. The <em class="emphasis">sensitivity</em> of a test is the probability that the test will be positive when administered to a person who has the disease. The higher the sensitivity, the greater the detection rate and the lower the false negative rate.</p>
             <p class="para" id="fwk-shafer-ch03_s03_s02_p15">Suppose the sensitivity of a diagnostic procedure to test whether a person has a particular disease is 92%. A person who actually has the disease is tested for it using this procedure by two independent laboratories.</p>
             <ol class="orderedlist" id="fwk-shafer-ch03_s03_s02_o02" numeration="loweralpha">
                 <li>What is the probability that both test results will be positive?</li>
                 <li>What is the probability that at least one of the two test results will be positive?</li>
             </ol>
-            <p class="simpara">Solution:</p>
+            <p class="simpara">Solusi:</p>
             <ol class="orderedlist" id="fwk-shafer-ch03_s03_s02_o03" numeration="loweralpha">
                 <li>
                     <p class="para">Let <em class="emphasis">A</em><sub class="subscript">1</sub> denote the event “the test by the first laboratory is positive” and let <em class="emphasis">A</em><sub class="subscript">2</sub> denote the event “the test by the second laboratory is positive.” Since <em class="emphasis">A</em><sub class="subscript">1</sub> and <em class="emphasis">A</em><sub class="subscript">2</sub> are independent,</p>
@@ -1979,14 +1979,14 @@
             </ol>
         </div>
         <div class="exercises block" id="fwk-shafer-ch03_s03_s02_n05">
-            <h3 class="title">Example 26</h3>
+            <h3 class="title">Contoh 26</h3>
             <p class="para" id="fwk-shafer-ch03_s03_s02_p16">The <em class="emphasis">specificity</em> of a diagnostic test for a disease is the probability that the test will be negative when administered to a person who does not have the disease. The higher the specificity, the lower the false positive rate.</p>
             <p class="para" id="fwk-shafer-ch03_s03_s02_p17">Suppose the specificity of a diagnostic procedure to test whether a person has a particular disease is 89%.</p>
             <ol class="orderedlist" id="fwk-shafer-ch03_s03_s02_o04" numeration="loweralpha">
                 <li>A person who does not have the disease is tested for it using this procedure. What is the probability that the test result will be positive?</li>
                 <li>A person who does not have the disease is tested for it by two independent laboratories using this procedure. What is the probability that both test results will be positive?</li>
             </ol>
-            <p class="simpara">Solution:</p>
+            <p class="simpara">Solusi:</p>
             <ol class="orderedlist" id="fwk-shafer-ch03_s03_s02_o05" numeration="loweralpha">
                 <li>
                     <p class="para">Let <em class="emphasis">B</em> denote the event “the test result is positive.” The complement of <em class="emphasis">B</em> is that the test result is negative, and has probability the specificity of the test, 0.89. Thus</p>
@@ -2000,10 +2000,10 @@
         </div>
         <p class="para block" id="fwk-shafer-ch03_s03_s02_p18">The concept of independence applies to any number of events. For example, three events <em class="emphasis">A</em>, <em class="emphasis">B</em>, and <em class="emphasis">C</em> are independent if <span class="inlineequation" id="shafer-20121106-125753-098504"><math xml:id="fwk-shafer-ch03-m0375" display="inline"><mi>P</mi><mrow><mo>(</mo><mrow><mi>A</mi><mo>∩</mo><mi>B</mi><mo>∩</mo><mi>C</mi></mrow><mo>)</mo></mrow><mo>=</mo><mi>P</mi><mrow><mo>(</mo><mrow><mi>A</mi></mrow><mo>)</mo></mrow><mo>·</mo><mi>P</mi><mrow><mo>(</mo><mrow><mi>B</mi></mrow><mo>)</mo></mrow><mo>·</mo><mi>P</mi><mrow><mo>(</mo><mrow><mi>C</mi></mrow><mo>)</mo></mrow><mo>.</mo></math></span> Note carefully that, as is the case with just two events, this is not a formula that is always valid, but holds precisely when the events in question are independent.</p>
         <div class="exercises block" id="fwk-shafer-ch03_s03_s02_n06">
-            <h3 class="title">Example 27</h3>
+            <h3 class="title">Contoh 27</h3>
             <p class="para" id="fwk-shafer-ch03_s03_s02_p19">The reliability of a system can be enhanced by redundancy, which means building two or more independent devices to do the same job, such as two independent braking systems in an automobile.</p>
             <p class="para" id="fwk-shafer-ch03_s03_s02_p20">Suppose a particular species of trained dogs has a 90% chance of detecting contraband in airline luggage. If the luggage is checked three times by three different dogs independently of one another, what is the probability that contraband will be detected?</p>
-            <p class="simpara">Solution:</p>
+            <p class="simpara">Solusi:</p>
             <p class="para" id="fwk-shafer-ch03_s03_s02_p21">Let <em class="emphasis">D</em><sub class="subscript">1</sub> denote the event that the contraband is detected by the first dog, <em class="emphasis">D</em><sub class="subscript">2</sub> the event that it is detected by the second dog, and <em class="emphasis">D</em><sub class="subscript">3</sub> the event that it is detected by the third. Since each dog has a 90% of detecting the contraband, by the Probability Rule for Complements it has a 10% chance of failing. In symbols, <span class="inlineequation" id="shafer-20121106-125753-098521"><math xml:id="fwk-shafer-ch03-m0376" display="inline"><mi>P</mi><mrow><mo>(</mo><mrow><msubsup><mrow><mi>D</mi></mrow><mrow><mn>1</mn></mrow><mrow><mi>c</mi></mrow></msubsup></mrow><mo>)</mo></mrow><mo>=</mo><mn>0.10</mn><mo>,</mo></math></span> <span class="inlineequation" id="shafer-20121106-125753-098537"><math xml:id="fwk-shafer-ch03-m0377" display="inline"><mi>P</mi><mrow><mo>(</mo><mrow><msubsup><mrow><mi>D</mi></mrow><mrow><mn>2</mn></mrow><mrow><mi>c</mi></mrow></msubsup></mrow><mo>)</mo></mrow><mo>=</mo><mn>0.10</mn></math></span>, and <span class="inlineequation" id="shafer-20121106-125753-098553"><math xml:id="fwk-shafer-ch03-m0378" display="inline"><mi>P</mi><mrow><mo>(</mo><mrow><msubsup><mrow><mi>D</mi></mrow><mrow><mn>3</mn></mrow><mrow><mi>c</mi></mrow></msubsup></mrow><mo>)</mo></mrow><mo>=</mo><mn>0.10</mn><mo>.</mo></math></span></p>
             <p class="para" id="fwk-shafer-ch03_s03_s02_p22">Let <em class="emphasis">D</em> denote the event that the contraband is detected. We seek <span class="inlineequation" id="shafer-20121106-125753-098568"><math xml:id="fwk-shafer-ch03-m0379" display="inline"><mi>P</mi><mrow><mo>(</mo><mrow><mi>D</mi></mrow><mo>)</mo></mrow><mo>.</mo></math></span> It is easier to find <span class="inlineequation" id="shafer-20121106-125753-098584"><math xml:id="fwk-shafer-ch03-m0380" display="inline"><mi>P</mi><mrow><mo>(</mo><mrow><msup><mrow><mi>D</mi></mrow><mrow><mi>c</mi></mrow></msup></mrow><mo>)</mo></mrow></math></span>, because although there are several ways for the contraband to be detected, there is only one way for it to go undetected: all three dogs must fail. Thus <span class="inlineequation" id="shafer-20121106-125753-098600"><math xml:id="fwk-shafer-ch03-m0381" display="inline"><msup><mrow><mi>D</mi></mrow><mrow><mi>c</mi></mrow></msup><mo>=</mo><msubsup><mrow><mi>D</mi></mrow><mrow><mn>1</mn></mrow><mrow><mi>c</mi></mrow></msubsup><mo>∩</mo><msubsup><mrow><mi>D</mi></mrow><mrow><mn>2</mn></mrow><mrow><mi>c</mi></mrow></msubsup><mo>∩</mo><msubsup><mrow><mi>D</mi></mrow><mrow><mn>3</mn></mrow><mrow><mi>c</mi></mrow></msubsup></math></span>, and</p>
             <span class="informalequation" id="shafer-20121106-125753-098615"><math xml:id="fwk-shafer-ch03-m0382" display="block"><mrow><mi>P</mi><mrow><mo>(</mo><mrow><mi>D</mi></mrow><mo>)</mo></mrow><mo>=</mo><mn>1</mn><mo>−</mo><mi>P</mi><mrow><mo>(</mo><mrow><msup><mrow><mi>D</mi></mrow><mrow><mi>c</mi></mrow></msup></mrow><mo>)</mo></mrow><mo>=</mo><mn>1</mn><mo>−</mo><mi>P</mi><mrow><mo>(</mo><mrow><msubsup><mrow><mi>D</mi></mrow><mrow><mn>1</mn></mrow><mrow><mi>c</mi></mrow></msubsup><mo>∩</mo><msubsup><mrow><mi>D</mi></mrow><mrow><mn>2</mn></mrow><mrow><mi>c</mi></mrow></msubsup><mo>∩</mo><msubsup><mrow><mi>D</mi></mrow><mrow><mn>3</mn></mrow><mrow><mi>c</mi></mrow></msubsup></mrow><mo>)</mo></mrow></mrow></math></span>
@@ -2018,14 +2018,14 @@
         <h2 class="title editable block">Probabilities on Tree Diagrams</h2>
         <p class="para editable block" id="fwk-shafer-ch03_s03_s03_p01">Some probability problems are made much simpler when approached using a tree diagram. The next example illustrates how to place probabilities on a tree diagram and use it to solve a problem.</p>
         <div class="exercises block" id="fwk-shafer-ch03_s03_s03_n01">
-            <h3 class="title">Example 28</h3>
+            <h3 class="title">Contoh 28</h3>
             <p class="para" id="fwk-shafer-ch03_s03_s03_p02">A jar contains 10 marbles, 7 black and 3 white. Two marbles are drawn without replacement, which means that the first one is not put back before the second one is drawn.</p>
             <ol class="orderedlist" id="fwk-shafer-ch03_s03_s03_o01" numeration="loweralpha">
                 <li>What is the probability that both marbles are black?</li>
                 <li>What is the probability that exactly one marble is black?</li>
                 <li>What is the probability that at least one marble is black?</li>
             </ol>
-            <p class="simpara">Solution:</p>
+            <p class="simpara">Solusi:</p>
             <p class="para" id="fwk-shafer-ch03_s03_s03_p03">A tree diagram for the situation of drawing one marble after the other without replacement is shown in <a class="xref" href="#fwk-shafer-ch03_s03_s03_f01">Figure 3.6 "Tree Diagram for Drawing Two Marbles"</a>. The circle and rectangle will be explained later, and should be ignored for now.</p>
             <div class="figure large small-height" id="fwk-shafer-ch03_s03_s03_f01">
                 <p class="title"><span class="title-prefix">Figure 3.6</span> Tree Diagram for Drawing Two Marbles</p>
@@ -2053,7 +2053,7 @@
             </ol>
         </div>
         <div class="key_takeaways block" id="fwk-shafer-ch03_s03_s03_n03">
-            <h3 class="title">Key Takeaways</h3>
+            <h3 class="title">Poin Utamas</h3>
             <ul class="itemizedlist" id="fwk-shafer-ch03_s03_s03_l01" mark="bullet">
                 <li>A conditional probability is the probability that an event has occurred, taking into account additional information about the result of the experiment.</li>
                 <li>A conditional probability can always be computed using the formula in the definition. Sometimes it can be computed by discarding part of the sample space.</li>
@@ -2061,7 +2061,7 @@
             </ul>
         </div>
         <div class="qandaset block" id="fwk-shafer-ch03_s03_qs01" defaultlabel="number">
-            <h3 class="title">Exercises</h3>
+            <h3 class="title">Latihans</h3>
             <ol class="qandadiv" id="fwk-shafer-ch03_s03_qs01_qd01">
                 <h3 class="title">Basic</h3>
                 <li class="qandaentry" id="fwk-shafer-ch03_s03_qs01_qd01_qa01">
@@ -2548,7 +2548,7 @@
                 </li>
             </ol>
             <ol class="qandadiv" id="fwk-shafer-ch03_s03_qs01_qd03" start="27">
-                <h3 class="title">Additional Exercises</h3>
+                <h3 class="title">Additional Latihans</h3>
                 <li class="qandaentry" id="fwk-shafer-ch03_s03_qs01_qd03_qa27">
                     <div class="question">
                         <p class="para" id="fwk-shafer-ch03_s03_qs01_p35">Events <em class="emphasis">A</em> and <em class="emphasis">B</em> are mutually exclusive. Find <span class="inlineequation" id="shafer-20121106-125753-099997"><math xml:id="fwk-shafer-ch03-m0463" display="inline"><mi>P</mi><mrow><mo>(</mo><mrow><mi>A</mi><mo>|</mo><mi>B</mi></mrow><mo>)</mo></mrow><mo>.</mo></math></span></p>
@@ -2836,15 +2836,15 @@
   <div id=navbar-bottom class="navbar">
     <div class="navbar-part left">
       
-        <a href="s06-descriptive-statistics.html"><img src="shared/images/batch-left.png"></a> <a href="s06-descriptive-statistics.html">Previous Chapter</a>
+        <a href="s06-descriptive-statistics.html"><img src="shared/images/batch-left.png"></a> <a href="s06-descriptive-statistics.html">Bab Sebelumnya</a>
       
     </div>
     <div class="navbar-part middle">
-      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Daftar Isi</a>
     </div>
     <div class="navbar-part right">
       
-        <a href="s08-discrete-random-variables.html">Next Chapter</a> <a href="s08-discrete-random-variables.html"><img src="shared/images/batch-right.png"></a>
+        <a href="s08-discrete-random-variables.html">Bab Selanjutnya</a> <a href="s08-discrete-random-variables.html"><img src="shared/images/batch-right.png"></a>
       
     </div>
   </div>

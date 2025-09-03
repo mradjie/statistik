@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <link href="shared/bookhub.css" rel="stylesheet" type="text/css">
-  <title>Areas of Tails of Distributions</title>
+  <title>Area Ekor Distribusi</title>
 </head>
 <body>
 
@@ -11,15 +11,15 @@
   <div id=navbar-top class="navbar">
     <div class="navbar-part left">
       
-        <a href="s09-03-probability-computations-for-g.html"><img src="shared/images/batch-left.png"></a> <a href="s09-03-probability-computations-for-g.html">Previous Section</a>
+        <a href="s09-03-probability-computations-for-g.html"><img src="shared/images/batch-left.png"></a> <a href="s09-03-probability-computations-for-g.html">Bagian Sebelumnya</a>
       
     </div>
     <div class="navbar-part middle">
-      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Daftar Isi</a>
     </div>
     <div class="navbar-part right">
       
-        <a href="s10-01-the-mean-and-standard-deviatio.html">Next Section</a> <a href="s10-01-the-mean-and-standard-deviatio.html"><img src="shared/images/batch-right.png"></a>
+        <a href="s10-01-the-mean-and-standard-deviatio.html">Bagian Selanjutnya</a> <a href="s10-01-the-mean-and-standard-deviatio.html"><img src="shared/images/batch-right.png"></a>
       
     </div>
   </div>
@@ -29,13 +29,13 @@
     <h2 class="title editable block">
 <span class="title-prefix">5.4</span> Areas of Tails of Distributions</h2>
     <div class="learning_objectives block" id="fwk-shafer-ch05_s04_n01">
-        <h3 class="title">Learning Objective</h3>
+        <h3 class="title">Tujuan Pembelajaran</h3>
         <ol class="orderedlist" id="fwk-shafer-ch05_s04_n01_o01" numeration="arabic">
             <li>To learn how to find, for a normal random variable <em class="emphasis">X</em> and an area <em class="emphasis">a</em>, the value <span class="inlineequation" id="shafer-20121106-125753-105545"><math xml:id="fwk-shafer-ch05-m0117" display="inline"><mrow><mi>x*</mi></mrow></math></span> of <em class="emphasis">X</em> so that <span class="inlineequation" id="shafer-20121106-125753-105561"><math xml:id="fwk-shafer-ch05-m0118" display="inline"><mi>P</mi><mrow><mo>(</mo><mrow><mi>X</mi><mo>&lt;</mo><mrow><mi>x*</mi></mrow></mrow><mo>)</mo></mrow><mo>=</mo><mi>a</mi></math></span> or that <span class="inlineequation" id="shafer-20121106-125753-105577"><math xml:id="fwk-shafer-ch05-m0119" display="inline"><mi>P</mi><mrow><mo>(</mo><mrow><mi>X</mi><mo>&gt;</mo><mrow><mi>x*</mi></mrow></mrow><mo>)</mo></mrow><mo>=</mo><mi>a</mi></math></span>, whichever is required.</li>
         </ol>
     </div>
     <div class="callout block" id="fwk-shafer-ch05_s04_n02">
-        <h3 class="title">Definition</h3>
+        <h3 class="title">Definisi</h3>
         <p class="para" id="fwk-shafer-ch05_s04_p01"><em class="emphasis">The</em> <strong class="emphasis bold">left</strong> <span class="margin_term"><a class="glossterm">tail</a><span class="glossdef">The region under a density curve whose area is either <span class="inlineequation" id="shafer-20121106-125753-105592"><math xml:id="fwk-shafer-ch05-m0120" display="inline"><mi>P</mi><mrow><mo>(</mo><mrow><mi>X</mi><mo>&lt;</mo><mrow><mi>x*</mi></mrow></mrow><mo>)</mo></mrow></math></span> or <span class="inlineequation" id="shafer-20121106-125753-105609"><math xml:id="fwk-shafer-ch05-m0121" display="inline"><mi>P</mi><mrow><mo>(</mo><mrow><mi>X</mi><mo>&gt;</mo><mrow><mi>x*</mi></mrow></mrow><mo>)</mo></mrow></math></span> for some number <span class="inlineequation" id="shafer-20121106-125753-105631"><math xml:id="fwk-shafer-ch05-m0122" display="inline"><mrow><mi>x*</mi></mrow></math></span>.</span></span> <em class="emphasis">of a density curve</em> <span class="inlineequation" id="shafer-20121106-125753-105648"><math xml:id="fwk-shafer-ch05-m0123" display="inline"><mi>y</mi><mo>=</mo><mi>f</mi><mrow><mo>(</mo><mrow><mi>x</mi></mrow><mo>)</mo></mrow></math></span> <em class="emphasis">of a continuous random variable</em> <em class="emphasis">X</em> <em class="emphasis">cut off by a value</em> <span class="inlineequation" id="shafer-20121106-125753-105664"><math xml:id="fwk-shafer-ch05-m0124" display="inline"><mrow><mi>x*</mi></mrow></math></span> <em class="emphasis">of</em> <em class="emphasis">X</em> <em class="emphasis">is the region under the curve that is to the left of</em> <span class="inlineequation" id="shafer-20121106-125753-105679"><math xml:id="fwk-shafer-ch05-m0125" display="inline"><mrow><mi>x*</mi></mrow></math></span>, <em class="emphasis">as shown by the shading in <a class="xref" href="#fwk-shafer-ch05_s04_f01">Figure 5.19 "Right and Left Tails of a Distribution"</a>(a). The</em> <strong class="emphasis bold">right tail</strong> <em class="emphasis">cut off by</em> <span class="inlineequation" id="shafer-20121106-125753-105695"><math xml:id="fwk-shafer-ch05-m0126" display="inline"><mrow><mi>x*</mi></mrow></math></span> <em class="emphasis">is defined similarly, as indicated by the shading in <a class="xref" href="#fwk-shafer-ch05_s04_f01">Figure 5.19 "Right and Left Tails of a Distribution"</a>(b)</em>.</p>
         <div class="figure large" id="fwk-shafer-ch05_s04_f01">
             <p class="title"><span class="title-prefix">Figure 5.19</span> Right and Left Tails of a Distribution</p>
@@ -52,23 +52,23 @@
             <img src="section_09/30641707b126e7384ae5b3e6745117f7.jpg">
         </div>
         <div class="exercises block" id="fwk-shafer-ch05_s04_s01_n01">
-            <h3 class="title">Example 12</h3>
+            <h3 class="title">Contoh 12</h3>
             <p class="para" id="fwk-shafer-ch05_s04_s01_p03">Find the value <span class="inlineequation" id="shafer-20121106-125753-105786"><math xml:id="fwk-shafer-ch05-m0131" display="inline"><mrow><mi>z*</mi></mrow></math></span> of <em class="emphasis">Z</em> as determined by <a class="xref" href="#fwk-shafer-ch05_s04_s01_f01">Figure 5.20</a>: the value <span class="inlineequation" id="shafer-20121106-125753-105802"><math xml:id="fwk-shafer-ch05-m0132" display="inline"><mrow><mi>z*</mi></mrow></math></span> that cuts off a left tail of area 0.0125 in the standard normal distribution. In symbols, find the number <span class="inlineequation" id="shafer-20121106-125753-105818"><math xml:id="fwk-shafer-ch05-m0133" display="inline"><mrow><mi>z*</mi></mrow></math></span> such that <span class="inlineequation" id="shafer-20121106-125753-105833"><math xml:id="fwk-shafer-ch05-m0134" display="inline"><mi>P</mi><mrow><mo>(</mo><mrow><mi>Z</mi><mo>&lt;</mo><mrow><mi>z*</mi></mrow></mrow><mo>)</mo></mrow><mo>=</mo><mn>0.0125</mn><mo>.</mo></math></span></p>
-            <p class="simpara">Solution:</p>
+            <p class="simpara">Solusi:</p>
             <p class="para" id="fwk-shafer-ch05_s04_s01_p04">The number that is known, 0.0125, is the area of a left tail, and as already mentioned the probabilities tabulated in <a class="xref" href="https://saylordotorg.github.io/text_introductory-statistics/s16-appendix.html">Figure 12.2 "Cumulative Normal Probability"</a> are areas of left tails. Thus to solve this problem we need only search in the interior of <a class="xref" href="https://saylordotorg.github.io/text_introductory-statistics/s16-appendix.html">Figure 12.2 "Cumulative Normal Probability"</a> for the number 0.0125. It lies in the row with the heading −2.2 and in the column with the heading 0.04. This means that <em class="emphasis">P</em>(<em class="emphasis">Z</em> &lt; −2.24) = 0.0125, hence <span class="inlineequation" id="shafer-20121106-125753-105849"><math xml:id="fwk-shafer-ch05-m0135" display="inline"><mrow><mi>z*</mi></mrow><mo>=</mo><mtext>−</mtext><mn>2.24</mn><mo>.</mo></math></span></p>
         </div>
         <div class="exercises block" id="fwk-shafer-ch05_s04_s01_n02">
-            <h3 class="title">Example 13</h3>
+            <h3 class="title">Contoh 13</h3>
             <p class="para" id="fwk-shafer-ch05_s04_s01_p05">Find the value <span class="inlineequation" id="shafer-20121106-125753-105865"><math xml:id="fwk-shafer-ch05-m0136" display="inline"><mrow><mi>z*</mi></mrow></math></span> of <em class="emphasis">Z</em> as determined by <a class="xref" href="#fwk-shafer-ch05_s04_s01_f02">Figure 5.21</a>: the value <span class="inlineequation" id="shafer-20121106-125753-105880"><math xml:id="fwk-shafer-ch05-m0137" display="inline"><mrow><mi>z*</mi></mrow></math></span> that cuts off a right tail of area 0.0250 in the standard normal distribution. In symbols, find the number <span class="inlineequation" id="shafer-20121106-125753-105897"><math xml:id="fwk-shafer-ch05-m0138" display="inline"><mrow><mi>z*</mi></mrow></math></span> such that <span class="inlineequation" id="shafer-20121106-125753-105913"><math xml:id="fwk-shafer-ch05-m0139" display="inline"><mi>P</mi><mrow><mo>(</mo><mrow><mi>Z</mi><mo>&gt;</mo><mrow><mi>z*</mi></mrow></mrow><mo>)</mo></mrow><mo>=</mo><mn>0.0250</mn><mo>.</mo></math></span></p>
             <div class="figure large small-height" id="fwk-shafer-ch05_s04_s01_f02">
                 <p class="title"><span class="title-prefix">Figure 5.21</span> <em class="emphasis">Z</em> Value that Produces a Known Area</p>
                 <img src="section_09/c01e6ac6766ff9e8602e238df3d23be1.jpg">
             </div>
-            <p class="simpara">Solution:</p>
+            <p class="simpara">Solusi:</p>
             <p class="para" id="fwk-shafer-ch05_s04_s01_p06">The important distinction between this example and the previous one is that here it is the area of a <em class="emphasis">right</em> tail that is known. In order to be able to use <a class="xref" href="https://saylordotorg.github.io/text_introductory-statistics/s16-appendix.html">Figure 12.2 "Cumulative Normal Probability"</a> we must first find that area of the <em class="emphasis">left</em> tail cut off by the unknown number <span class="inlineequation" id="shafer-20121106-125753-105930"><math xml:id="fwk-shafer-ch05-m0140" display="inline"><mrow><mi>z*</mi></mrow><mo>.</mo></math></span> Since the total area under the density curve is 1, that area is <span class="inlineequation" id="shafer-20121106-125753-105952"><math xml:id="fwk-shafer-ch05-m0141" display="inline"><mn>1</mn><mo>−</mo><mn>0.0250</mn><mo>=</mo><mn>0.9750</mn><mo>.</mo></math></span> This is the number we look for in the interior of <a class="xref" href="https://saylordotorg.github.io/text_introductory-statistics/s16-appendix.html">Figure 12.2 "Cumulative Normal Probability"</a>. It lies in the row with the heading 1.9 and in the column with the heading 0.06. Therefore <span class="inlineequation" id="shafer-20121106-125753-105968"><math xml:id="fwk-shafer-ch05-m0142" display="inline"><mrow><mi>z*</mi></mrow><mo>=</mo><mn>1.96</mn><mo>.</mo></math></span></p>
         </div>
         <div class="callout block" id="fwk-shafer-ch05_s04_s01_n03">
-            <h3 class="title">Definition</h3>
+            <h3 class="title">Definisi</h3>
             <p class="para" id="fwk-shafer-ch05_s04_s01_p07"><em class="emphasis">The value of the standard normal random variable</em> <em class="emphasis">Z</em> <em class="emphasis">that cuts off a right tail of area</em> <em class="emphasis">c</em> <em class="emphasis">is denoted</em> <em class="emphasis">z<sub class="subscript">c</sub></em>. <em class="emphasis">By symmetry, value of</em> <em class="emphasis">Z</em> <em class="emphasis">that cuts off a left tail of area</em> <em class="emphasis">c</em> <em class="emphasis">is</em> <span class="inlineequation" id="shafer-20121106-125753-105984"><math xml:id="fwk-shafer-ch05-m0143" display="inline"><mtext>−</mtext><msub><mrow><mi>z</mi></mrow><mrow><mi>c</mi></mrow></msub><mo>.</mo></math></span> <em class="emphasis">See <a class="xref" href="#fwk-shafer-ch05_s04_s01_f03">Figure 5.22 "The Numbers "</a></em>.</p>
             <div class="figure large small-height" id="fwk-shafer-ch05_s04_s01_f03">
                 <p class="title"><span class="title-prefix">Figure 5.22</span> The Numbers <em class="emphasis">z<sub class="subscript">c</sub></em> and <span class="inlineequation" id="shafer-20121106-125753-106000"><math xml:id="fwk-shafer-ch05-m0144" display="inline"><mtext>−</mtext><msub><mrow><mi>z</mi></mrow><mrow><mi>c</mi></mrow></msub></math></span></p>
@@ -77,9 +77,9 @@
         </div>
         <p class="para editable block" id="fwk-shafer-ch05_s04_s01_p08">The previous two examples were atypical because the areas we were looking for in the interior of <a class="xref" href="https://saylordotorg.github.io/text_introductory-statistics/s16-appendix.html">Figure 12.2 "Cumulative Normal Probability"</a> were actually there. The following example illustrates the situation that is more common.</p>
         <div class="exercises block" id="fwk-shafer-ch05_s04_s01_n04">
-            <h3 class="title">Example 14</h3>
+            <h3 class="title">Contoh 14</h3>
             <p class="para" id="fwk-shafer-ch05_s04_s01_p09">Find <span class="inlineequation" id="shafer-20121106-125753-106017"><math xml:id="fwk-shafer-ch05-m0145" display="inline"><msub><mrow><mi>z</mi></mrow><mrow><mo>.</mo><mn>01</mn></mrow></msub></math></span> and <span class="inlineequation" id="shafer-20121106-125753-106033"><math xml:id="fwk-shafer-ch05-m0146" display="inline"><mtext>−</mtext><msub><mrow><mi>z</mi></mrow><mrow><mo>.</mo><mn>01</mn></mrow></msub></math></span>, the values of <em class="emphasis">Z</em> that cut off right and left tails of area 0.01 in the standard normal distribution.</p>
-            <p class="simpara">Solution:</p>
+            <p class="simpara">Solusi:</p>
             <p class="para" id="fwk-shafer-ch05_s04_s01_p10">Since <span class="inlineequation" id="shafer-20121106-125753-106049"><math xml:id="fwk-shafer-ch05-m0147" display="inline"><mtext>−</mtext><msub><mrow><mi>z</mi></mrow><mrow><mo>.</mo><mn>01</mn></mrow></msub></math></span> cuts off a left tail of area 0.01 and <a class="xref" href="https://saylordotorg.github.io/text_introductory-statistics/s16-appendix.html">Figure 12.2 "Cumulative Normal Probability"</a> is a table of left tails, we look for the number 0.0100 in the interior of the table. It is not there, but falls between the two numbers 0.0102 and 0.0099 in the row with heading −2.3. The number 0.0099 is closer to 0.0100 than 0.0102 is, so for the hundredths place in <span class="inlineequation" id="shafer-20121106-125753-106065"><math xml:id="fwk-shafer-ch05-m0148" display="inline"><mtext>−</mtext><msub><mrow><mi>z</mi></mrow><mrow><mo>.</mo><mn>01</mn></mrow></msub></math></span> we use the heading of the column that contains 0.0099, namely, 0.03, and write <span class="inlineequation" id="shafer-20121106-125753-106086"><math xml:id="fwk-shafer-ch05-m0149" display="inline"><mtext>−</mtext><msub><mrow><mi>z</mi></mrow><mrow><mo>.</mo><mn>01</mn></mrow></msub><mo>≈</mo><mtext>−</mtext><mn>2.33</mn><mo>.</mo></math></span></p>
             <p class="para" id="fwk-shafer-ch05_s04_s01_p11">The answer to the second half of the problem is automatic: since <span class="inlineequation" id="shafer-20121106-125753-106103"><math xml:id="fwk-shafer-ch05-m0150" display="inline"><mtext>−</mtext><msub><mrow><mi>z</mi></mrow><mrow><mo>.</mo><mn>01</mn></mrow></msub><mo>=</mo><mtext>−</mtext><mn>2.33</mn></math></span>, we conclude immediately that <span class="inlineequation" id="shafer-20121106-125753-106119"><math xml:id="fwk-shafer-ch05-m0151" display="inline"><msub><mrow><mi>z</mi></mrow><mrow><mo>.</mo><mn>01</mn></mrow></msub><mo>=</mo><mn>2.33</mn><mo>.</mo></math></span></p>
             <p class="para" id="fwk-shafer-ch05_s04_s01_p12">We could just as well have solved this problem by looking for <span class="inlineequation" id="shafer-20121106-125753-106134"><math xml:id="fwk-shafer-ch05-m0152" display="inline"><msub><mrow><mi>z</mi></mrow><mrow><mo>.</mo><mn>01</mn></mrow></msub></math></span> first, and it is instructive to rework the problem this way. To begin with, we must first subtract 0.01 from 1 to find the area <span class="inlineequation" id="shafer-20121106-125753-106150"><math xml:id="fwk-shafer-ch05-m0153" display="inline"><mn>1</mn><mo>−</mo><mn>0.0100</mn><mo>=</mo><mn>0.9900</mn></math></span> of the <em class="emphasis">left</em> tail cut off by the unknown number <span class="inlineequation" id="shafer-20121106-125753-106166"><math xml:id="fwk-shafer-ch05-m0154" display="inline"><msub><mrow><mi>z</mi></mrow><mrow><mo>.</mo><mn>01</mn></mrow></msub><mo>.</mo></math></span> See <a class="xref" href="#fwk-shafer-ch05_s04_s01_f04">Figure 5.23 "Computation of the Number "</a>. Then we search for the area 0.9900 in <a class="xref" href="https://saylordotorg.github.io/text_introductory-statistics/s16-appendix.html">Figure 12.2 "Cumulative Normal Probability"</a>. It is not there, but falls between the numbers 0.9898 and 0.9901 in the row with heading 2.3. Since 0.9901 is closer to 0.9900 than 0.9898 is, we use the column heading above it, 0.03, to obtain the approximation <span class="inlineequation" id="shafer-20121106-125753-106181"><math xml:id="fwk-shafer-ch05-m0155" display="inline"><msub><mrow><mi>z</mi></mrow><mrow><mo>.</mo><mn>01</mn></mrow></msub><mo>≈</mo><mn>2.33</mn><mo>.</mo></math></span> Then finally <span class="inlineequation" id="shafer-20121106-125753-106196"><math xml:id="fwk-shafer-ch05-m0156" display="inline"><mtext>−</mtext><msub><mrow><mi>z</mi></mrow><mrow><mo>.</mo><mn>01</mn></mrow></msub><mo>≈</mo><mtext>−</mtext><mn>2.33</mn><mo>.</mo></math></span></p>
@@ -104,9 +104,9 @@
         </div>
         <p class="para block" id="fwk-shafer-ch05_s04_s02_p03">In short, solve the corresponding problem for the standard normal distribution, thereby obtaining the <em class="emphasis">z</em>-score of <span class="inlineequation" id="shafer-20121106-125753-106346"><math xml:id="fwk-shafer-ch05-m0165" display="inline"><mrow><mi>x*</mi></mrow></math></span>, then destandardize to obtain <span class="inlineequation" id="shafer-20121106-125753-106362"><math xml:id="fwk-shafer-ch05-m0166" display="inline"><mrow><mi>x*</mi></mrow><mo>.</mo></math></span></p>
         <div class="exercises block" id="fwk-shafer-ch05_s04_s02_n02">
-            <h3 class="title">Example 15</h3>
+            <h3 class="title">Contoh 15</h3>
             <p class="para" id="fwk-shafer-ch05_s04_s02_p04">Find <span class="inlineequation" id="shafer-20121106-125753-106384"><math xml:id="fwk-shafer-ch05-m0167" display="inline"><mrow><mi>x*</mi></mrow></math></span> such that <span class="inlineequation" id="shafer-20121106-125753-106400"><math xml:id="fwk-shafer-ch05-m0168" display="inline"><mi>P</mi><mrow><mo>(</mo><mrow><mi>X</mi><mo>&lt;</mo><mrow><mi>x*</mi></mrow></mrow><mo>)</mo></mrow><mo>=</mo><mn>0.9332</mn></math></span>, where <em class="emphasis">X</em> is a normal random variable with mean <em class="emphasis">μ</em> = 10 and standard deviation <em class="emphasis">σ</em> = 2.5.</p>
-            <p class="simpara">Solution:</p>
+            <p class="simpara">Solusi:</p>
             <p class="para" id="fwk-shafer-ch05_s04_s02_p05">All the ideas for the solution are illustrated in <a class="xref" href="#fwk-shafer-ch05_s04_s02_f01">Figure 5.24 "Tail of a Normally Distributed Random Variable"</a>. Since 0.9332 is the area of a left tail, we can find <span class="inlineequation" id="shafer-20121106-125753-106416"><math xml:id="fwk-shafer-ch05-m0169" display="inline"><mrow><mi>z*</mi></mrow></math></span> simply by looking for 0.9332 in the interior of <a class="xref" href="https://saylordotorg.github.io/text_introductory-statistics/s16-appendix.html">Figure 12.2 "Cumulative Normal Probability"</a>. It is in the row and column with headings 1.5 and 0.00, hence <span class="inlineequation" id="shafer-20121106-125753-106432"><math xml:id="fwk-shafer-ch05-m0170" display="inline"><mrow><mi>z*</mi></mrow><mo>=</mo><mn>1.50</mn><mo>.</mo></math></span> Thus <span class="inlineequation" id="shafer-20121106-125753-106448"><math xml:id="fwk-shafer-ch05-m0171" display="inline"><mrow><mi>x*</mi></mrow></math></span> is 1.50 standard deviations above the mean, so</p>
             <span class="informalequation" id="shafer-20121106-125753-106463"><math xml:id="fwk-shafer-ch05-m0172" display="block"><mrow><mrow><mi>x*</mi></mrow><mo>=</mo><mi mathvariant="italic">μ</mi><mo>+</mo><mrow><mi>z*</mi></mrow><mi mathvariant="italic">σ</mi><mo>=</mo><mn>10</mn><mo>+</mo><mn>1.50</mn><mo>·</mo><mn>2.5</mn><mo>=</mo><mn>13.75</mn><mo>.</mo></mrow></math></span>
             <div class="figure large small-height" id="fwk-shafer-ch05_s04_s02_f01">
@@ -115,9 +115,9 @@
             </div>
         </div>
         <div class="exercises block" id="fwk-shafer-ch05_s04_s02_n03">
-            <h3 class="title">Example 16</h3>
+            <h3 class="title">Contoh 16</h3>
             <p class="para" id="fwk-shafer-ch05_s04_s02_p06">Find <span class="inlineequation" id="shafer-20121106-125753-106479"><math xml:id="fwk-shafer-ch05-m0173" display="inline"><mrow><mi>x*</mi></mrow></math></span> such that <span class="inlineequation" id="shafer-20121106-125753-106495"><math xml:id="fwk-shafer-ch05-m0174" display="inline"><mi>P</mi><mrow><mo>(</mo><mrow><mi>X</mi><mo>&gt;</mo><mrow><mi>x*</mi></mrow></mrow><mo>)</mo></mrow><mo>=</mo><mn>0.65</mn></math></span>, where <em class="emphasis">X</em> is a normal random variable with mean <em class="emphasis">μ</em> = 175 and standard deviation <em class="emphasis">σ</em> = 12.</p>
-            <p class="simpara">Solution:</p>
+            <p class="simpara">Solusi:</p>
             <p class="para" id="fwk-shafer-ch05_s04_s02_p07">The situation is illustrated in <a class="xref" href="#fwk-shafer-ch05_s04_s02_f02">Figure 5.25 "Tail of a Normally Distributed Random Variable"</a>. Since 0.65 is the area of a right tail, we first subtract it from 1 to obtain <span class="inlineequation" id="shafer-20121106-125753-106517"><math xml:id="fwk-shafer-ch05-m0175" display="inline"><mn>1</mn><mo>−</mo><mn>0.65</mn><mo>=</mo><mn>0.35</mn></math></span>, the area of the complementary left tail. We find <span class="inlineequation" id="shafer-20121106-125753-106533"><math xml:id="fwk-shafer-ch05-m0176" display="inline"><mrow><mi>z*</mi></mrow></math></span> by looking for 0.3500 in the interior of <a class="xref" href="https://saylordotorg.github.io/text_introductory-statistics/s16-appendix.html">Figure 12.2 "Cumulative Normal Probability"</a>. It is not present, but lies between table entries 0.3520 and 0.3483. The entry 0.3483 with row and column headings −0.3 and 0.09 is closer to 0.3500 than the other entry is, so <span class="inlineequation" id="shafer-20121106-125753-106549"><math xml:id="fwk-shafer-ch05-m0177" display="inline"><mrow><mi>z*</mi></mrow><mo>≈</mo><mtext>−</mtext><mn>0.39</mn><mo>.</mo></math></span> Thus <span class="inlineequation" id="shafer-20121106-125753-106565"><math xml:id="fwk-shafer-ch05-m0178" display="inline"><mrow><mi>x*</mi></mrow></math></span> is 0.39 standard deviations below the mean, so</p>
             <span class="informalequation" id="shafer-20121106-125753-106581"><math xml:id="fwk-shafer-ch05-m0179" display="block"><mrow><mrow><mi>x*</mi></mrow><mo>=</mo><mi mathvariant="italic">μ</mi><mo>+</mo><mrow><mi>z*</mi></mrow><mi mathvariant="italic">σ</mi><mo>=</mo><mn>175</mn><mo>+</mo><mrow><mo>(</mo><mrow><mtext>−</mtext><mn>0.39</mn></mrow><mo>)</mo></mrow><mo>·</mo><mn>12</mn><mo>=</mo><mn>170.32</mn></mrow></math></span>
             <div class="figure large small-height" id="fwk-shafer-ch05_s04_s02_f02">
@@ -126,9 +126,9 @@
             </div>
         </div>
         <div class="exercises block" id="fwk-shafer-ch05_s04_s02_n04">
-            <h3 class="title">Example 17</h3>
+            <h3 class="title">Contoh 17</h3>
             <p class="para" id="fwk-shafer-ch05_s04_s02_p08">Scores on a standardized college entrance examination (<em class="emphasis">CEE</em>) are normally distributed with mean 510 and standard deviation 60. A selective university decides to give serious consideration for admission to applicants whose <em class="emphasis">CEE</em> scores are in the top 5% of all <em class="emphasis">CEE</em> scores. Find the minimum score that meets this criterion for serious consideration for admission.</p>
-            <p class="simpara">Solution:</p>
+            <p class="simpara">Solusi:</p>
             <p class="para" id="fwk-shafer-ch05_s04_s02_p09">Let <em class="emphasis">X</em> denote the score made on the <em class="emphasis">CEE</em> by a randomly selected individual. Then <em class="emphasis">X</em> is normally distributed with mean 510 and standard deviation 60. The probability that <em class="emphasis">X</em> lie in a particular interval is the same as the proportion of all exam scores that lie in that interval. Thus the minimum score that is in the top 5% of all <em class="emphasis">CEE</em> is the score <span class="inlineequation" id="shafer-20121106-125753-106597"><math xml:id="fwk-shafer-ch05-m0180" display="inline"><mrow><mi>x*</mi></mrow></math></span> that cuts off a right tail in the distribution of <em class="emphasis">X</em> of area 0.05 (5% expressed as a proportion). See <a class="xref" href="#fwk-shafer-ch05_s04_s02_f03">Figure 5.26 "Tail of a Normally Distributed Random Variable"</a>.</p>
             <div class="figure large small-height" id="fwk-shafer-ch05_s04_s02_f03">
                 <p class="title"><span class="title-prefix">Figure 5.26</span> Tail of a Normally Distributed Random Variable</p>
@@ -138,9 +138,9 @@
             <span class="informalequation" id="shafer-20121106-125753-106682"><math xml:id="fwk-shafer-ch05-m0185" display="block"><mrow><mrow><mi>x*</mi></mrow><mo>=</mo><mi mathvariant="italic">μ</mi><mo>+</mo><mrow><mi>z*</mi></mrow><mi mathvariant="italic">σ</mi><mo>=</mo><mn>510</mn><mo>+</mo><mn>1.645</mn><mo>·</mo><mn>60</mn><mo>=</mo><mn>608.7</mn></mrow></math></span>
         </div>
         <div class="exercises block" id="fwk-shafer-ch05_s04_s02_n05">
-            <h3 class="title">Example 18</h3>
+            <h3 class="title">Contoh 18</h3>
             <p class="para" id="fwk-shafer-ch05_s04_s02_p11">All boys at a military school must run a fixed course as fast as they can as part of a physical examination. Finishing times are normally distributed with mean 29 minutes and standard deviation 2 minutes. The middle 75% of all finishing times are classified as “average.” Find the range of times that are average finishing times by this definition.</p>
-            <p class="simpara">Solution:</p>
+            <p class="simpara">Solusi:</p>
             <p class="para" id="fwk-shafer-ch05_s04_s02_p12">Let <em class="emphasis">X</em> denote the finish time of a randomly selected boy. Then <em class="emphasis">X</em> is normally distributed with mean 29 and standard deviation 2. The probability that <em class="emphasis">X</em> lie in a particular interval is the same as the proportion of all finish times that lie in that interval. Thus the situation is as shown in <a class="xref" href="#fwk-shafer-ch05_s04_s02_f04">Figure 5.27 "Distribution of Times to Run a Course"</a>. Because the area in the middle corresponding to “average” times is 0.75, the areas of the two tails add up to 1 − 0.75 = 0.25 in all. By the symmetry of the density curve each tail must have half of this total, or area 0.125 each. Thus the fastest time that is “average” has <em class="emphasis">z</em>-score <span class="inlineequation" id="shafer-20121106-125753-106698"><math xml:id="fwk-shafer-ch05-m0186" display="inline"><mtext>−</mtext><msub><mrow><mi>z</mi></mrow><mrow><mo>.</mo><mn>125</mn></mrow></msub></math></span>, which by <a class="xref" href="https://saylordotorg.github.io/text_introductory-statistics/s16-appendix.html">Figure 12.2 "Cumulative Normal Probability"</a> is −1.15, and the slowest time that is “average” has <em class="emphasis">z</em>-score <span class="inlineequation" id="shafer-20121106-125753-106714"><math xml:id="fwk-shafer-ch05-m0187" display="inline"><msub><mrow><mi>z</mi></mrow><mrow><mo>.</mo><mn>125</mn></mrow></msub><mo>=</mo><mn>1.15</mn><mo>.</mo></math></span> The fastest and slowest times that are still considered average are</p>
             <span class="informalequation" id="shafer-20121106-125753-106729"><math xml:id="fwk-shafer-ch05-m0188" display="block"><mrow><msub><mrow><mi>x</mi></mrow><mrow><mstyle><mtext> </mtext><mtext>fast</mtext></mstyle></mrow></msub><mo>=</mo><mi mathvariant="italic">μ</mi><mo>+</mo><mrow><mo>(</mo><mrow><mtext>−</mtext><msub><mrow><mi>z</mi></mrow><mrow><mo>.</mo><mn>125</mn></mrow></msub></mrow><mo>)</mo></mrow><mi mathvariant="italic">σ</mi><mo>=</mo><mn>29</mn><mo>+</mo><mrow><mo>(</mo><mrow><mtext>−</mtext><mn>1.15</mn></mrow><mo>)</mo></mrow><mo>·</mo><mn>2</mn><mo>=</mo><mn>26.7</mn></mrow></math></span>
             <p class="para" id="fwk-shafer-ch05_s04_s02_p13">and</p>
@@ -152,7 +152,7 @@
             <p class="para" id="fwk-shafer-ch05_s04_s02_p14">A boy has an average finishing time if he runs the course with a time between 26.7 and 31.3 minutes, or equivalently between 26 minutes 42 seconds and 31 minutes 18 seconds.</p>
         </div>
         <div class="key_takeaways block" id="fwk-shafer-ch05_s04_s02_n06">
-            <h3 class="title">Key Takeaways</h3>
+            <h3 class="title">Poin Utamas</h3>
             <ul class="itemizedlist" id="fwk-shafer-ch05_s04_s02_i01" mark="bullet">
                 <li>The problem of finding the number <span class="inlineequation" id="shafer-20121106-125753-106761"><math xml:id="fwk-shafer-ch05-m0190" display="inline"><mrow><mi>z*</mi></mrow></math></span> so that the probability <span class="inlineequation" id="shafer-20121106-125753-106778"><math xml:id="fwk-shafer-ch05-m0191" display="inline"><mi>P</mi><mrow><mo>(</mo><mrow><mi>Z</mi><mo>&lt;</mo><mrow><mi>z*</mi></mrow></mrow><mo>)</mo></mrow></math></span> is a specified value <em class="emphasis">c</em> is solved by looking for the number <em class="emphasis">c</em> in the interior of <a class="xref" href="https://saylordotorg.github.io/text_introductory-statistics/s16-appendix.html">Figure 12.2 "Cumulative Normal Probability"</a> and reading <span class="inlineequation" id="shafer-20121106-125753-106800"><math xml:id="fwk-shafer-ch05-m0192" display="inline"><mrow><mi>z*</mi></mrow></math></span> from the margins.</li>
                 <li>The problem of finding the number <span class="inlineequation" id="shafer-20121106-125753-106817"><math xml:id="fwk-shafer-ch05-m0193" display="inline"><mrow><mi>z*</mi></mrow></math></span> so that the probability <span class="inlineequation" id="shafer-20121106-125753-106832"><math xml:id="fwk-shafer-ch05-m0194" display="inline"><mi>P</mi><mrow><mo>(</mo><mrow><mi>Z</mi><mo>&gt;</mo><mrow><mi>z*</mi></mrow></mrow><mo>)</mo></mrow></math></span> is a specified value <em class="emphasis">c</em> is solved by looking for the complementary probability <span class="inlineequation" id="shafer-20121106-125753-106848"><math xml:id="fwk-shafer-ch05-m0195" display="inline"><mn>1</mn><mo>−</mo><mi>c</mi></math></span> in the interior of <a class="xref" href="https://saylordotorg.github.io/text_introductory-statistics/s16-appendix.html">Figure 12.2 "Cumulative Normal Probability"</a> and reading <span class="inlineequation" id="shafer-20121106-125753-106864"><math xml:id="fwk-shafer-ch05-m0196" display="inline"><mrow><mi>z*</mi></mrow></math></span> from the margins.</li>
@@ -162,7 +162,7 @@
             </ul>
         </div>
         <div class="qandaset block" id="fwk-shafer-ch05_s04_qs01" defaultlabel="number">
-            <h3 class="title">Exercises</h3>
+            <h3 class="title">Latihans</h3>
             <ol class="qandadiv" id="fwk-shafer-ch05_s04_qs01_qd01">
                 <h3 class="title">Basic</h3>
                 <li class="qandaentry" id="fwk-shafer-ch05_s04_qs01_qd01_qa01">
@@ -340,7 +340,7 @@
                 </li>
             </ol>
             <ol class="qandadiv" id="fwk-shafer-ch05_s04_qs01_qd03" start="23">
-                <h3 class="title">Additional Exercises</h3>
+                <h3 class="title">Additional Latihans</h3>
                 <li class="qandaentry" id="fwk-shafer-ch05_s04_qs01_qd03_qa23">
                     <div class="question">
                         <p class="para" id="fwk-shafer-ch05_s04_qs01_p34">A machine for filling 2-liter bottles of soft drink delivers an amount to each bottle that varies from bottle to bottle according to a normal distribution with standard deviation 0.002 liter and mean whatever amount the machine is set to deliver.</p>
@@ -504,15 +504,15 @@
   <div id=navbar-bottom class="navbar">
     <div class="navbar-part left">
       
-        <a href="s09-03-probability-computations-for-g.html"><img src="shared/images/batch-left.png"></a> <a href="s09-03-probability-computations-for-g.html">Previous Section</a>
+        <a href="s09-03-probability-computations-for-g.html"><img src="shared/images/batch-left.png"></a> <a href="s09-03-probability-computations-for-g.html">Bagian Sebelumnya</a>
       
     </div>
     <div class="navbar-part middle">
-      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Daftar Isi</a>
     </div>
     <div class="navbar-part right">
       
-        <a href="s10-01-the-mean-and-standard-deviatio.html">Next Section</a> <a href="s10-01-the-mean-and-standard-deviatio.html"><img src="shared/images/batch-right.png"></a>
+        <a href="s10-01-the-mean-and-standard-deviatio.html">Bagian Selanjutnya</a> <a href="s10-01-the-mean-and-standard-deviatio.html"><img src="shared/images/batch-right.png"></a>
       
     </div>
   </div>

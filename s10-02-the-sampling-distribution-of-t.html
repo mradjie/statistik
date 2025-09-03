@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <link href="shared/bookhub.css" rel="stylesheet" type="text/css">
-  <title>The Sampling Distribution of the Sample Mean</title>
+  <title>Distribusi Sampling dari Rata-rata Sampel</title>
 </head>
 <body>
 
@@ -11,15 +11,15 @@
   <div id=navbar-top class="navbar">
     <div class="navbar-part left">
       
-        <a href="s10-01-the-mean-and-standard-deviatio.html"><img src="shared/images/batch-left.png"></a> <a href="s10-01-the-mean-and-standard-deviatio.html">Previous Section</a>
+        <a href="s10-01-the-mean-and-standard-deviatio.html"><img src="shared/images/batch-left.png"></a> <a href="s10-01-the-mean-and-standard-deviatio.html">Bagian Sebelumnya</a>
       
     </div>
     <div class="navbar-part middle">
-      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Daftar Isi</a>
     </div>
     <div class="navbar-part right">
       
-        <a href="s10-03-the-sample-proportion.html">Next Section</a> <a href="s10-03-the-sample-proportion.html"><img src="shared/images/batch-right.png"></a>
+        <a href="s10-03-the-sample-proportion.html">Bagian Selanjutnya</a> <a href="s10-03-the-sample-proportion.html"><img src="shared/images/batch-right.png"></a>
       
     </div>
   </div>
@@ -29,7 +29,7 @@
     <h2 class="title editable block">
 <span class="title-prefix">6.2</span> The Sampling Distribution of the Sample Mean</h2>
     <div class="learning_objectives block" id="fwk-shafer-ch06_s02_n01">
-        <h3 class="title">Learning Objectives</h3>
+        <h3 class="title">Tujuan Pembelajarans</h3>
         <ol class="orderedlist" id="fwk-shafer-ch06_s02_o01" numeration="arabic">
             <li>To learn what the sampling distribution of <span class="inlineequation" id="shafer-20121106-125753-108371"><math xml:id="fwk-shafer-ch06-m0052" display="inline"><mrow><mover accent="true"><mi mathvariant="italic" fontsize="80%">X</mi><mo stretchy="true">-</mo></mover></mrow></math></span> is when the sample size is large.</li>
             <li>To learn what the sampling distribution of <span class="inlineequation" id="shafer-20121106-125753-108388"><math xml:id="fwk-shafer-ch06-m0053" display="inline"><mrow><mover accent="true"><mi mathvariant="italic" fontsize="80%">X</mi><mo stretchy="true">-</mo></mover></mrow></math></span> is when the population is normal.</li>
@@ -37,7 +37,7 @@
     </div>
     <div class="section" id="fwk-shafer-ch06_s02_s01" version="5.0" lang="en">
         <h2 class="title editable block">The Central Limit Theorem</h2>
-        <p class="para editable block" id="fwk-shafer-ch06_s02_s01_p01">In <a class="xref" href="fwk-shafer-ch06_s01#fwk-shafer-ch06_s01_n02" xrefstyle="select: title">Note 6.5 "Example 1"</a> in <a class="xref" href="fwk-shafer-ch06_s01#fwk-shafer-ch06_s01">Section 6.1 "The Mean and Standard Deviation of the Sample Mean"</a> we constructed the probability distribution of the sample mean for samples of size two drawn from the population of four rowers. The probability distribution is:</p>
+        <p class="para editable block" id="fwk-shafer-ch06_s02_s01_p01">In <a class="xref" href="fwk-shafer-ch06_s01#fwk-shafer-ch06_s01_n02" xrefstyle="select: title">Note 6.5 "Contoh 1"</a> in <a class="xref" href="fwk-shafer-ch06_s01#fwk-shafer-ch06_s01">Section 6.1 "The Mean and Standard Deviation of the Sample Mean"</a> we constructed the probability distribution of the sample mean for samples of size two drawn from the population of four rowers. The probability distribution is:</p>
         <span class="informalequation block" id="shafer-20121106-125753-108415"><math xml:id="fwk-shafer-ch06-m0054" display="block"><mrow><mtable columnspacing="0.5em" columnlines="solid none none none none none none none" rowlines="solid"><mtr><mtd><mrow><mover accent="true"><mi mathvariant="italic">x</mi><mo stretchy="true">-</mo></mover></mrow></mtd><mtd><mrow><mn>152</mn></mrow></mtd><mtd><mrow><mn>154</mn></mrow></mtd><mtd><mrow><mn>156</mn></mrow></mtd><mtd><mrow><mn>158</mn></mrow></mtd><mtd><mrow><mn>160</mn></mrow></mtd><mtd><mrow><mn>162</mn></mrow></mtd><mtd><mrow><mn>164</mn></mrow></mtd></mtr><mtr><mtd><mrow><mi>P</mi><mrow><mo>(</mo><mrow><mover accent="true"><mi mathvariant="italic">x</mi><mo stretchy="true">-</mo></mover></mrow><mo>)</mo></mrow></mrow></mtd><mtd><mrow><mfrac><mn>1</mn><mrow><mn>16</mn></mrow></mfrac></mrow></mtd><mtd><mrow><mfrac><mn>2</mn><mrow><mn>16</mn></mrow></mfrac></mrow></mtd><mtd><mrow><mfrac><mn>3</mn><mrow><mn>16</mn></mrow></mfrac></mrow></mtd><mtd><mrow><mfrac><mn>4</mn><mrow><mn>16</mn></mrow></mfrac></mrow></mtd><mtd><mrow><mfrac><mn>3</mn><mrow><mn>16</mn></mrow></mfrac></mrow></mtd><mtd><mrow><mfrac><mn>2</mn><mrow><mn>16</mn></mrow></mfrac></mrow></mtd><mtd><mrow><mfrac><mn>1</mn><mrow><mn>16</mn></mrow></mfrac></mrow></mtd></mtr></mtable></mrow></math></span>
         <p class="para editable block" id="fwk-shafer-ch06_s02_s01_p02"><a class="xref" href="#fwk-shafer-ch06_s02_s01_f01">Figure 6.1 "Distribution of a Population and a Sample Mean"</a> shows a side-by-side comparison of a histogram for the original population and a histogram for this distribution. Whereas the distribution of the population is uniform, the sampling distribution of the mean has a shape approaching the shape of the familiar bell curve. This phenomenon of the sampling distribution of the mean taking on a bell shape even though the population distribution is not bell-shaped happens in general. Here is a somewhat more realistic example.</p>
         <div class="figure large editable block" id="fwk-shafer-ch06_s02_s01_f01">
@@ -80,7 +80,7 @@
 </li>
         </ol>
         <div class="exercises block" id="fwk-shafer-ch06_s02_s01_n02">
-            <h3 class="title">Example 3</h3>
+            <h3 class="title">Contoh 3</h3>
             <p class="para" id="fwk-shafer-ch06_s02_s01_p15">Let <span class="inlineequation" id="shafer-20121106-125753-108694"><math xml:id="fwk-shafer-ch06-m0067" display="inline"><mrow><mover accent="true"><mi mathvariant="italic" fontsize="80%">X</mi><mo stretchy="true">-</mo></mover></mrow></math></span> be the mean of a random sample of size 50 drawn from a population with mean 112 and standard deviation 40.</p>
             <ol class="orderedlist" id="fwk-shafer-ch06_s02_s01_o02" numeration="loweralpha">
                 <li>Find the mean and standard deviation of <span class="inlineequation" id="shafer-20121106-125753-108710"><math xml:id="fwk-shafer-ch06-m0068" display="inline"><mrow><mover accent="true"><mi mathvariant="italic">X</mi><mo stretchy="true">-</mo></mover></mrow><mo>.</mo></math></span>
@@ -104,9 +104,9 @@
                 </li>
             </ol>
         </div>
-        <p class="para block" id="fwk-shafer-ch06_s02_s01_p16">Note that if in <a class="xref" href="#fwk-shafer-ch06_s02_s01_n02" xrefstyle="select: title">Note 6.11 "Example 3"</a> we had been asked to compute the probability that the value of a single randomly selected element of the population exceeds 113, that is, to compute the number <em class="emphasis">P</em>(<em class="emphasis">X</em> &gt; 113), we would not have been able to do so, since we do not know the distribution of <em class="emphasis">X</em>, but only that its mean is 112 and its standard deviation is 40. By contrast we could compute <span class="inlineequation" id="shafer-20121106-125753-108850"><math xml:id="fwk-shafer-ch06-m0076" display="inline"><mi>P</mi><mrow><mo>(</mo><mrow><mrow><mover accent="true"><mi mathvariant="italic">X</mi><mo stretchy="true">-</mo></mover></mrow><mo>&gt;</mo><mn>113</mn></mrow><mo>)</mo></mrow></math></span> even without complete knowledge of the distribution of <em class="emphasis">X</em> because the Central Limit Theorem guarantees that <span class="inlineequation" id="shafer-20121106-125753-108866"><math xml:id="fwk-shafer-ch06-m0077" display="inline"><mrow><mover accent="true"><mi mathvariant="italic" fontsize="80%">X</mi><mo stretchy="true">-</mo></mover></mrow></math></span> is approximately normal.</p>
+        <p class="para block" id="fwk-shafer-ch06_s02_s01_p16">Note that if in <a class="xref" href="#fwk-shafer-ch06_s02_s01_n02" xrefstyle="select: title">Note 6.11 "Contoh 3"</a> we had been asked to compute the probability that the value of a single randomly selected element of the population exceeds 113, that is, to compute the number <em class="emphasis">P</em>(<em class="emphasis">X</em> &gt; 113), we would not have been able to do so, since we do not know the distribution of <em class="emphasis">X</em>, but only that its mean is 112 and its standard deviation is 40. By contrast we could compute <span class="inlineequation" id="shafer-20121106-125753-108850"><math xml:id="fwk-shafer-ch06-m0076" display="inline"><mi>P</mi><mrow><mo>(</mo><mrow><mrow><mover accent="true"><mi mathvariant="italic">X</mi><mo stretchy="true">-</mo></mover></mrow><mo>&gt;</mo><mn>113</mn></mrow><mo>)</mo></mrow></math></span> even without complete knowledge of the distribution of <em class="emphasis">X</em> because the Central Limit Theorem guarantees that <span class="inlineequation" id="shafer-20121106-125753-108866"><math xml:id="fwk-shafer-ch06-m0077" display="inline"><mrow><mover accent="true"><mi mathvariant="italic" fontsize="80%">X</mi><mo stretchy="true">-</mo></mover></mrow></math></span> is approximately normal.</p>
         <div class="exercises block" id="fwk-shafer-ch06_s02_s01_n03">
-            <h3 class="title">Example 4</h3>
+            <h3 class="title">Contoh 4</h3>
             <p class="para" id="fwk-shafer-ch06_s02_s01_p17">The numerical population of grade point averages at a college has mean 2.61 and standard deviation 0.5. If a random sample of size 100 is taken from the population, what is the probability that the sample mean will be between 2.51 and 2.71?</p>
             <p class="simpara">Solution</p>
             <p class="para" id="fwk-shafer-ch06_s02_s01_p18">The sample mean <span class="inlineequation" id="shafer-20121106-125753-108882"><math xml:id="fwk-shafer-ch06-m0078" display="inline"><mrow><mover accent="true"><mi mathvariant="italic" fontsize="80%">X</mi><mo stretchy="true">-</mo></mover></mrow></math></span> has mean <span class="inlineequation" id="shafer-20121106-125753-108905"><math xml:id="fwk-shafer-ch06-m0079" display="inline"><msub><mrow><mi mathvariant="italic">μ</mi></mrow><mrow><mrow><mover accent="true"><mi mathvariant="italic">X</mi><mo stretchy="true">-</mo></mover></mrow></mrow></msub><mo>=</mo><mi mathvariant="italic">μ</mi><mo>=</mo><mn>2.61</mn></math></span> and standard deviation <span class="inlineequation" id="shafer-20121106-125753-108921"><math xml:id="fwk-shafer-ch06-m0080" display="inline"><msub><mrow><mi mathvariant="italic">σ</mi></mrow><mrow><mrow><mover accent="true"><mi mathvariant="italic">X</mi><mo stretchy="true">-</mo></mover></mrow></mrow></msub><mo>=</mo><mi mathvariant="italic">σ</mi><mo>/</mo><msqrt><mrow><mi>n</mi></mrow></msqrt><mo>=</mo><mn>0.5</mn><mo>/</mo><mn>10</mn><mo>=</mo><mn>0.05</mn></math></span>, so</p>
@@ -125,7 +125,7 @@
             <img src="section_10/86efb32d8f607d8fc448b44f66c8a4c7.jpg">
         </div>
         <div class="exercises block" id="fwk-shafer-ch06_s02_s02_n02">
-            <h3 class="title">Example 5</h3>
+            <h3 class="title">Contoh 5</h3>
             <p class="para" id="fwk-shafer-ch06_s02_s02_p04">A prototype automotive tire has a design life of 38,500 miles with a standard deviation of 2,500 miles. Five such tires are manufactured and tested. On the assumption that the actual population mean is 38,500 miles and the actual population standard deviation is 2,500 miles, find the probability that the sample mean will be less than 36,000 miles. Assume that the distribution of lifetimes of such tires is normal.</p>
             <p class="simpara">Solution</p>
             <p class="para" id="fwk-shafer-ch06_s02_s02_p05">For simplicity we use units of thousands of miles. Then the sample mean <span class="inlineequation" id="shafer-20121106-125753-108986"><math xml:id="fwk-shafer-ch06-m0084" display="inline"><mrow><mover accent="true"><mi mathvariant="italic" fontsize="80%">X</mi><mo stretchy="true">-</mo></mover></mrow></math></span> has mean <span class="inlineequation" id="shafer-20121106-125753-109002"><math xml:id="fwk-shafer-ch06-m0085" display="inline"><msub><mrow><mi mathvariant="italic">μ</mi></mrow><mrow><mrow><mover accent="true"><mi mathvariant="italic">X</mi><mo stretchy="true">-</mo></mover></mrow></mrow></msub><mo>=</mo><mi mathvariant="italic">μ</mi><mo>=</mo><mn>38.5</mn></math></span> and standard deviation <span class="inlineequation" id="shafer-20121106-125753-109024"><math xml:id="fwk-shafer-ch06-m0086" display="inline"><msub><mrow><mi mathvariant="italic">σ</mi></mrow><mrow><mrow><mover accent="true"><mi mathvariant="italic">X</mi><mo stretchy="true">-</mo></mover></mrow></mrow></msub><mo>=</mo><mi mathvariant="italic">σ</mi><mo>/</mo><msqrt><mrow><mi>n</mi></mrow></msqrt><mo>=</mo><mn>2.5</mn><mo>/</mo><msqrt><mrow><mn>5</mn></mrow></msqrt><mo>=</mo><mn>1.11803</mn><mo>.</mo></math></span> Since the population is normally distributed, so is <span class="inlineequation" id="shafer-20121106-125753-109047"><math xml:id="fwk-shafer-ch06-m0087" display="inline"><mrow><mover accent="true"><mi mathvariant="italic" fontsize="80%">X</mi><mo stretchy="true">-</mo></mover></mrow></math></span>, hence</p>
@@ -133,7 +133,7 @@
             <p class="para" id="fwk-shafer-ch06_s02_s02_p06">That is, if the tires perform as designed, there is only about a 1.25% chance that the average of a sample of this size would be so low.</p>
         </div>
         <div class="exercises block" id="fwk-shafer-ch06_s02_s02_n03">
-            <h3 class="title">Example 6</h3>
+            <h3 class="title">Contoh 6</h3>
             <p class="para" id="fwk-shafer-ch06_s02_s02_p07">An automobile battery manufacturer claims that its midgrade battery has a mean life of 50 months with a standard deviation of 6 months. Suppose the distribution of battery lives of this particular brand is approximately normal.</p>
             <ol class="orderedlist" id="fwk-shafer-ch06_s02_s02_o01" numeration="loweralpha">
                 <li>On the assumption that the manufacturer’s claims are true, find the probability that a randomly selected battery of this type will last less than 48 months.</li>
@@ -152,14 +152,14 @@
             </ol>
         </div>
         <div class="key_takeaways editable block" id="fwk-shafer-ch06_s02_s02_n04">
-            <h3 class="title">Key Takeaways</h3>
+            <h3 class="title">Poin Utamas</h3>
             <ul class="itemizedlist" id="fwk-shafer-ch06_s02_s02_l01" mark="bullet">
                 <li>When the sample size is at least 30 the sample mean is normally distributed.</li>
                 <li>When the population is normal the sample mean is normally distributed regardless of the sample size.</li>
             </ul>
         </div>
         <div class="qandaset block" id="fwk-shafer-ch06_s02_qs01" defaultlabel="number">
-            <h3 class="title">Exercises</h3>
+            <h3 class="title">Latihans</h3>
             <ol class="qandadiv" id="fwk-shafer-ch06_s02_qs01_qd01">
                 <h3 class="title">Basic</h3>
                 <li class="qandaentry" id="fwk-shafer-ch06_s02_qs01_qd01_qa01">
@@ -355,7 +355,7 @@
                 </li>
             </ol>
             <ol class="qandadiv" id="fwk-shafer-ch06_s02_qs01_qd03" start="25">
-                <h3 class="title">Additional Exercises</h3>
+                <h3 class="title">Additional Latihans</h3>
                 <li class="qandaentry" id="fwk-shafer-ch06_s02_qs01_qd03_qa01">
                     <div class="question">
                         <p class="para" id="fwk-shafer-ch06_s02_qs01_p33">A high-speed packing machine can be set to deliver between 11 and 13 ounces of a liquid. For any delivery setting in this range the amount delivered is normally distributed with mean some amount <em class="emphasis">μ</em> and with standard deviation 0.08 ounce. To calibrate the machine it is set to deliver a particular amount, many containers are filled, and 25 containers are randomly selected and the amount they contain is measured. Find the probability that the sample mean will be within 0.05 ounce of the actual mean amount being delivered to all containers.</p>
@@ -544,15 +544,15 @@
   <div id=navbar-bottom class="navbar">
     <div class="navbar-part left">
       
-        <a href="s10-01-the-mean-and-standard-deviatio.html"><img src="shared/images/batch-left.png"></a> <a href="s10-01-the-mean-and-standard-deviatio.html">Previous Section</a>
+        <a href="s10-01-the-mean-and-standard-deviatio.html"><img src="shared/images/batch-left.png"></a> <a href="s10-01-the-mean-and-standard-deviatio.html">Bagian Sebelumnya</a>
       
     </div>
     <div class="navbar-part middle">
-      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Daftar Isi</a>
     </div>
     <div class="navbar-part right">
       
-        <a href="s10-03-the-sample-proportion.html">Next Section</a> <a href="s10-03-the-sample-proportion.html"><img src="shared/images/batch-right.png"></a>
+        <a href="s10-03-the-sample-proportion.html">Bagian Selanjutnya</a> <a href="s10-03-the-sample-proportion.html"><img src="shared/images/batch-right.png"></a>
       
     </div>
   </div>

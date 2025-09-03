@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <link href="shared/bookhub.css" rel="stylesheet" type="text/css">
-  <title>Continuous Random Variables</title>
+  <title>Variabel Acak Kontinu</title>
 </head>
 <body>
 
@@ -11,15 +11,15 @@
   <div id=navbar-top class="navbar">
     <div class="navbar-part left">
       
-        <a href="s08-03-the-binomial-distribution.html"><img src="shared/images/batch-left.png"></a> <a href="s08-03-the-binomial-distribution.html">Previous Section</a>
+        <a href="s08-03-the-binomial-distribution.html"><img src="shared/images/batch-left.png"></a> <a href="s08-03-the-binomial-distribution.html">Bagian Sebelumnya</a>
       
     </div>
     <div class="navbar-part middle">
-      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Daftar Isi</a>
     </div>
     <div class="navbar-part right">
       
-        <a href="s09-02-the-standard-normal-distributi.html">Next Section</a> <a href="s09-02-the-standard-normal-distributi.html"><img src="shared/images/batch-right.png"></a>
+        <a href="s09-02-the-standard-normal-distributi.html">Bagian Selanjutnya</a> <a href="s09-02-the-standard-normal-distributi.html"><img src="shared/images/batch-right.png"></a>
       
     </div>
   </div>
@@ -29,7 +29,7 @@
     <h2 class="title editable block">
 <span class="title-prefix">5.1</span> Continuous Random Variables</h2>
     <div class="learning_objectives editable block" id="fwk-shafer-ch05_s01_n01">
-        <h3 class="title">Learning Objectives</h3>
+        <h3 class="title">Tujuan Pembelajarans</h3>
         <ol class="orderedlist" id="fwk-shafer-ch05_s01_o01" numeration="arabic">
             <li>To learn the concept of the probability distribution of a continuous random variable, and how it is used to compute probabilities.</li>
             <li>To learn basic facts about the family of normally distributed random variables.</li>
@@ -39,7 +39,7 @@
         <h2 class="title editable block">The Probability Distribution of a Continuous Random Variable</h2>
         <p class="para block" id="fwk-shafer-ch05_s01_s01_p01">For a discrete random variable <em class="emphasis">X</em> the probability that <em class="emphasis">X</em> assumes one of its possible values on a single trial of the experiment makes good sense. This is not the case for a continuous random variable. For example, suppose <em class="emphasis">X</em> denotes the length of time a commuter just arriving at a bus stop has to wait for the next bus. If buses run every 30 minutes without fail, then the set of possible values of <em class="emphasis">X</em> is the interval denoted <span class="inlineequation" id="shafer-20121106-125753-103556"><math xml:id="fwk-shafer-ch05-m0001" display="inline"><mrow><mo>[</mo><mrow><mn>0,30</mn></mrow><mo>]</mo></mrow></math></span>, the set of all decimal numbers between 0 and 30. But although the number 7.211916 is a possible value of <em class="emphasis">X</em>, there is little or no meaning to the concept of the probability that the commuter will wait precisely 7.211916 minutes for the next bus. If anything the probability should be zero, since if we could meaningfully measure the waiting time to the nearest millionth of a minute it is practically inconceivable that we would ever get <em class="emphasis">exactly</em> 7.211916 minutes. More meaningful questions are those of the form: What is the probability that the commuter's waiting time is less than 10 minutes, or is between 5 and 10 minutes? In other words, with continuous random variables one is concerned not with the event that the variable assumes a single particular value, but with the event that the random variable assumes a value in a particular interval.</p>
         <div class="callout block" id="fwk-shafer-ch05_s01_s01_n01">
-            <h3 class="title">Definition</h3>
+            <h3 class="title">Definisi</h3>
             <p class="para" id="fwk-shafer-ch05_s01_s01_p02"><em class="emphasis">The</em> <strong class="emphasis bold">probability distribution of a continuous random variable</strong> <em class="emphasis">X</em> <em class="emphasis">is an assignment of probabilities to intervals of decimal numbers using a function</em> <span class="inlineequation" id="shafer-20121106-125753-103572"><math xml:id="fwk-shafer-ch05-m0002" display="inline"><mi>f</mi><mrow><mo>(</mo><mrow><mi>x</mi></mrow><mo>)</mo></mrow></math></span>, <em class="emphasis">called a</em> <span class="margin_term"><a class="glossterm">density function</a><span class="glossdef">The function <span class="inlineequation" id="shafer-20121106-125753-103589"><math xml:id="fwk-shafer-ch05-m0003" display="inline"><mi>f</mi><mrow><mo>(</mo><mrow><mi>x</mi></mrow><mo>)</mo></mrow></math></span> such that probabilities of a continuous random variable <em class="emphasis">X</em> are areas of regions under the graph of <span class="inlineequation" id="shafer-20121106-125753-103605"><math xml:id="fwk-shafer-ch05-m0004" display="inline"><mi>y</mi><mo>=</mo><mi>f</mi><mrow><mo>(</mo><mrow><mi>x</mi></mrow><mo>)</mo></mrow></math></span>.</span></span>, <em class="emphasis">in the following way: the probability that</em> <em class="emphasis">X</em> <em class="emphasis">assumes a value in the interval</em> <span class="inlineequation" id="shafer-20121106-125753-103627"><math xml:id="fwk-shafer-ch05-m0005" display="inline"><mrow><mo>[</mo><mrow><mi>a</mi><mo>,</mo><mi>b</mi></mrow><mo>]</mo></mrow></math></span> <em class="emphasis">is equal to the area of the region that is bounded above by the graph of the equation</em> <span class="inlineequation" id="shafer-20121106-125753-103643"><math xml:id="fwk-shafer-ch05-m0006" display="inline"><mi>y</mi><mo>=</mo><mi>f</mi><mrow><mo>(</mo><mrow><mi>x</mi></mrow><mo>)</mo></mrow></math></span>, <em class="emphasis">bounded below by the</em> <em class="emphasis">x</em><em class="emphasis">-axis, and bounded on the left and right by the vertical lines through</em> <em class="emphasis">a</em> <em class="emphasis">and</em> <em class="emphasis">b</em>, <em class="emphasis">as illustrated in <a class="xref" href="#fwk-shafer-ch05_s01_s01_f01">Figure 5.1 "Probability Given as Area of a Region under a Curve"</a></em>.</p>
             <div class="figure large small-height" id="fwk-shafer-ch05_s01_s01_f01">
                 <p class="title"><span class="title-prefix">Figure 5.1</span> Probability Given as Area of a Region under a Curve</p>
@@ -60,7 +60,7 @@
             <span class="informalequation" id="shafer-20121106-125753-103740"><math xml:id="fwk-shafer-ch05-m0012" display="block"><mrow><mi>P</mi><mrow><mo>(</mo><mrow><mi>a</mi><mo>≤</mo><mi>X</mi><mo>≤</mo><mi>b</mi></mrow><mo>)</mo></mrow><mo>=</mo><mi>P</mi><mrow><mo>(</mo><mrow><mi>a</mi><mo>&lt;</mo><mi>X</mi><mo>≤</mo><mi>b</mi></mrow><mo>)</mo></mrow><mo>=</mo><mi>P</mi><mrow><mo>(</mo><mrow><mi>a</mi><mo>≤</mo><mi>X</mi><mo>&lt;</mo><mi>b</mi></mrow><mo>)</mo></mrow><mo>=</mo><mi>P</mi><mrow><mo>(</mo><mrow><mi>a</mi><mo>&lt;</mo><mi>X</mi><mo>&lt;</mo><mi>b</mi></mrow><mo>)</mo></mrow></mrow></math></span>
         </div>
         <div class="exercises block" id="fwk-shafer-ch05_s01_s01_n04">
-            <h3 class="title">Example 1</h3>
+            <h3 class="title">Contoh 1</h3>
             <p class="para" id="fwk-shafer-ch05_s01_s01_p07">A random variable <em class="emphasis">X</em> has the uniform distribution on the interval <span class="inlineequation" id="shafer-20121106-125753-103763"><math xml:id="fwk-shafer-ch05-m0013" display="inline"><mrow><mo>[</mo><mrow><mn>0,1</mn></mrow><mo>]</mo></mrow></math></span>: the density function is <span class="inlineequation" id="shafer-20121106-125753-103779"><math xml:id="fwk-shafer-ch05-m0014" display="inline"><mi>f</mi><mrow><mo>(</mo><mrow><mi>x</mi></mrow><mo>)</mo></mrow><mo>=</mo><mn>1</mn></math></span> if <em class="emphasis">x</em> is between 0 and 1 and <span class="inlineequation" id="shafer-20121106-125753-103795"><math xml:id="fwk-shafer-ch05-m0015" display="inline"><mi>f</mi><mrow><mo>(</mo><mrow><mi>x</mi></mrow><mo>)</mo></mrow><mo>=</mo><mn>0</mn></math></span> for all other values of <em class="emphasis">x</em>, as shown in <a class="xref" href="#fwk-shafer-ch05_s01_s01_f02">Figure 5.2 "Uniform Distribution on "</a>.</p>
             <div class="figure large small-height" id="fwk-shafer-ch05_s01_s01_f02">
                 <p class="title"><span class="title-prefix">Figure 5.2</span> Uniform Distribution on <span class="inlineequation" id="shafer-20121106-125753-103811"><math xml:id="fwk-shafer-ch05-m0016" display="inline"><mrow><mo>[</mo><mrow><mn>0,1</mn></mrow><mo>]</mo></mrow></math></span></p>
@@ -71,7 +71,7 @@
                 <li>Find <em class="emphasis">P</em>(<em class="emphasis">X</em> ≤ 0.2), the probability that <em class="emphasis">X</em> assumes a value less than or equal to 0.2.</li>
                 <li>Find <em class="emphasis">P</em>(0.4 &lt; <em class="emphasis">X</em> &lt; 0.7), the probability that <em class="emphasis">X</em> assumes a value between 0.4 and 0.7.</li>
             </ol>
-            <p class="simpara">Solution:</p>
+            <p class="simpara">Solusi:</p>
             <ol class="orderedlist" id="fwk-shafer-ch05_s01_s01_o03" numeration="loweralpha">
                 <li>
 <em class="emphasis">P</em>(<em class="emphasis">X</em> &gt; 0.75) is the area of the rectangle of height 1 and base length <span class="inlineequation" id="shafer-20121106-125753-103827"><math xml:id="fwk-shafer-ch05-m0017" display="inline"><mn>1</mn><mo>−</mo><mn>0.75</mn><mo>=</mo><mn>0.25</mn></math></span>, hence is <span class="inlineequation" id="shafer-20121106-125753-103843"><math xml:id="fwk-shafer-ch05-m0018" display="inline"><mrow><mtext>base</mtext><mo>×</mo><mtext>height</mtext><mo>=</mo><mo>(</mo><mn>0.25</mn><mo>)</mo><mo>·</mo><mo>(</mo><mn>1</mn><mo>)</mo><mo>=</mo><mn>0.25</mn></mrow><mo>.</mo></math></span> See <a class="xref" href="#fwk-shafer-ch05_s01_s01_f03">Figure 5.3 "Probabilities from the Uniform Distribution on "</a>(a).</li>
@@ -86,9 +86,9 @@
             </div>
         </div>
         <div class="exercises block" id="fwk-shafer-ch05_s01_s01_n05">
-            <h3 class="title">Example 2</h3>
+            <h3 class="title">Contoh 2</h3>
             <p class="para" id="fwk-shafer-ch05_s01_s01_p08">A man arrives at a bus stop at a random time (that is, with no regard for the scheduled service) to catch the next bus. Buses run every 30 minutes without fail, hence the next bus will come any time during the next 30 minutes with evenly distributed probability (a uniform distribution). Find the probability that a bus will come within the next 10 minutes.</p>
-            <p class="simpara">Solution:</p>
+            <p class="simpara">Solusi:</p>
             <p class="para" id="fwk-shafer-ch05_s01_s01_p09">The graph of the density function is a horizontal line above the interval from 0 to 30 and is the <em class="emphasis">x</em>-axis everywhere else. Since the total area under the curve must be 1, the height of the horizontal line is 1/30. See <a class="xref" href="#fwk-shafer-ch05_s01_s01_f04">Figure 5.4 "Probability of Waiting At Most 10 Minutes for a Bus"</a>. The probability sought is <span class="inlineequation" id="shafer-20121106-125753-103946"><math xml:id="fwk-shafer-ch05-m0024" display="inline"><mi>P</mi><mrow><mo>(</mo><mrow><mn>0</mn><mo>≤</mo><mi>X</mi><mo>≤</mo><mn>10</mn></mrow><mo>)</mo></mrow><mo>.</mo></math></span> By definition, this probability is the area of the rectangular region bounded above by the horizontal line <span class="inlineequation" id="shafer-20121106-125753-103961"><math xml:id="fwk-shafer-ch05-m0025" display="inline"><mi>f</mi><mrow><mo>(</mo><mrow><mi>x</mi></mrow><mo>)</mo></mrow><mo>=</mo><mn>1</mn><mo>∕</mo><mn>30</mn></math></span>, bounded below by the <em class="emphasis">x</em>-axis, bounded on the left by the vertical line at 0 (the <em class="emphasis">y</em>-axis), and bounded on the right by the vertical line at 10. This is the shaded region in <a class="xref" href="#fwk-shafer-ch05_s01_s01_f04">Figure 5.4 "Probability of Waiting At Most 10 Minutes for a Bus"</a>. Its area is the base of the rectangle times its height, <span class="inlineequation" id="shafer-20121106-125753-103977"><math xml:id="fwk-shafer-ch05-m0026" display="inline"><mn>10</mn><mo>·</mo><mrow><mo>(</mo><mrow><mn>1</mn><mo>∕</mo><mn>30</mn></mrow><mo>)</mo></mrow><mo>=</mo><mn>1</mn><mo>∕</mo><mn>3</mn><mo>.</mo></math></span> Thus <span class="inlineequation" id="shafer-20121106-125753-103993"><math xml:id="fwk-shafer-ch05-m0027" display="inline"><mi>P</mi><mrow><mo>(</mo><mrow><mn>0</mn><mo>≤</mo><mi>X</mi><mo>≤</mo><mn>10</mn></mrow><mo>)</mo></mrow><mo>=</mo><mn>1</mn><mo>∕</mo><mn>3</mn><mo>.</mo></math></span></p>
             <div class="figure large small-height" id="fwk-shafer-ch05_s01_s01_f04">
                 <p class="title"><span class="title-prefix">Figure 5.4</span> Probability of Waiting At Most 10 Minutes for a Bus</p>
@@ -112,11 +112,11 @@
             <img src="section_09/14fc6536402c36855bba94c6a80f7143.jpg">
         </div>
         <div class="callout editable block" id="fwk-shafer-ch05_s01_s02_n01">
-            <h3 class="title">Definition</h3>
+            <h3 class="title">Definisi</h3>
             <p class="para" id="fwk-shafer-ch05_s01_s02_p05"><em class="emphasis">The probability distribution corresponding to the density function for the bell curve with parameters</em> <em class="emphasis">μ</em> <em class="emphasis">and</em> <em class="emphasis">σ</em> <em class="emphasis">is called the</em> <span class="margin_term"><a class="glossterm">normal distribution</a><span class="glossdef">Assignment of probabilities to a continuous random variable using a bell curve for the density function.</span></span> <em class="emphasis">with mean</em> <em class="emphasis">μ</em> <em class="emphasis">and standard deviation</em> <em class="emphasis">σ</em>.</p>
         </div>
         <div class="callout editable block" id="fwk-shafer-ch05_s01_s02_n02">
-            <h3 class="title">Definition</h3>
+            <h3 class="title">Definisi</h3>
             <p class="para" id="fwk-shafer-ch05_s01_s02_p06"><em class="emphasis">A continuous random variable whose probabilities are described by the normal distribution with mean</em> <em class="emphasis">μ</em> <em class="emphasis">and standard deviation</em> <em class="emphasis">σ</em> <em class="emphasis">is called a</em> <strong class="emphasis bold">normally distributed random variable, or a</strong> <span class="margin_term"><a class="glossterm">normal random variable</a><span class="glossdef">A continuous random variable whose probabilities are determined by a bell curve.</span></span> <em class="emphasis">for short, with mean</em> <em class="emphasis">μ</em> <em class="emphasis">and standard deviation</em> <em class="emphasis">σ</em>.</p>
         </div>
         <p class="para editable block" id="fwk-shafer-ch05_s01_s02_p07"><a class="xref" href="#fwk-shafer-ch05_s01_s02_f03">Figure 5.7 "Density Function for a Normally Distributed Random Variable with Mean "</a> shows the density function that determines the normal distribution with mean <em class="emphasis">μ</em> and standard deviation <em class="emphasis">σ</em>. We repeat an important fact about this curve:</p>
@@ -128,9 +128,9 @@
             <img src="section_09/a9f781e1b0891ceedd50cd7fea7d0f39.jpg">
         </div>
         <div class="exercises block" id="fwk-shafer-ch05_s01_s02_n04">
-            <h3 class="title">Example 3</h3>
+            <h3 class="title">Contoh 3</h3>
             <p class="para" id="fwk-shafer-ch05_s01_s02_p09">Heights of 25-year-old men in a certain region have mean 69.75 inches and standard deviation 2.59 inches. These heights are approximately normally distributed. Thus the height <em class="emphasis">X</em> of a randomly selected 25-year-old man is a normal random variable with mean <em class="emphasis">μ</em> = 69.75 and standard deviation <em class="emphasis">σ</em> = 2.59. Sketch a qualitatively accurate graph of the density function for <em class="emphasis">X</em>. Find the probability that a randomly selected 25-year-old man is more than 69.75 inches tall.</p>
-            <p class="simpara">Solution:</p>
+            <p class="simpara">Solusi:</p>
             <p class="para" id="fwk-shafer-ch05_s01_s02_p10">The distribution of heights looks like the bell curve in <a class="xref" href="#fwk-shafer-ch05_s01_s02_f04">Figure 5.8 "Density Function for Heights of 25-Year-Old Men"</a>. The important point is that it is centered at its mean, 69.75, and is symmetric about the mean.</p>
             <div class="figure large small-height" id="fwk-shafer-ch05_s01_s02_f04">
                 <p class="title"><span class="title-prefix">Figure 5.8</span> Density Function for Heights of 25-Year-Old Men</p>
@@ -140,7 +140,7 @@
             <p class="para" id="fwk-shafer-ch05_s01_s02_p12">We will learn how to compute other probabilities in the next two sections.</p>
         </div>
         <div class="key_takeaways block" id="fwk-shafer-ch05_s01_s02_n05">
-            <h3 class="title">Key Takeaways</h3>
+            <h3 class="title">Poin Utamas</h3>
             <ul class="itemizedlist" id="fwk-shafer-ch05_s01_s01_i01" mark="bullet">
                 <li>For a continuous random variable <em class="emphasis">X</em> the only probabilities that are computed are those of <em class="emphasis">X</em> taking a value in a specified interval.</li>
                 <li>The probability that <em class="emphasis">X</em> take a value in a particular interval is the same whether or not the endpoints of the interval are included.</li>
@@ -150,7 +150,7 @@
             </ul>
         </div>
         <div class="qandaset block" id="fwk-shafer-ch05_s01_qs01" defaultlabel="number">
-            <h3 class="title">Exercises</h3>
+            <h3 class="title">Latihans</h3>
             <ol class="qandadiv" id="fwk-shafer-ch05_s01_qs01_qd01">
                 <h3 class="title">Basic</h3>
                 <li class="qandaentry" id="fwk-shafer-ch05_s01_qs01_qd01_qa01">
@@ -326,15 +326,15 @@
   <div id=navbar-bottom class="navbar">
     <div class="navbar-part left">
       
-        <a href="s08-03-the-binomial-distribution.html"><img src="shared/images/batch-left.png"></a> <a href="s08-03-the-binomial-distribution.html">Previous Section</a>
+        <a href="s08-03-the-binomial-distribution.html"><img src="shared/images/batch-left.png"></a> <a href="s08-03-the-binomial-distribution.html">Bagian Sebelumnya</a>
       
     </div>
     <div class="navbar-part middle">
-      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Daftar Isi</a>
     </div>
     <div class="navbar-part right">
       
-        <a href="s09-02-the-standard-normal-distributi.html">Next Section</a> <a href="s09-02-the-standard-normal-distributi.html"><img src="shared/images/batch-right.png"></a>
+        <a href="s09-02-the-standard-normal-distributi.html">Bagian Selanjutnya</a> <a href="s09-02-the-standard-normal-distributi.html"><img src="shared/images/batch-right.png"></a>
       
     </div>
   </div>
